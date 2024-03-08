@@ -1,0 +1,33 @@
+---
+title: R plot 001
+author: Admin
+date: '2024-02-27'
+slug: demo_001
+categories: 
+  - Blog
+tags:
+  - R
+  - Plots
+draft: yes
+---
+
+```{r, echo=FALSE, include=FALSE}
+library(scales)
+library(ggplot2)
+library(dplyr)
+```
+
+# Loading data
+```{r}
+head(mtcars)
+# summary(mtcars)
+```
+
+## Make a plot
+```{r}
+ggplot(data = mtcars, mapping = aes(x = disp, y = mpg, 
+    col = factor(gear))) +
+    geom_point(aes(shape = factor(gear)), size = 5) +
+    theme_gray() 
+```
+

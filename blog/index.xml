@@ -1,0 +1,733 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FHS-BAP-Docs – Blog</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blog on FHS-BAP-Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Blog: R plot 001</title>
+      <link>http://localhost:1313/blog/demo_001/</link>
+      <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/demo_001/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;loading-data&#34;&gt;Loading data&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;mtcars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# summary(mtcars)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;make-a-plot&#34;&gt;Make a plot&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;ggplot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mtcars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mapping&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;aes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;disp&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mpg&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;col&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;factor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;gear&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)))&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;geom_point&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;aes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;shape&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;factor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;gear&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)),&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;theme_gray&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;img src=&#34;http://localhost:1313/blog/demo_001/index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Blog: YouTube videos</title>
+      <link>http://localhost:1313/blog/youtube-demo/</link>
+      <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/youtube-demo/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This is a simple placeholder written in the article&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Scenario 1: Across columns&#34; src=&#34;http://localhost:1313/images/FHS_logo.jpg&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;section-1&#34;&gt;Section 1&lt;/h1&gt;
+&lt;p&gt;Hello world!&lt;/p&gt;
+&lt;h2 id=&#34;a-new-hugo-site-in-under-2-minutes-wave&#34;&gt;A New Hugo Site in Under 2 Minutes &amp;#x1f44b;&lt;/h2&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/youtube.svg&#34; width=&#34;50&#34; height=&#34;50&#34;&gt;
+&lt;p&gt;A quick overview of how to go from a an empty folder to a simple web site using Hugo, the static site generator.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Click me&lt;/summary&gt;
+&lt;h3 id=&#34;heading&#34;&gt;Heading&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Foo&lt;/li&gt;
+&lt;li&gt;Bar
+&lt;ul&gt;
+&lt;li&gt;Baz&lt;/li&gt;
+&lt;li&gt;Qux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;some-javascript&#34;&gt;Some Javascript&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;logSomething&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;something&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000&#34;&gt;console&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Something&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;something&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/details&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Blog: Docsy 0.9.0 release report</title>
+      <link>http://localhost:1313/blog/2024/0.9.0/</link>
+      <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2024/0.9.0/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Docsy &lt;a href=&#34;https://github.com/google/docsy/releases/tag/v0.9.0&#34;&gt;0.9.0&lt;/a&gt; is a sizable&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; release (&lt;a href=&#34;https://github.com/google/docsy/compare/v0.8.0...v0.9.0&#34;&gt;containing 65+ PRs&lt;/a&gt;)
+that has some breaking and notable changes worth calling out, namely those
+related to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2024/0.9.0/#footer&#34;&gt;Footer improvements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2024/0.9.0/#page-meta&#34;&gt;Repository links and other page info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2024/0.9.0/#look-and-feel&#34;&gt;Look and feel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you to all &lt;a href=&#34;https://github.com/google/docsy/releases/tag/v0.9.0&#34;&gt;contributors&lt;/a&gt;!&lt;/p&gt;
+&lt;h2 id=&#34;footer&#34;&gt;Footer improvements&lt;/h2&gt;
+&lt;p&gt;For a list of all footer improvements and fixes included in this release, see
+&lt;a href=&#34;https://github.com/google/docsy/pull/1818&#34;&gt;#1818&lt;/a&gt;. We mention a few in this section. More footer improvements, for even
+easier customization, are planned for the next &lt;a href=&#34;https://github.com/google/docsy/issues/1812&#34;&gt;major release&lt;/a&gt; (&lt;a href=&#34;https://github.com/google/docsy/issues/1852&#34;&gt;#1852&lt;/a&gt;).&lt;/p&gt;
+&lt;h3 id=&#34;footer-layout&#34;&gt;Footer layout changes&lt;/h3&gt;
+&lt;p&gt;In support of easier footer customization, the footer layout has been factored
+into parts: &lt;em&gt;left&lt;/em&gt;, &lt;em&gt;right&lt;/em&gt;, and &lt;em&gt;center&lt;/em&gt; (&lt;a href=&#34;https://github.com/google/docsy/pull/1500&#34;&gt;#1500&lt;/a&gt;), with &lt;em&gt;copyright&lt;/em&gt; as a
+subpart of center (&lt;a href=&#34;https://github.com/google/docsy/pull/1817&#34;&gt;#1817&lt;/a&gt;). Each part has its own class, such as
+&lt;code&gt;td-footer__left&lt;/code&gt;, for easy style customization. Note that the class
+&lt;code&gt;td-footer__copyright-etc&lt;/code&gt; has been renamed to &lt;code&gt;td-footer__center&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;footer-copyright&#34;&gt;Footer copyright date-range and more&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Oh my! We&amp;rsquo;ve closed &lt;a href=&#34;https://github.com/google/docsy/issues/2&#34;&gt;issue #2&lt;/a&gt;!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This release has resolves &lt;strong&gt;&lt;em&gt;the&lt;/em&gt; longest standing and first ever issue
+created&lt;/strong&gt; in Docsy!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/issues/2&#34;&gt;The footer should allow a more flexible copyright statement #2&lt;/a&gt; by
+&lt;a href=&#34;https://github.com/sarahmaddox&#34;&gt;@sarahmaddox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The footer copyright now supports a date-range and the site-copyright as a
+fallback:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Hugo config option &lt;code&gt;params.copyright&lt;/code&gt;, previously a string, can now also
+be a map with the following optional fields: &lt;code&gt;authors&lt;/code&gt;, &lt;code&gt;from_year&lt;/code&gt;,
+&lt;code&gt;to_year&lt;/code&gt;. When unset, &lt;code&gt;to_year&lt;/code&gt; defaults to the year that the site built. The
+default &lt;code&gt;authors&lt;/code&gt; is &amp;ldquo;&amp;lt;Site.Title&amp;gt; Authors&amp;rdquo; and this field is rendered as
+markdown.&lt;/li&gt;
+&lt;li&gt;If &lt;code&gt;params.copyright&lt;/code&gt; is unset, then the &lt;a href=&#34;https://gohugo.io/methods/site/copyright/&#34;&gt;site &lt;code&gt;copyright&lt;/code&gt;&lt;/a&gt; configuration
+option will be used and rendered as markdown &amp;ldquo;as is&amp;rdquo; — with no date(s)
+added.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;footer-streamlined&#34;&gt;Footer streamlined&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The About-page footer link is now hidden by default. To enable this link, set
+&lt;code&gt;.params.ui.footer_about_enable&lt;/code&gt; to true in your project&amp;rsquo;s configuration file.
+Parameter &lt;code&gt;.params.ui.footer_about_disable&lt;/code&gt; is deprecated.&lt;/li&gt;
+&lt;li&gt;The All-rights-reserved text is hidden by default. To make it visible, add the
+following to your &lt;code&gt;_styles_project.scss&lt;/code&gt; &lt;a href=&#34;https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files&#34;&gt;project style file&lt;/a&gt; (optionally
+with a &lt;code&gt;!important&lt;/code&gt; modifier — not shown):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-scss&#34; data-lang=&#34;scss&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;.td-footer__all_rights_reserved&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#c4a000&#34;&gt;display&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ce5c00&#34;&gt;inline&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;page-meta&#34;&gt;Repository links and other page info&lt;/h2&gt;
+&lt;h3 id=&#34;repository-links&#34;&gt;Repository links&lt;/h3&gt;
+&lt;p&gt;Getting &lt;a href=&#34;https://www.docsy.dev/docs/adding-content/repository-links/&#34;&gt;repository links&lt;/a&gt; right has eluded Docsy maintainers and contributors
+since 2019 (&lt;a href=&#34;https://github.com/google/docsy/issues/138&#34;&gt;#138&lt;/a&gt;). The challenge is ensuring that repository links work for
+all Docsy-based projects regardless of their setup for single- or multi-language
+support, or whether they have a homepage.&lt;/p&gt;
+&lt;p&gt;At last, steering committee member &lt;a href=&#34;https://github.com/LisaFC&#34;&gt;Lisa&lt;/a&gt;&amp;rsquo;s determination has payed off.
+Half-jokingly, Lisa commented: &lt;em&gt;All we needed was several years and a few Hugo
+improvements&lt;/em&gt;. That is, it wasn&amp;rsquo;t until &lt;a href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.112.0&#34;&gt;Hugo 0.112.0&lt;/a&gt;, released in May 2023,
+that the necessary &lt;a href=&#34;https://gohugo.io/functions/&#34;&gt;functions&lt;/a&gt; became available. For details, see:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/pull/1744&#34;&gt;Fix links for single language sites #1744&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/t/hugo-v0-112-0-new-template-functions/44512&#34;&gt;Hugo v0.112.0 - New template functions&lt;/a&gt;, by &lt;a href=&#34;https://github.com/jmooring&#34;&gt;@jmooring&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We&amp;rsquo;re convinced that Lisa&amp;rsquo;s fix has squashed repo-link bugs for good!&lt;/p&gt;
+&lt;p&gt;As mentioned in the &lt;a href=&#34;https://github.com/google/docsy/blob/main/CHANGELOG.md/#090&#34;&gt;CHANGELOG&lt;/a&gt;, this is a &lt;strong&gt;breaking change&lt;/strong&gt; for
+sites that use mounts and that have pages configured with
+&lt;a href=&#34;https://www.docsy.dev/docs/adding-content/repository-links/#path_base_for_github_subdir-optional&#34;&gt;path_base_for_github_subdir&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As can be seen from &lt;a href=&#34;https://github.com/google/docsy/issues/1841&#34;&gt;Repository / page-meta link fixes and improvements
+#1841&lt;/a&gt;, several issues remain, but resolving &lt;a href=&#34;https://github.com/google/docsy/pull/1744&#34;&gt;#1744&lt;/a&gt; establishes the
+necessary foundation for future work. The issues listed in &lt;a href=&#34;https://github.com/google/docsy/issues/1841&#34;&gt;#1841&lt;/a&gt; will be
+addressed in a future release through further layout refactoring and extension.&lt;/p&gt;
+&lt;h3 id=&#34;last-modified-page-info&#34;&gt;Last-modified page info&lt;/h3&gt;
+&lt;p&gt;You can configure your site to display page-source last-modified metadata at the
+bottom of documentation and blog pages. For details, see the newly added User
+Guide section &lt;a href=&#34;http://localhost:1313/docs/adding-content/repository-links/#last-modified-page-metadata&#34;&gt;Last-modified page metadata&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;look-and-feel&#34;&gt;Look and feel&lt;/h2&gt;
+&lt;h3 id=&#34;heading-self-links&#34;&gt;Heading self links&lt;/h3&gt;
+&lt;p&gt;Docsy has switched to build-time generation of heading self links using Hugo&amp;rsquo;s
+&lt;code&gt;render-heading.html&lt;/code&gt; &lt;a href=&#34;https://gohugo.io/templates/render-hooks/&#34;&gt;hook&lt;/a&gt;, replacing client-side rendering via
+&lt;code&gt;assets/js/anchor.js&lt;/code&gt; (dropped in &lt;a href=&#34;https://github.com/google/docsy/issues/1460&#34;&gt;#1460&lt;/a&gt;). Projects must now explicitly enable
+the feature. For details, see &lt;a href=&#34;http://localhost:1313/docs/adding-content/navigation/#heading-self-links&#34;&gt;Heading self links&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Formerly an embedded SVG, the default self-link symbol is now CSS-defined to be
+&lt;code&gt;#&lt;/code&gt;, a common choice for websites. Projects can customize the appearance of the
+heading self link through the &lt;a href=&#34;https://github.com/chalin/docsy/blob/849dea0790bbaef5f4f71659824f44045afcd65e/assets/scss/_content.scss#L98&#34;&gt;.td-heading-self-link&lt;/a&gt; class.&lt;/p&gt;
+&lt;p&gt;Heading self links are now:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Always visible on mobile and touch devices&lt;/li&gt;
+&lt;li&gt;For other devices and screens, the link is invisible until the user hovers
+over the heading (as before)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;accessibility-links-are-underlined&#34;&gt;Accessibility: Links are underlined&lt;/h3&gt;
+&lt;p&gt;Docsy now follows recommended &lt;strong&gt;accessibility practice&lt;/strong&gt;: page-body &lt;strong&gt;links are
+underlined&lt;/strong&gt; by default. For details, see &lt;a href=&#34;https://github.com/google/docsy/issues/1814&#34;&gt;#1814&lt;/a&gt; and &lt;a href=&#34;https://github.com/google/docsy/pull/1815&#34;&gt;#1815&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;bye-bye-ellipsis&#34;&gt;Bye bye ellipsis&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.docsy.dev/docs/adding-content/shortcodes/#blocksfeature&#34;&gt;blocks/feature&lt;/a&gt; shortcode no longer includes ellipsis (&amp;quot;&amp;hellip;&amp;quot;) after the
+&amp;ldquo;Read more&amp;rdquo; link text. Projects wanting to recover the ellipsis can add it to
+the &lt;code&gt;&amp;quot;ui_read_more&amp;quot;&lt;/code&gt; &lt;a href=&#34;https://www.docsy.dev/docs/language/#internationalization-bundles&#34;&gt;language parameter&lt;/a&gt; for your site&amp;rsquo;s languages (&lt;a href=&#34;https://github.com/google/docsy/issues/1820&#34;&gt;#1820&lt;/a&gt;).&lt;/p&gt;
+&lt;h2 id=&#34;references-and-future-releases&#34;&gt;References and future releases&lt;/h2&gt;
+&lt;p&gt;For the complete list of changes in this release, see the &lt;a href=&#34;https://github.com/google/docsy/releases/tag/v0.9.0&#34;&gt;0.9.0&lt;/a&gt; release entry
+and issue
+&lt;a href=&#34;https://github.com/google/docsy/issues/1759&#34;&gt;Release 0.9.0 preparation #1759&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Which Docsy improvements are on the horizon? For work items &lt;em&gt;tentatively&lt;/em&gt; planed
+for the next release, see
+&lt;a href=&#34;https://github.com/google/docsy/issues/1812&#34;&gt;Release 0.10.0 preparation #1812&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Feature and fix candidates for 0.10.0 and beyond currently include more
+Bootstrap work, in preparation for the reintroduction of RTL support —
+specifically:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/issues/1510&#34;&gt;BSv5.2 upgrade followup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/issues/1528&#34;&gt;Upgrade to Bootstrap 5.3 #1528&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/issues/1442&#34;&gt;[BSv5] Reintroduce RTL support using RTLCSS bootstrap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/issues/1845&#34;&gt;Support adding theme colors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Sizable by Docsy-release standards&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Blog: Docsy priorities for 2024</title>
+      <link>http://localhost:1313/blog/2023/priorities-for-2024/</link>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2023/priorities-for-2024/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt; 1.4K projects use Docsy! The top user-project focused priorities for
+2024 are: improving Docsy&amp;rsquo;s stability, usability &amp;amp; customizability, and
+cohesiveness while performing feature consolidation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;docsy-is-a-popular-theme&#34;&gt;Docsy is a popular theme&lt;/h2&gt;
+&lt;p&gt;The Hugo-Docsy tool combo is powerful and effective, as I&amp;rsquo;ve &lt;a href=&#34;https://www.cncf.io/blog/2023/01/19/fast-and-effective-tools-for-cncf-and-open-source-project-websites/&#34;&gt;blogged about
+elsewhere&lt;/a&gt;. It&amp;rsquo;s maybe no surprise then, to see Docsy &lt;a href=&#34;https://github.com/google/docsy/network/dependents&#34;&gt;used by 1.4K
+projects&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Why is Docsy popular? I can&amp;rsquo;t say for sure, but
+I use and recommend Docsy because it has the core features &amp;mdash; necessary for
+publishing non-trivial tech-doc sites &amp;mdash; that projects seem to want and need,
+including support for versioning, multiple languages, auto-generated site
+navigation, and more. It&amp;rsquo;s quick to set up, and it allows projects to focus on
+delivering site content rather than writing site template code.&lt;/p&gt;
+&lt;h2 id=&#34;user-project-focused-and-long-term-vision&#34;&gt;User-project focused and long-term vision&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.docsy.dev/blog/2022/hello/#introducing-the-psc&#34;&gt;Steering committee&lt;/a&gt; members, including myself, are actively supporting
+several projects at the CNCF and Google that rely on Docsy. Both as users and
+contributors to Docsy, we share a vested interest in ensuring Docsy&amp;rsquo;s long-term
+health. Our envisioned priorities for Docsy are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Stability&lt;/strong&gt; of Docsy&amp;rsquo;s &lt;strong&gt;core&lt;/strong&gt; through bug fixes and necessary upgrades
+&amp;mdash; the &lt;a href=&#34;https://www.docsy.dev/blog/2023/bootstrap-5-migration/&#34;&gt;migration from the end-of-life Bootstrap 4 to version
+5&lt;/a&gt; is one example of such an effort.&lt;/li&gt;
+&lt;li&gt;Reducing &lt;strong&gt;technical debt&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Improving usability, customizability, and maintainability&lt;/strong&gt; by, in
+particular, working to more &lt;strong&gt;clearly separate&lt;/strong&gt; and document &amp;ldquo;&lt;strong&gt;API
+surfaces&lt;/strong&gt;&amp;rdquo; &amp;mdash; or configuration / customization surfaces.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Feature consolidation&lt;/strong&gt;, which I will explain next.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Google open sourced Docsy a little over five years ago, and thanks to community
+contributions, it has grown in stability and its feature set. During that time,
+Docsy also accumulated considerable technical debt, and it now suffers (IMHO)
+from a mild case of software bloat/feature creep. So, in addition to investing
+in Docsy&amp;rsquo;s long-term stability and maintainability, we need to &lt;strong&gt;reaffirm
+Docsy&amp;rsquo;s core features&lt;/strong&gt; and deprioritize the rest&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &amp;mdash; lest we suffer a &lt;a href=&#34;https://github.com/kentcdodds/cross-env/issues/257&#34;&gt;fate
+similar to projects like &lt;code&gt;cross-env&lt;/code&gt;&lt;/a&gt;. Consider Docsy on a feature diet.&lt;/p&gt;
+&lt;p&gt;Before tackling 2024 objectives, we plan on setting up a &lt;strong&gt;test infrastructure&lt;/strong&gt;
+with (a growing) suite of tests to help us ensure Docsy&amp;rsquo;s integrity as it
+evolves.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This is a tall order for 2024 and beyond, but I believe that slow and steady
+wins the day.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re eager to hear from you, the Docsy community! &lt;a href=&#34;https://github.com/google/docsy/discussions&#34;&gt;Share your thoughts&lt;/a&gt; on our
+focus areas and how we can enhance Docsy. Take a look at our issue triage into
+&lt;a href=&#34;https://github.com/google/docsy/milestones&#34;&gt;quarterly milestones&lt;/a&gt; for a rough idea of what is targeted for upcoming
+releases. Vote for or comment on issues that are important to you, and we&amp;rsquo;ll do
+our best to respond and adjust release targets within the boundaries of our set
+priorities. Better yet, volunteer to work on the current quarter&amp;rsquo;s tasks. As we
+start the new year, we&amp;rsquo;ll be especially interested in getting help with testing
+and feature consolidation.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;According to &lt;a href=&#34;https://github.com/google/docsy/network/dependents&#34;&gt;Docsy&amp;rsquo;s GitHub analytics&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Features outside the identified core could even be moved to a separate
+community-maintained repo. The steering committee is also considering a
+&amp;ldquo;plugin&amp;rdquo; architecture for some secondary features, such as (to mention just
+one) Mermaid support.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Blog: Upgrading to Docsy 0.7 &amp; Bootstrap 5</title>
+      <link>http://localhost:1313/blog/2023/docsy-0.7/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2023/docsy-0.7/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Last June, Docsy celebrated a significant milestone with the release of version
+&lt;a href=&#34;https://github.com/google/docsy/releases/tag/v0.7.0&#34;&gt;0.7.0&lt;/a&gt;. This major upgrade
+was the result of
+&lt;a href=&#34;https://github.com/google/docsy/issues/470&#34;&gt;six months of meticulous work (#470)&lt;/a&gt;
+focused on the migration to Bootstrap 5.2. For highlights and the rationale
+behind that journey, see
+&lt;a href=&#34;http://localhost:1313/blog/2023/bootstrap-5-migration/&#34;&gt;Migrating to Bootstrap 5.2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This blog post is intended to help those who are upgrading to Docsy 0.7 and
+Bootstrap 5, based on my Docsy 0.7 upgrade experiences, specifically related to
+Bootstrap. The post starts with general guidance for Docsy-based projects
+wishing to upgrade. Every project&amp;rsquo;s migration experience will be unique, but
+hopefully this post, and the two included case studies, will make your upgrade
+process easier and faster.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re here, you probably want to upgrade your Docsy-based project&amp;mdash;so,
+let&amp;rsquo;s jump in!&lt;/p&gt;
+&lt;h2 id=&#34;upgrading-your-project&#34;&gt;Upgrading your project&lt;/h2&gt;
+&lt;p&gt;As was mentioned in the
+&lt;a href=&#34;http://localhost:1313/blog/2023/bootstrap-5-migration/#migrating-docsy-based-projects&#34;&gt;first post&lt;/a&gt;,
+each project uses its own specific set of Bootstrap and Docsy features, so in
+all likelihood, &lt;strong&gt;your upgrade journey will be unique&lt;/strong&gt;. This section offers
+some general guidance.&lt;/p&gt;
+&lt;h3 id=&#34;upgrade-docsy&#34;&gt;Upgrade Docsy&lt;/h3&gt;
+&lt;p&gt;If you haven&amp;rsquo;t already, upgrade your project all the way up to Docsy 0.6 first.
+Each release of Docsy can bring its own set of upgrade challenges that will vary
+in size and effort depending on your project and the features it uses, as well
+as how long it&amp;rsquo;s been since your version of Docsy has been upgraded. You&amp;rsquo;ll want
+to get all pre-0.7 upgrade issues out of the way so that you can focus on
+Bootstrap 5 issues. Once you are done, upgrade to the latest Docsy 0.7.x
+release.&lt;/p&gt;
+&lt;h3 id=&#34;address-bootstrap-changes&#34;&gt;Address Bootstrap changes&lt;/h3&gt;
+&lt;p&gt;I recommend that you first walk through the Bootstrap 5.2
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/&#34;&gt;migration page&lt;/a&gt; to get an
+appreciation of the scope of the changes made to Bootstrap 5 relative to 4.
+Identify the breaking changes to those Bootstrap features used by your project,
+and address each individually. I mention a few breaking changes next and close
+the section with a comment about what to do about the rest.&lt;/p&gt;
+&lt;p&gt;Some Bootstrap changes will break your website&amp;rsquo;s layout or functionality in
+obvious ways. This is the case for the
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#utilities&#34;&gt;rename&lt;/a&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#utilities&#34;&gt; of utility classes&lt;/a&gt;,
+like &lt;code&gt;ml-1&lt;/code&gt; and &lt;code&gt;pr-2&lt;/code&gt;. Using regular-expression based search-and-replace over
+your project&amp;rsquo;s custom layouts or doc-page inline HTML is a good way to tackle
+this. I&amp;rsquo;ve used regex like these:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Margin and padding: &lt;code&gt;\b([mp])[lr](-([0-5]|auto))\b&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Left/right classes: &lt;code&gt;\b((float|border|rounded|text)-)(left|right)\b&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If your project uses Bootstrap
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#javascript&#34;&gt;JavaScript plugins&lt;/a&gt;
+such as dropdowns, popovers, and tooltips, these will stop working until you
+adjust data attribute names, which are now &amp;ldquo;namespaced&amp;rdquo; using the &lt;code&gt;data-bs&lt;/code&gt;
+prefix. For example, use &lt;code&gt;data-bs-toggle&lt;/code&gt; instead of &lt;code&gt;data-toggle&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Other Bootstrap breaking changes will require more work to address, such as the
+following that were mentioned in the
+&lt;a href=&#34;http://localhost:1313/blog/2023/bootstrap-5-migration/#tldr&#34;&gt;TL;DR&lt;/a&gt; of the first post:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2023/bootstrap-5-migration/#mixin-media-breakpoint-down-argument-shift&#34;&gt;Mixin &lt;code&gt;media-breakpoint-down()&lt;/code&gt; argument shift&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2023/bootstrap-5-migration/#grid-row-and-col-style-changes-are-breaking&#34;&gt;Grid &lt;code&gt;.row&lt;/code&gt; and &lt;code&gt;.col&lt;/code&gt; style changes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2023/bootstrap-5-migration/#import-ordering-of-bootstrap-sass-files-functions-first&#34;&gt;Import ordering of Bootstrap Sass files: functions first&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Docsy blog layout used the &lt;code&gt;.media&lt;/code&gt; class, which was
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#grid-updates&#34;&gt;dropped from Bootstrap 5&lt;/a&gt;.
+This, and the
+&lt;a href=&#34;http://localhost:1313/blog/2023/bootstrap-5-migration/#grid-row-and-col-style-changes-are-breaking&#34;&gt;&lt;code&gt;.row&lt;/code&gt; and &lt;code&gt;.col&lt;/code&gt; style changes&lt;/a&gt;,
+required a couple of iterated changes to the blog layouts, such as
+&lt;a href=&#34;https://github.com/google/docsy/pull/1566&#34;&gt;PR #1566&lt;/a&gt;. If your project
+customizes blog layouts, then you&amp;rsquo;ll want to walk through the updates carefully.
+Otherwise, your project will get these updates automatically, without any
+further required changes.&lt;/p&gt;
+&lt;p&gt;Should you encounter a Bootstrap-5 breaking change affecting your project that
+hasn&amp;rsquo;t been mentioned above, you might find the opening comment of Docsy
+&lt;a href=&#34;https://github.com/google/docsy/issues/470&#34;&gt;issue #470 · Upgrade to Bootstrap 5.2&lt;/a&gt;
+useful: it lists 50 tasks, each addressing a distinct migration problem,
+accompanied by notes or cross-referenced PRs that illustrate how each problem
+was resolved.&lt;/p&gt;
+&lt;h3 id=&#34;address-docsy-specific-changes&#34;&gt;Address Docsy-specific changes&lt;/h3&gt;
+&lt;p&gt;It is worth mentioning in passing some of the main Docsy 0.7 changes that aren&amp;rsquo;t
+related to Bootstrap, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Default and accepted values of the &lt;code&gt;blocks/section&lt;/code&gt;&amp;rsquo;s &lt;code&gt;type&lt;/code&gt; argument have
+changed (&lt;a href=&#34;https://github.com/google/docsy/issues/1472&#34;&gt;#1472&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Pre-Hugo-0.54.x behavior of &lt;code&gt;{{% %}}&lt;/code&gt; is no longer supported
+(&lt;a href=&#34;https://github.com/google/docsy/issues/939&#34;&gt;#939&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo release&lt;/a&gt; 0.110.0 or later is
+required&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the complete list of changes, see the
+&lt;a href=&#34;https://github.com/google/docsy/blob/main/CHANGELOG.md#070&#34;&gt;CHANGELOG at 0.7.0&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;case-studies&#34;&gt;Case studies&lt;/h2&gt;
+&lt;p&gt;Our two case study projects to illustrate the Docsy upgrade process are the
+OpenTelemetry project and the Docsy example template repository.&lt;/p&gt;
+&lt;h3 id=&#34;opentelemetryio&#34;&gt;opentelemetry.io&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cncf.io/blog/2023/01/19/fast-and-effective-tools-for-cncf-and-open-source-project-websites/&#34;&gt;Several CNCF projects&lt;/a&gt;
+use the Docsy theme, including &lt;a href=&#34;https://opentelemetry.io/&#34;&gt;opentelemetry.io&lt;/a&gt;,
+which I used as a Docsy pre-release test site. As suggested earlier, I first
+upgraded Docsy from 0.4 to 0.6
+(&lt;a href=&#34;https://github.com/open-telemetry/opentelemetry.io/issues/2419&#34;&gt;opentelemetry.io issue #2419&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The upgrade to Docsy 0.7 went
+&lt;a href=&#34;https://github.com/open-telemetry/opentelemetry.io/issues?q=label%3Adocsy+is%3Aclosed+closed%3A%3E2023-03-03&#34;&gt;fairly smoothly&lt;/a&gt;.
+In addition to addressing the &amp;ldquo;obvious changes&amp;rdquo; related to utility class renames
+and data-attribute namespacing, the OTel website required these project-specific
+changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#forms&#34;&gt;Breaking changes to&lt;/a&gt;
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#forms&#34;&gt;forms&lt;/a&gt; required a
+significant rework of the
+&lt;a href=&#34;https://opentelemetry.io/ecosystem/registry/&#34;&gt;Registry&lt;/a&gt; form&lt;/li&gt;
+&lt;li&gt;While the OTel website has no blog layout overrides, it made use of the
+&lt;code&gt;.media&lt;/code&gt; class (which was dropped) for registry entries. Flex styles were used
+instead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&amp;rsquo;s it! To see how both of the above were resolved, see OTel
+&lt;a href=&#34;https://github.com/open-telemetry/opentelemetry.io/pull/2490&#34;&gt;PR #2490&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;docsy-example&#34;&gt;Docsy-example&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;docsy-example&lt;/a&gt; repository is a
+&lt;a href=&#34;https://gitprotect.io/blog/how-to-use-github-repository-templates/&#34;&gt;GitHub template&lt;/a&gt;
+that we suggest as a possible starting point for users looking to adopt
+&lt;a href=&#34;http://localhost:1313/docs/get-started/docsy-as-module/example-site-as-template/&#34;&gt;Docsy for a new website&lt;/a&gt;.
+The example site features &lt;a href=&#34;http://localhost:1313/docs/language/&#34;&gt;multi-language support&lt;/a&gt;, which had
+an impact on the required upgrades.&lt;/p&gt;
+&lt;p&gt;The example-site upgrade was even simpler than for the OTel website. The key
+changes (&lt;a href=&#34;https://github.com/google/docsy-example/pull/221&#34;&gt;PR #221&lt;/a&gt;) were
+mainly confined to the landing page of each natural language:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Utility-class renames, such as &lt;code&gt;.ml-*&lt;/code&gt; and &lt;code&gt;.mr-*&lt;/code&gt; to &lt;code&gt;.ms-*&lt;/code&gt; and &lt;code&gt;.me-*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/#blockssection&#34;&gt;blocks/section&lt;/a&gt; changes
+(&lt;a href=&#34;https://github.com/google/docsy/pull/1472&#34;&gt;PR #1472&lt;/a&gt;):
+&lt;ul&gt;
+&lt;li&gt;Language landing pages had to be renamed from &lt;code&gt;.html&lt;/code&gt; to &lt;code&gt;.md&lt;/code&gt; in support of
+using blocks shortcodes to render markdown content&lt;/li&gt;
+&lt;li&gt;Switched to &lt;code&gt;type=&amp;quot;row&amp;quot;&lt;/code&gt; for &lt;code&gt;blocks/section&lt;/code&gt; elements that are rows (also
+from &lt;a href=&#34;https://github.com/google/docsy-example/pull/220&#34;&gt;PR #220&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That was it.&lt;/p&gt;
+&lt;h2 id=&#34;what-next&#34;&gt;What next?&lt;/h2&gt;
+&lt;p&gt;If your project doesn&amp;rsquo;t override any Docsy layouts, then your upgrade experience
+should be relatively straightforward. Reviewing layout file changes, on the
+other hand, always warrants special attention.&lt;/p&gt;
+&lt;p&gt;With the tips shared here, I hope that your journey to Docsy 0.7 will be more
+streamlined. Consider sharing your experiences by adding a comment to the
+&lt;a href=&#34;https://github.com/google/docsy/discussions/1555&#34;&gt;discussion of 0.7.0&lt;/a&gt; or any
+&lt;a href=&#34;https://github.com/google/docsy/discussions/categories/announcement?discussions_q%3Dis%253Aopen%2Bcategory%253AAnnouncement&#34;&gt;later 0.7.x release&lt;/a&gt;.
+Wishing you a successful upgrade journey!&lt;/p&gt;
+&lt;p&gt;A special thanks to &lt;a href=&#34;https://github.com/emckean&#34;&gt;Erin McKean&lt;/a&gt; for detailed and
+valuable feedback on this post, and to all who contributed to the 0.7.x releases
+of Docsy and the Docsy example!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Blog: Migrating to Bootstrap 5.2</title>
+      <link>http://localhost:1313/blog/2023/bootstrap-5-migration/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2023/bootstrap-5-migration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;a href=&#34;https://docsy.dev&#34;&gt;Docsy&lt;/a&gt;, and Docsy-based project websites (&lt;a href=&#34;https://www.cncf.io/blog/2023/01/19/fast-and-effective-tools-for-cncf-and-open-source-project-websites/&#34;&gt;including those
+at the CNCF&lt;/a&gt;), have been happily using the
+&lt;a href=&#34;https://getbootstrap.com&#34;&gt;Bootstrap CSS framework&lt;/a&gt; from Docsy&amp;rsquo;s inception. In
+January of this year, Bootstrap 4 (the version used by Docsy for the past few
+years) reached its &lt;a href=&#34;https://endoflife.date/bootstrap&#34;&gt;end of life&lt;/a&gt;. While we,
+the Docsy steering committee, have been eager to benefit from the Bootstrap 5
+improvements, we were concerned about the magnitude of the migration effort, as
+well as the impact on downstream projects. Because of this, the migration was
+delayed for as long as possible. In December of 2022, when Bootstrap 4 stopped
+receiving critical upgrades, we declared
+&lt;a href=&#34;https://github.com/google/docsy/discussions/1308&#34;&gt;Docsy to be in a feature freeze&lt;/a&gt;,
+and focused our maintenance efforts on the Bootstrap 5 migration.&lt;/p&gt;
+&lt;p&gt;This post is about Docsy&amp;rsquo;s migration journey to
+&lt;a href=&#34;https://blog.getbootstrap.com/2022/07/19/bootstrap-5-2-0/&#34;&gt;&lt;strong&gt;Bootstrap 5.2&lt;/strong&gt;&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;:
+it highlights the most notable steps, with a special attention given to the most
+surprising aspects of the migration. Our hope is that this post will be useful
+to others upgrading to Bootstrap 5, in particular, for downstream Docsy projects
+&amp;mdash; though we plan a separate post specifically for downstream projects.&lt;/p&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;Eager to dive into the Bootstrap migration of your project? Besides carefully
+stepping through the
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/&#34;&gt;Bootstrap migration page&lt;/a&gt;, watch
+out for the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;media-breakpoint-down()&lt;/code&gt; mixin&amp;rsquo;s breakpoint argument needs to be shifted.&lt;/li&gt;
+&lt;li&gt;Grid &lt;code&gt;.row&lt;/code&gt; and &lt;code&gt;.col&lt;/code&gt; style changes are breaking.&lt;/li&gt;
+&lt;li&gt;Import ordering of Bootstrap Sass files: import functions first.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For details, read on.&lt;/p&gt;
+&lt;h2 id=&#34;technical-details&#34;&gt;Technical details&lt;/h2&gt;
+&lt;p&gt;If you are well accustomed to upgrading Docsy (and its dependencies) by reading
+changelogs and systematically stepping through commits, then this section
+provides a summary of some notable changes. In it, I describe technical aspects
+of the migration that surprised me, either because they required particular care
+in fixing, were undocumented, and/or insufficiently explained in the Bootstrap
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/&#34;&gt;migration page&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;mixin-media-breakpoint-down-argument-shift&#34;&gt;Mixin &lt;code&gt;media-breakpoint-down()&lt;/code&gt; argument shift&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://getbootstrap.com/docs/5.2/layout/breakpoints&#34;&gt;breakpoint&lt;/a&gt; argument
+to the &lt;code&gt;media-breakpoint-down()&lt;/code&gt; mixin needs to be bumped up to the next higher
+breakpoint. Thankfully, a similar change isn&amp;rsquo;t required of
+&lt;code&gt;media-breakpoint-up()&lt;/code&gt;. This change will be required of Docsy-based projects.
+If you forget to make this non-obviously breaking layout change, your project&amp;rsquo;s
+responsive layouts will likely start misbehaving in apparently strange ways.&lt;/p&gt;
+&lt;p&gt;For details and an example, see:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#sass&#34;&gt;Sass&lt;/a&gt; section of the
+migration page&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/pull/1367&#34;&gt;[BSv5] Adjust &lt;code&gt;media-breakpoint-down()&lt;/code&gt; argument · Docsy PR #1367&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;grid-row-and-col-style-changes-are-breaking&#34;&gt;Grid &lt;code&gt;.row&lt;/code&gt; and &lt;code&gt;.col&lt;/code&gt; style changes are breaking&lt;/h3&gt;
+&lt;p&gt;The main issue addressed in this section is not, at the time of writing,
+documented in the Bootstrap 5
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration&#34;&gt;migration page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There seems to be an assumption, in Bootstrap 5, that the immediate child of a
+.&lt;code&gt;row&lt;/code&gt; should be a &lt;code&gt;.col&lt;/code&gt;. I don&amp;rsquo;t know how strict an assumption this is. While
+I have searched for an explicit statement of this assumption in the Bootstrap
+documentation, I haven&amp;rsquo;t found one yet &amp;mdash; if you are aware of such a statement,
+let us know!&lt;/p&gt;
+&lt;p&gt;This assumption wasn&amp;rsquo;t apparent nor was it enforced in Bootstrap 4,
+consequently, some of Docsy&amp;rsquo;s layouts failed to respect it. In
+&lt;a href=&#34;https://github.com/google/docsy/issues/1466&#34;&gt;most cases&lt;/a&gt;, fixing violations
+consisted of simply wrapping a &lt;code&gt;.row&lt;/code&gt;&amp;rsquo;s child element in a &lt;code&gt;.col&lt;/code&gt;, but the
+&lt;a href=&#34;https://github.com/google/docsy/blob/v0.7.0/layouts/partials/footer.html&#34;&gt;Docsy footer&lt;/a&gt;
+required a couple of iterations to get right.&lt;/p&gt;
+&lt;p&gt;My first footer adjustment reset
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink&#34;&gt;&lt;code&gt;flex-shrink&lt;/code&gt;&lt;/a&gt; to
+its default value (PR &lt;a href=&#34;https://github.com/google/docsy/pull/1373&#34;&gt;#1373&lt;/a&gt;), but
+that turned out to be unnecessary once I better understood how to appropriately
+handle row margins (PR &lt;a href=&#34;https://github.com/google/docsy/pull/1523&#34;&gt;#1523&lt;/a&gt;) &amp;mdash;
+rows have negative margins, as I
+&lt;a href=&#34;https://github.com/google/docsy/pull/1502#issue-1678874640&#34;&gt;recently learned&lt;/a&gt;,
+which is something to keep in mind.&lt;/p&gt;
+&lt;p&gt;The following Bootstrap 5 &lt;code&gt;.col&lt;/code&gt; style changes influenced Docsy-specific style
+updates and might impact Docsy-based projects as well:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;position&lt;/code&gt; is reverted to its
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/position#values&#34;&gt;default value of &lt;code&gt;static&lt;/code&gt;&lt;/a&gt;
+from
+&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/28517/files#diff-41667d8b9901aa9fa52483b538bb9026c287f2c663d2fdc01acffa06888cc087L13&#34;&gt;&lt;code&gt;relative&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flex-shrink&lt;/code&gt;
+&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink#values&#34;&gt;default value of 1&lt;/a&gt;
+is overridden and
+&lt;a href=&#34;https://github.com/twbs/bootstrap/pull/28517/files#diff-41667d8b9901aa9fa52483b538bb9026c287f2c663d2fdc01acffa06888cc087R18&#34;&gt;set to 0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;References:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/issues/1466&#34;&gt;[BSv5] Row/col formatting breaks Docsy components #1466&lt;/a&gt;,
+in particular
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/pull/1373&#34;&gt;[BSv5] Footer fixes: reset flex-shrink, and more·&lt;/a&gt;
+&lt;a href=&#34;https://github.com/google/docsy/pull/1367&#34;&gt;Docsy PR&lt;/a&gt;&lt;a href=&#34;https://github.com/google/docsy/pull/1373&#34;&gt; #1373&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/pull/1523&#34;&gt;[BSv5] Footer: drop flex-shrink tweak + other adjustments ·&lt;/a&gt;
+&lt;a href=&#34;https://github.com/google/docsy/pull/1367&#34;&gt;Docsy PR&lt;/a&gt;&lt;a href=&#34;https://github.com/google/docsy/pull/1523&#34;&gt; #1523&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/twbs/bootstrap/issues/25254&#34;&gt;Why are all col classes &amp;lsquo;position: relative&amp;rsquo;? · Bootstrap v4 issue #25254&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/orgs/twbs/discussions/37951&#34;&gt;Why flex-shrink 0 for all columns? · Bootstrap discussion #37951&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;import-ordering-of-bootstrap-sass-files-functions-first&#34;&gt;Import ordering of Bootstrap Sass files: functions first&lt;/h3&gt;
+&lt;p&gt;Projects can &lt;a href=&#34;https://getbootstrap.com/docs/5.2/customize/sass/&#34;&gt;import&lt;/a&gt;
+Bootstrap Sass sources all in one go (using
+&lt;a href=&#34;https://github.com/twbs/bootstrap/blob/v5.2.3/scss/bootstrap.scss&#34;&gt;bootstrap.scss&lt;/a&gt;),
+or selectively import any one of the
+&lt;a href=&#34;https://github.com/twbs/bootstrap/blob/v5.2.3/scss/bootstrap.scss&#34;&gt;40+&lt;/a&gt;
+Bootstrap parts, layouts, and components that they need. Regardless of the
+import strategy chosen, due to a Sass map initialization limitation,
+Bootstrap-client projects need to perform (emphasis mine):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip; variable customizations &amp;hellip; &lt;strong&gt;after&lt;/strong&gt; &lt;code&gt;@import &amp;quot;functions&amp;quot;&lt;/code&gt;, but
+&lt;strong&gt;before&lt;/strong&gt; &amp;gt; &lt;code&gt;@import &amp;quot;variables&amp;quot;&lt;/code&gt; and the rest of [the Bootstrap] import
+stack.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For details, see
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#new-_mapsscss&#34;&gt;New _maps.scss&lt;/a&gt;
+from the migration page, and
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/customize/sass/&#34;&gt;Importing&lt;/a&gt; from Bootstrap&amp;rsquo;s
+Sass customization documentation.&lt;/p&gt;
+&lt;p&gt;Having to maintain a custom list of a few dozen imports (even if it&amp;rsquo;s relatively
+stable) feels like a maintenance overhead that we should avoid if we can, so in
+Docsy&amp;rsquo;s
+&lt;a href=&#34;https://github.com/google/docsy/blob/v0.7.0/assets/scss/main.scss&#34;&gt;main.scss&lt;/a&gt;,
+we @import &amp;ldquo;functions&amp;rdquo; before Docsy- and project-specific variable overrides,
+and then we import the &lt;em&gt;full&lt;/em&gt; Bootstrap suite of SCSS. This results in
+&lt;a href=&#34;https://github.com/twbs/bootstrap/blob/v5.2.3/scss/_functions.scss&#34;&gt;_functions.scss&lt;/a&gt;
+being imported twice, but according to the
+&lt;a href=&#34;https://sass-lang.com/documentation/at-rules/import&#34;&gt;Sass &lt;code&gt;@import&lt;/code&gt; documentation&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the same stylesheet is imported more than once, it will be evaluated again
+each time. If it just defines functions and mixins, this usually isn&amp;rsquo;t a big
+deal, but if it contains style rules they&amp;rsquo;ll be compiled to CSS more than
+once.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The
+&lt;a href=&#34;https://github.com/twbs/bootstrap/blob/v5.2.3/scss/_functions.scss&#34;&gt;_functions.scss&lt;/a&gt;
+file only contains function definitions, so we should be ok. This seems like a
+small cost to pay in contrast to the alternative strategy of inlining the 40+
+imports from
+&lt;a href=&#34;https://github.com/twbs/bootstrap/blob/v5.2.3/scss/bootstrap.scss&#34;&gt;bootstrap.scss&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;References:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/pull/1388&#34;&gt;[BSv5] Fix SCSS functions import issue &amp;hellip; ·&lt;/a&gt;
+&lt;a href=&#34;https://github.com/google/docsy/pull/1367&#34;&gt;Docsy PR&lt;/a&gt;
+&lt;a href=&#34;https://github.com/google/docsy/pull/1388&#34;&gt;#1388&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#new-_mapsscss&#34;&gt;New _maps.scss&lt;/a&gt;
+from the migration page&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://getbootstrap.com/docs/5.2/customize/sass/&#34;&gt;Importing&lt;/a&gt; from
+Bootstrap&amp;rsquo;s Sass customization documentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;systematic-and-stepwise-migration&#34;&gt;Systematic and stepwise migration&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;ve glanced at the Bootstrap 5
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/&#34;&gt;migration page&lt;/a&gt;, you will see
+that there are a &lt;em&gt;lot&lt;/em&gt; of changes to address while migrating. To ensure that we
+didn&amp;rsquo;t miss any, we systematically walked through the migration guide, and
+tracked the status of each change through
+&lt;a href=&#34;https://github.com/google/docsy/issues/470&#34;&gt;Docsy issue #470&lt;/a&gt;. Each relevant
+migration page section is represented in the issue&amp;rsquo;s opening comment: we either
+noted that a migration-page section is irrelevant for Docsy, or added the
+section to the tracking issue, and list the PRs containing corresponding
+Docsy-specific changes. If you&amp;rsquo;re curious to see how that worked out, see
+&lt;a href=&#34;https://github.com/google/docsy/issues/470&#34;&gt;Upgrade to Bootstrap 5.2 · Docsy issue #470&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;first-bootstrap-5-release-of-docsy&#34;&gt;First Bootstrap 5 release of Docsy&lt;/h2&gt;
+&lt;p&gt;A first Bootstrap 5 release of Docsy is planned for the start of June, since
+most aspects of the migration have been completed. Some updates have been
+postponed, most notably support for right-to-left
+(&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#rtl&#34;&gt;RTL&lt;/a&gt;) text. For the complete
+list of followup items, see
+&lt;a href=&#34;https://github.com/google/docsy/issues/1510&#34;&gt;BSv5.2 upgrade followup · Docsy issue #1510&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As was mentioned earlier, this first release will be in support of
+&lt;a href=&#34;https://blog.getbootstrap.com/2022/07/19/bootstrap-5-2-0/&#34;&gt;Bootstrap 5.2&lt;/a&gt;. We
+plan a separate migration effort to bring Docsy up to
+&lt;a href=&#34;https://blog.getbootstrap.com/2023/05/30/bootstrap-5-3-0/&#34;&gt;Bootstrap 5.3&lt;/a&gt;, in
+particular to benefit from new
+&lt;a href=&#34;https://blog.getbootstrap.com/2023/05/30/bootstrap-5-3-0/#custom-color-modes&#34;&gt;color modes&lt;/a&gt;.
+You can track our progress through
+&lt;a href=&#34;https://github.com/google/docsy/issues/1528&#34;&gt;Docsy issue #1528&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;migrating-docsy-based-projects&#34;&gt;Migrating Docsy-based projects&lt;/h2&gt;
+&lt;p&gt;This section contains some preliminary and general guidance for downstream
+projects. We are planning a separate post to cover more migration details.&lt;/p&gt;
+&lt;h3 id=&#34;bootstrap-migration-page-walkthrough&#34;&gt;Bootstrap migration-page walkthrough&lt;/h3&gt;
+&lt;p&gt;Each project uses its own specific set of Bootstrap features, so walking through
+the Bootstrap 5.2 &lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/&#34;&gt;migration page&lt;/a&gt;
+will be advisable for most projects. Of course, one strategy is just to upgrade
+and see what breaks or no longer works, but only doing that without a more
+systematic follow-up would be ill-advised for all but the most trivial
+projects&amp;mdash;consider the challenge in detecting and recovering from a missed
+change to a ​​&lt;code&gt;media-breakpoint-down()&lt;/code&gt; argument, as discussed earlier.&lt;/p&gt;
+&lt;h3 id=&#34;docsy-specific-changes&#34;&gt;Docsy-specific changes&lt;/h3&gt;
+&lt;p&gt;During the migration effort we seized the opportunity to do some long overdue
+Docsy house cleaning. For details concerning both breaking and non-breaking
+Docsy-specific changes, consult the
+&lt;a href=&#34;https://github.com/google/docsy/blob/main/CHANGELOG.md#070&#34;&gt;changelog&lt;/a&gt;. In
+particular, one non-breaking but important change to be aware of is:
+&lt;a href=&#34;https://github.com/google/docsy/pull/1462&#34;&gt;[BSv5] Docsy variables cleanup &amp;hellip; PR #1462&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;give-it-a-try&#34;&gt;Give it a try!&lt;/h2&gt;
+&lt;p&gt;To get a first and quick impression of the impact of the upgrade on your
+project, it can be informative to simply upgrade Docsy and see what breaks. This
+is what the Docsy team did with Bootstrap 5. Only one change actually broke the
+build of the Docsy User Guide: the
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#sass&#34;&gt;rename of the &lt;code&gt;color-yiq()&lt;/code&gt; function&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After such a smoke test, we recommend systematically walking through the
+Bootstrap &lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/&#34;&gt;migration page&lt;/a&gt; as
+described above, and the Docsy
+&lt;a href=&#34;https://github.com/google/docsy/blob/main/CHANGELOG.md#070&#34;&gt;changelog&lt;/a&gt;. I used
+this approach for &lt;a href=&#34;https://opentelemetry.io/&#34;&gt;opentelemetry.io&lt;/a&gt;, which was the
+first Docsy-based project to be upgraded with a pre-release of Bootstrap-5-based
+Docsy. The upgrade went
+&lt;a href=&#34;https://github.com/open-telemetry/opentelemetry.io/issues/2419&#34;&gt;quite smoothly&lt;/a&gt;.
+The main pain point of the OTel website was upgrading to Bootstrap 5
+&lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#forms&#34;&gt;forms&lt;/a&gt;; an aspect of the
+migration that didn&amp;rsquo;t apply to Docsy since Docsy uses only the most trivial of
+forms.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll have more to share about the OTel migration effort as well as general
+project-specific migration advice in a &lt;a href=&#34;http://localhost:1313/blog/2023/docsy-0.7/&#34;&gt;followup blog post&lt;/a&gt;. In the meantime,
+I hope that you have found parts of this technical article helpful for your own
+migration efforts.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cncf.io/projects/&#34;&gt;CNCF project&lt;/a&gt; websites eager to migrate can send
+questions to the CNCF
+&lt;a href=&#34;https://cloud-native.slack.com/archives/CUJ6W5TLM&#34;&gt;#techdocs Slack channel&lt;/a&gt;.
+CNCF and other Docsy-based projects can also
+&lt;a href=&#34;https://github.com/google/docsy/discussions/new&#34;&gt;start a discussion&lt;/a&gt; in the
+Docsy repository. Happy migrating!&lt;/p&gt;
+&lt;p&gt;A big thanks to the Docsy Steering Committee and other reviewers who offered
+feedback on earlier drafts of this post, as well as to all those who contributed
+to the migration effort.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;A version of this article originally appeared as the &lt;a href=&#34;https://www.cncf.io/blog/&#34;&gt;CNCF blog&lt;/a&gt; post
+&lt;a href=&#34;https://www.cncf.io/blog/2023/06/05/migrating-docsy-to-bootstrap-5/&#34;&gt;Migrating Docsy to Bootstrap 5 &lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.getbootstrap.com/2023/05/30/bootstrap-5-3-0/&#34;&gt;Bootstrap 5.3 reached GA&lt;/a&gt;
+on May 30. There will be a separate migration effort to bring
+&lt;a href=&#34;https://github.com/google/docsy/issues/1528&#34;&gt;Docsy up to Bootstrap 5.3&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Blog: Hello Docsy!</title>
+      <link>http://localhost:1313/blog/2022/hello/</link>
+      <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2022/hello/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;hello&#34;&gt;Hello&lt;/h2&gt;
+&lt;p&gt;It may seem strange to see a &amp;ldquo;Hello&amp;rdquo; post from a project that&amp;rsquo;s several years old, but as Docsy matures as a community-driven project, we thought it was time to (re)introduce ourselves and talk about what&amp;rsquo;s new with your favorite (we hope) Hugo documentation theme!&lt;/p&gt;
+&lt;h3 id=&#34;discuss-amongst-yourselves&#34;&gt;Discuss amongst yourselves&lt;/h3&gt;
+&lt;p&gt;Our &lt;a href=&#34;https://github.com/google/docsy/discussions&#34;&gt;Discussions&lt;/a&gt; are really hopping lately! Don&amp;rsquo;t miss our notice of the &lt;a href=&#34;https://github.com/google/docsy/discussions/950&#34;&gt;upcoming deprecation of the Font-Awesome and Bootstrap git submodules&lt;/a&gt; or our announcement of our &lt;a href=&#34;https://github.com/google/docsy/discussions/798&#34;&gt;new governance model&lt;/a&gt;!&lt;/p&gt;
+&lt;h3 id=&#34;milestones-releases-and-roadmaps&#34;&gt;Milestones, releases, and roadmaps&lt;/h3&gt;
+&lt;p&gt;We are planning our first official release of Docsy soon—check out the &lt;a href=&#34;https://github.com/google/docsy/milestone/2&#34;&gt;milestones for 0.2.0&lt;/a&gt;. Got a suggestion for the roadmap? Open an &lt;a href=&#34;https://github.com/google/docsy/issues&#34;&gt;issue&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;coming-soon-project-metrics&#34;&gt;Coming soon: project metrics&lt;/h3&gt;
+&lt;p&gt;Starting next month, we&amp;rsquo;ll publish project metrics here on this blog.&lt;/p&gt;
+&lt;h3 id=&#34;introducing-the-psc&#34;&gt;Introducing the PSC&lt;/h3&gt;
+&lt;p&gt;Docsy now has a Project Steering Committee! The PSC members are &lt;a href=&#34;https://github.com/chalin&#34;&gt;@chalin&lt;/a&gt;, &lt;a href=&#34;https://github.com/LisaFC&#34;&gt;@LisaFC&lt;/a&gt;, &lt;a href=&#34;https://github.com/geriom&#34;&gt;@geriom&lt;/a&gt;, and &lt;a href=&#34;https://github.com/emckean&#34;&gt;@emckean&lt;/a&gt;. If you&amp;rsquo;re interested in serving on the PSC, open an &lt;a href=&#34;https://github.com/google/docsy/issues&#34;&gt;issue&lt;/a&gt; and nominate yourself!&lt;/p&gt;
+&lt;h3 id=&#34;contribute-to-the-blog&#34;&gt;Contribute to the blog!&lt;/h3&gt;
+&lt;p&gt;Also coming soon: contribution guidelines. Got an idea for a blog post? Open an &lt;a href=&#34;https://github.com/google/docsy/issues&#34;&gt;issue&lt;/a&gt;!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,463 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FHS-BAP-Docs – Update Docsy</title>
+    <link>http://localhost:1313/docs/updating/</link>
+    <description>Recent content in Update Docsy on FHS-BAP-Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/docs/updating/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Update your Docsy Hugo Module</title>
+      <link>http://localhost:1313/docs/updating/updating-hugo-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/updating/updating-hugo-module/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When using the Docsy theme as a Hugo Module, updating your theme is really easy.&lt;/p&gt;
+&lt;p&gt;At the command prompt, change to the root directory of your existing site.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; /path/to/my-existing-site
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then invoke hugo&amp;rsquo;s module &lt;code&gt;get&lt;/code&gt; subcommand with the update flag:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo mod get -u github.com/google/docsy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Hugo automatically pulls in the latest theme version. That&amp;rsquo;s it, your update is
+done!&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+
+    &lt;p&gt;If you want to set your module to a certain version inside the Docsy theme repo,
+simply specify the name of the tag representing this version when updating your
+theme, for example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo mod get -u github.com/google/docsy@v0.9.1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Instead of a version tag, you can also specify a commit hash, for example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo mod get -u github.com/google/docsy@6c8a3afe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Update Docsy without Hugo Modules</title>
+      <link>http://localhost:1313/docs/updating/updating-submodules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/updating/updating-submodules/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you aren&amp;rsquo;t using Hugo Modules, depending on how you chose to install Docsy on your existing site, use one of the following two procedures to update your theme.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+
+    If you intend to update your site, consider &lt;a href=&#34;http://localhost:1313/docs/updating/convert-site-to-module/&#34;&gt;converting your site to Hugo Modules&lt;/a&gt;. After conversion, it&amp;rsquo;s even simpler to update Docsy!
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;update-your-docsy-submodule&#34;&gt;Update your Docsy submodule&lt;/h2&gt;
+&lt;p&gt;If you are using the &lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#option-1-docsy-as-a-git-submodule&#34;&gt;Docsy theme as a submodule&lt;/a&gt; in your project, here&amp;rsquo;s how you update the submodule:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the root of your local project, then run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git submodule update --remote
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add and then commit the change to your project:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add themes/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Updating theme submodule&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Push the commit to your project repo. For example, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push origin master
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;route-2-update-your-docsy-clone&#34;&gt;Route 2: Update your Docsy clone&lt;/h2&gt;
+&lt;p&gt;If you &lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#option-2-clone-the-docsy-theme&#34;&gt;cloned the Docsy theme&lt;/a&gt; into
+the &lt;code&gt;themes&lt;/code&gt; folder in your project, then you use the &lt;code&gt;git pull&lt;/code&gt; command:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the &lt;code&gt;themes&lt;/code&gt; directory in your local project:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; themes
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ensure that &lt;code&gt;origin&lt;/code&gt; is set to &lt;code&gt;https://github.com/google/docsy.git&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git remote -v
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update your local clone:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git pull origin master
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you have made any local changes to the cloned theme, &lt;strong&gt;you must manually resolve any merge conflicts&lt;/strong&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Migrate to Hugo Modules</title>
+      <link>http://localhost:1313/docs/updating/convert-site-to-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/updating/convert-site-to-module/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;tldr-conversion-for-the-impatient-expert&#34;&gt;TL;DR: Conversion for the impatient expert&lt;/h2&gt;
+&lt;p&gt;Run the following from the command line:&lt;/p&gt;
+
+
+
+
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;tabs-0&#34; role=&#34;tablist&#34;&gt;
+  &lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link disabled&#34;
+          id=&#34;tabs-00-00-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-00-00&#34; role=&#34;tab&#34;
+          aria-controls=&#34;tabs-00-00&#34; aria-selected=&#34;false&#34;&gt;
+        CLI:
+      &lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link active&#34;
+          id=&#34;tabs-00-01-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-00-01&#34; role=&#34;tab&#34;
+          data-td-tp-persist=&#34;bash&#34; aria-controls=&#34;tabs-00-01&#34; aria-selected=&#34;true&#34;&gt;
+        Unix shell
+      &lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link&#34;
+          id=&#34;tabs-00-02-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-00-02&#34; role=&#34;tab&#34;
+          data-td-tp-persist=&#34;batchfile&#34; aria-controls=&#34;tabs-00-02&#34; aria-selected=&#34;false&#34;&gt;
+        Windows command line
+      &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;tab-content&#34; id=&#34;tabs-0-content&#34;&gt;
+    &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-00-00&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-00-00-tab&#34; tabindex=&#34;0&#34;&gt;
+        &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tab-pane fade show active&#34;
+        id=&#34;tabs-00-01&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-00-01-tab&#34; tabindex=&#34;0&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; /path/to/my-existing-site
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo mod init github.com/me-at-github/my-existing-site
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo mod get github.com/google/docsy@v0.9.1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sed -i &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/theme = \[&amp;#34;docsy&amp;#34;\]/d&amp;#39;&lt;/span&gt; config.toml
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mv config.toml hugo.toml
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat &amp;gt;&amp;gt; hugo.toml &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;lt;&amp;lt;EOL
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;[module]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;proxy = &amp;#34;direct&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;[[module.imports]]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;path = &amp;#34;github.com/google/docsy&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;EOL&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-00-02&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-00-02-tab&#34; tabindex=&#34;0&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Batchfile&#34; data-lang=&#34;Batchfile&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;cd&lt;/span&gt;  my-existing-site
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo mod init github.com/me-at-github/my-existing-site
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo mod get github.com/google/docsy@v0.9.1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;findstr /v /c:&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;theme = [\&amp;#34;&lt;/span&gt;docsy\&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;]&amp;#34;&lt;/span&gt; config.toml &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; hugo.toml
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;echo&lt;/span&gt; [module]&lt;span style=&#34;color:#4e9a06&#34;&gt;^
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;proxy = &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;direct&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;^
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;[[module.imports]]&lt;span style=&#34;color:#4e9a06&#34;&gt;^
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;path = &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github.com/google/docsy&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&amp;gt;&amp;gt;&lt;/span&gt;hugo.toml
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;detailed-conversion-instructions&#34;&gt;Detailed conversion instructions&lt;/h2&gt;
+&lt;h3 id=&#34;import-the-docsy-theme-module-as-a-dependency-of-your-site&#34;&gt;Import the Docsy theme module as a dependency of your site&lt;/h3&gt;
+&lt;p&gt;At the command prompt, change to the root directory of your existing site.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; /path/to/my-existing-site
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Only sites that are Hugo Modules themselves can import other Hugo Modules. Turn your existing site into a Hugo Module by running the following command from your site directory, replacing &lt;code&gt;github.com/me/my-existing-site&lt;/code&gt; with your site repository:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo mod init github.com/me/my-existing-site
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This creates two new files, &lt;code&gt;go.mod&lt;/code&gt; for the module definitions and &lt;code&gt;go.sum&lt;/code&gt; which holds the checksums for module verification.&lt;/p&gt;
+&lt;p&gt;Next declare the Docsy theme module as a dependency for your site.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo mod get github.com/google/docsy@v0.9.1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command adds the &lt;code&gt;docsy&lt;/code&gt; theme module to your definition file &lt;code&gt;go.mod&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;update-your-config-file&#34;&gt;Update your config file&lt;/h3&gt;
+&lt;p&gt;In your &lt;code&gt;hugo.toml&lt;/code&gt;/&lt;code&gt;hugo.yaml&lt;/code&gt;/&lt;code&gt;hugo.json&lt;/code&gt; file, update the theme setting to use Hugo Modules. Find the following line:&lt;/p&gt;
+
+
+
+
+
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;tabs-2&#34; role=&#34;tablist&#34;&gt;
+  &lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link disabled&#34;
+          id=&#34;tabs-02-00-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-02-00&#34; role=&#34;tab&#34;
+          aria-controls=&#34;tabs-02-00&#34; aria-selected=&#34;false&#34;&gt;
+        Configuration file:
+      &lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link active&#34;
+          id=&#34;tabs-02-01-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-02-01&#34; role=&#34;tab&#34;
+          data-td-tp-persist=&#34;toml&#34; aria-controls=&#34;tabs-02-01&#34; aria-selected=&#34;true&#34;&gt;
+        hugo.toml
+      &lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link&#34;
+          id=&#34;tabs-02-02-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-02-02&#34; role=&#34;tab&#34;
+          data-td-tp-persist=&#34;yaml&#34; aria-controls=&#34;tabs-02-02&#34; aria-selected=&#34;false&#34;&gt;
+        config.yaml
+      &lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link&#34;
+          id=&#34;tabs-02-03-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-02-03&#34; role=&#34;tab&#34;
+          data-td-tp-persist=&#34;json&#34; aria-controls=&#34;tabs-02-03&#34; aria-selected=&#34;false&#34;&gt;
+        config.json
+      &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;tab-content&#34; id=&#34;tabs-2-content&#34;&gt;
+    &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-02-00&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-02-00-tab&#34; tabindex=&#34;2&#34;&gt;
+        &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tab-pane fade show active&#34;
+        id=&#34;tabs-02-01&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-02-01-tab&#34; tabindex=&#34;2&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;theme&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;docsy&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-02-02&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-02-02-tab&#34; tabindex=&#34;2&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;theme&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;docsy&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-02-03&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-02-03-tab&#34; tabindex=&#34;2&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;theme&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;docsy&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Change this line to:&lt;/p&gt;
+
+
+
+
+
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;tabs-3&#34; role=&#34;tablist&#34;&gt;
+  &lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link disabled&#34;
+          id=&#34;tabs-03-00-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-03-00&#34; role=&#34;tab&#34;
+          aria-controls=&#34;tabs-03-00&#34; aria-selected=&#34;false&#34;&gt;
+        Configuration file:
+      &lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link active&#34;
+          id=&#34;tabs-03-01-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-03-01&#34; role=&#34;tab&#34;
+          data-td-tp-persist=&#34;toml&#34; aria-controls=&#34;tabs-03-01&#34; aria-selected=&#34;true&#34;&gt;
+        hugo.toml
+      &lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link&#34;
+          id=&#34;tabs-03-02-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-03-02&#34; role=&#34;tab&#34;
+          data-td-tp-persist=&#34;yaml&#34; aria-controls=&#34;tabs-03-02&#34; aria-selected=&#34;false&#34;&gt;
+        config.yaml
+      &lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link&#34;
+          id=&#34;tabs-03-03-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-03-03&#34; role=&#34;tab&#34;
+          data-td-tp-persist=&#34;json&#34; aria-controls=&#34;tabs-03-03&#34; aria-selected=&#34;false&#34;&gt;
+        hugo.json
+      &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;tab-content&#34; id=&#34;tabs-3-content&#34;&gt;
+    &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-03-00&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-03-00-tab&#34; tabindex=&#34;3&#34;&gt;
+        &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tab-pane fade show active&#34;
+        id=&#34;tabs-03-01&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-03-01-tab&#34; tabindex=&#34;3&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;theme&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github.com/google/docsy&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-03-02&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-03-02-tab&#34; tabindex=&#34;3&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;theme&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;- &lt;span style=&#34;color:#000&#34;&gt;github.com/google/docsy&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-03-03&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-03-03-tab&#34; tabindex=&#34;3&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;theme&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github.com/google/docsy&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Alternatively, you can omit this line altogether and replace it with the settings given in the following snippet:&lt;/p&gt;
+
+
+
+
+
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;tabs-4&#34; role=&#34;tablist&#34;&gt;
+  &lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link disabled&#34;
+          id=&#34;tabs-04-00-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-04-00&#34; role=&#34;tab&#34;
+          aria-controls=&#34;tabs-04-00&#34; aria-selected=&#34;false&#34;&gt;
+        Configuration file:
+      &lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link active&#34;
+          id=&#34;tabs-04-01-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-04-01&#34; role=&#34;tab&#34;
+          data-td-tp-persist=&#34;toml&#34; aria-controls=&#34;tabs-04-01&#34; aria-selected=&#34;true&#34;&gt;
+        hugo.toml
+      &lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link&#34;
+          id=&#34;tabs-04-02-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-04-02&#34; role=&#34;tab&#34;
+          data-td-tp-persist=&#34;yaml&#34; aria-controls=&#34;tabs-04-02&#34; aria-selected=&#34;false&#34;&gt;
+        hugo.yaml
+      &lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;button class=&#34;nav-link&#34;
+          id=&#34;tabs-04-03-tab&#34; data-bs-toggle=&#34;tab&#34; data-bs-target=&#34;#tabs-04-03&#34; role=&#34;tab&#34;
+          data-td-tp-persist=&#34;json&#34; aria-controls=&#34;tabs-04-03&#34; aria-selected=&#34;false&#34;&gt;
+        hugo.json
+      &lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;tab-content&#34; id=&#34;tabs-4-content&#34;&gt;
+    &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-04-00&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-04-00-tab&#34; tabindex=&#34;4&#34;&gt;
+        &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tab-pane fade show active&#34;
+        id=&#34;tabs-04-01&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-04-01-tab&#34; tabindex=&#34;4&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;module&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000&#34;&gt;proxy&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;direct&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# uncomment line below for temporary local development of module&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# replacements = &amp;#34;github.com/google/docsy -&amp;gt; ../../docsy&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;module&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;hugoVersion&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;extended&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;min&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;0.73.0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;module&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;imports&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;path&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github.com/google/docsy&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;disable&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-04-02&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-04-02-tab&#34; tabindex=&#34;4&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;module&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;proxy&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;direct&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;hugoVersion&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;extended&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;min&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.73.0&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;imports&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;- &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;path&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;github.com/google/docsy&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;disable&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;- &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;path&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;github.com/google/docsy/dependencies&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;disable&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-04-03&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-04-03-tab&#34; tabindex=&#34;4&#34;&gt;
+        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;module&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;proxy&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;direct&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;hugoVersion&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;extended&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;min&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;0.73.0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;imports&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github.com/google/docsy&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;disable&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github.com/google/docsy/dependencies&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;&amp;#34;disable&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can find details of what these configuration settings do in the &lt;a href=&#34;https://gohugo.io/hugo-modules/configuration/#module-config-top-level&#34;&gt;Hugo modules documentation&lt;/a&gt;.
+Depending on your environment you may need to tweak them slightly, for example by adding a proxy to use when downloading remote modules.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+
+    In Hugo 0.110.0 the default config base filename was changed to &lt;code&gt;hugo.toml&lt;/code&gt;.
+If you are using hugo 0.110 or above, we recommend renaming your &lt;code&gt;config.toml&lt;/code&gt; to &lt;code&gt;hugo.toml&lt;/code&gt;!
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Attention&lt;/h4&gt;
+
+    If you have a multi language installation, please make sure that the section &lt;code&gt;[languages]&lt;/code&gt; inside your &lt;code&gt;hugo.toml&lt;/code&gt; is declared before the section &lt;code&gt;[module]&lt;/code&gt; with the module imports. Otherwise you will run into trouble!
+
+&lt;/div&gt;
+
+&lt;h3 id=&#34;check-validity-of-your-configuration-settings&#34;&gt;Check validity of your configuration settings&lt;/h3&gt;
+&lt;p&gt;To make sure that your configuration settings are correct, run the command &lt;code&gt;hugo mod graph&lt;/code&gt; which prints a module dependency graph:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo mod graph
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo: collected modules in &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1092&lt;/span&gt; ms
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;github.com/me/my-existing-site github.com/google/docsy@v0.9.1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;github.com/google/docsy@v0.9.1 github.com/twbs/bootstrap@v5.2.3+incompatible
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;github.com/google/docsy@v0.9.1 github.com/FortAwesome/Font-Awesome@ v0.0.0-20230802202706-f0c25837a3fe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make sure that three lines with dependencies &lt;code&gt;docsy&lt;/code&gt;, &lt;code&gt;bootstrap&lt;/code&gt; and &lt;code&gt;Font-Awesome&lt;/code&gt; are listed. If not, please double check your config settings.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
+
+    &lt;p&gt;In order to clean up your module cache, issue the command &lt;code&gt;hugo mod clean&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo mod clean
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo: collected modules in &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;995&lt;/span&gt; ms
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo: cleaned module cache &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github.com/FortAwesome/Font-Awesome&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo: cleaned module cache &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github.com/google/docsy&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo: cleaned module cache &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github.com/twbs/bootstrap&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;clean-up-your-repository&#34;&gt;Clean up your repository&lt;/h2&gt;
+&lt;p&gt;Since your site now uses Hugo Modules, you can remove &lt;code&gt;docsy&lt;/code&gt; from the &lt;code&gt;themes&lt;/code&gt; directory, as instructed below.
+First, change to the root directory of your site:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; /path/to/my-existing-site
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;previous-use-of-docsy-theme-as-git-clone&#34;&gt;Previous use of Docsy theme as git clone&lt;/h3&gt;
+&lt;p&gt;Simply remove the subdirectory &lt;code&gt;docsy&lt;/code&gt; inside your &lt;code&gt;themes&lt;/code&gt; directory:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm -rf themes/docsy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;previous-use-of-docsy-theme-as-git-submodule&#34;&gt;Previous use of Docsy theme as git submodule&lt;/h3&gt;
+&lt;p&gt;If your Docsy theme was installed as submodule, use git&amp;rsquo;s &lt;code&gt;rm&lt;/code&gt; subcommand to remove the subdirectory &lt;code&gt;docsy&lt;/code&gt; inside your &lt;code&gt;themes&lt;/code&gt; directory:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git rm -rf themes/docsy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You are now ready to commit your changes to your repository:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Removed docsy git submodule&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Attention&lt;/h4&gt;
+
+    Be careful when using the &lt;code&gt;rm -rf&lt;/code&gt; command, make sure that you don&amp;rsquo;t inadvertently delete any productive data files!
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,709 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs/updating/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/updating/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Update Docsy | FHS-BAP-Docs</title>
+<meta name="description" content="Keeping the Docsy theme up to date.
+">
+<meta property="og:title" content="Update Docsy" />
+<meta property="og:description" content="Keeping the Docsy theme up to date.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/docs/updating/" /><meta property="og:site_name" content="FHS-BAP-Docs" />
+
+<meta itemprop="name" content="Update Docsy">
+<meta itemprop="description" content="Keeping the Docsy theme up to date.
+"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Update Docsy"/>
+<meta name="twitter:description" content="Keeping the Docsy theme up to date.
+"/>
+
+
+
+
+
+<link href="/scss/main.css" rel="stylesheet">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar navbar-dark js-navbar-scroll">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1200 1200"><path fill="#fff" d="M1.422 630.365C-.4 620.378.049 611.896.049 601.507v-2.748c163.322-14.011 341.241-55.15 473.665-149.787 37.996 17.409 75.363 15.034 111.208-2.748 75.104 75.855 148.807 128.574 247.13 159.405 10.067 25.652 26.086 45.35 48.054 59.091-26.543 65.961-63.612 124.136-111.209 174.521-70.346-50.674-163.23-13.979-194.957 59.091-220.012-2.384-441.761-98.642-572.518-267.967m571.143 354.54c-112.313 58.005-230.856 89.276-351.474 82.451C127.796 989.072 60.567 886.74 26.135 780.151c151.522 130.23 352.912 204.549 546.43 204.754m248.503-16.49c127.807-26.659 245.244-78.05 340.488-156.657-125.012 325.938-501.479 474.94-810.035 336.676 100.162-14.432 194.251-49.025 274.588-94.817 80.286 46.004 175.832-2.388 194.959-85.202m236.146-335.302c49.196-3.631 97.167-7.251 142.786-15.116-.089 12.283-1.357 24.374-1.373 35.729-85.771 109.767-214.696 184.762-343.235 219.87 47.966-58.233 83.545-122.923 108.462-188.264 39.174-5.082 71.173-23.077 93.36-52.219m21.968-87.948c-5.416-40.734-25.791-73.796-57.664-94.819 10.072-93.269 11.733-184.275 4.119-272.089 96.156 99.264 154.383 225.964 170.244 351.792-34.781 7.329-73.682 12.368-116.699 15.116M410.559 387.133C289.275 463.55 147.263 500.671 6.914 512.185 41.964 293.143 191.16 112.112 391.337 38.09c5.438 71.134 21.91 139.81 48.054 199.257-41.973 42.622-51.941 97.264-28.832 149.786m236.145-101.69c63.215-78.489 115.77-158.695 145.532-252.851C843.492 50 889.715 72.444 930.903 99.928c14.386 113.183 16.386 225.917 5.491 331.18-49.729 8.487-88.823 38.744-105.717 82.45-73.416-26.576-133.514-76.068-186.72-129.174 13.364-34.477 13.869-66.794 2.747-98.941m-127.683-81.077c-25.545-63.148-42.218-124.34-42.562-191.012 76.599-17.623 159.296-17.036 232.027-2.748-27.786 77.786-71.688 149.88-118.073 208.876-16.321-6.971-56.075-22.499-71.392-15.116"/></svg></span><span class="navbar-brand__name">FHS-BAP-Docs</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/about/"><span>About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/docs/"><span>Documentation</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/community/"><span>Community</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.bumc.bu.edu/fhs-bap/" target="_blank" rel="noopener"><span>FHS-BAP Site</span><sup><i class="ps-1 fa-solid fa-up-right-from-square fa-xs" aria-hidden="true"></i></sup></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/blog/"><span>Blog</span></a>
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    <div class="td-search">
+  <div class="td-search__icon"></div>
+  <input type="search" class="td-search__input form-control td-search-input" placeholder="Search this site…" aria-label="Search this site…" autocomplete="off">
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/docs/updating/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Update Docsy</h1>
+<div class="lead">Keeping the Docsy theme up to date.</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-2bafa9bdeac42b21e0fc306105794329">Update your Docsy Hugo Module</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-595d81005a6671c0c09959b1e41817e9">Update Docsy without Hugo Modules</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-3290803c30e81772c02d0fc32c08441b">Migrate to Hugo Modules</a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      <p>We hope to continue to make improvements to the theme <a href="/docs/contribution-guidelines/">along with the Docsy community</a>.
+If you have cloned the example site (or are otherwise using the theme as a Hugo Module or Git submodule), you can easily update the Docsy theme in your site yourself. If you have cloned the theme itself into your own project you can also update, though you may need to resolve merge conflicts.</p>
+<p>Updating Docsy means that your site will build using the latest version of Docsy at <code>HEAD</code> and include
+all the new commits or changes that have been merged since the point in time that you initially added the Docsy
+submodule, or last updated. Updating won&rsquo;t affect any modifications that you made in your own project to
+<a href="/docs/adding-content/lookandfeel/">override the Docsy look and feel</a>, as your overrides
+don&rsquo;t modify the theme itself. For details about what has changed in the theme since your last update, see the list of
+<a href="https://github.com/google/docsy/commits/main">Docsy commits</a>.</p>
+<p>If you have been using the theme as a Git submodule, you can also update your site to use <a href="/docs/get-started/docsy-as-module/">Docsy as a Hugo Module</a>. This is the latest and simplest way to pull in a Hugo theme from its repository. If you&rsquo;re not ready to migrate to Hugo Modules yet, don&rsquo;t worry, your site will still work and you can continue to update your submodule as before.</p>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-2bafa9bdeac42b21e0fc306105794329">1 - Update your Docsy Hugo Module</h1>
+    <div class="lead">Update your Docsy theme to the latest version using Hugo Modules.</div>
+	<p>When using the Docsy theme as a Hugo Module, updating your theme is really easy.</p>
+<p>At the command prompt, change to the root directory of your existing site.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#204a87">cd</span> /path/to/my-existing-site
+</span></span></code></pre></div><p>Then invoke hugo&rsquo;s module <code>get</code> subcommand with the update flag:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod get -u github.com/google/docsy
+</span></span></code></pre></div><p>Hugo automatically pulls in the latest theme version. That&rsquo;s it, your update is
+done!</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Tip</h4>
+
+    <p>If you want to set your module to a certain version inside the Docsy theme repo,
+simply specify the name of the tag representing this version when updating your
+theme, for example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod get -u github.com/google/docsy@v0.9.1
+</span></span></code></pre></div><p>Instead of a version tag, you can also specify a commit hash, for example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod get -u github.com/google/docsy@6c8a3afe
+</span></span></code></pre></div>
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-595d81005a6671c0c09959b1e41817e9">2 - Update Docsy without Hugo Modules</h1>
+    <div class="lead">Update the Docsy theme to the latest version using submodules or <code>git pull</code>.</div>
+	<p>If you aren&rsquo;t using Hugo Modules, depending on how you chose to install Docsy on your existing site, use one of the following two procedures to update your theme.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Tip</h4>
+
+    If you intend to update your site, consider <a href="/docs/updating/convert-site-to-module/">converting your site to Hugo Modules</a>. After conversion, it&rsquo;s even simpler to update Docsy!
+
+</div>
+
+<h2 id="update-your-docsy-submodule">Update your Docsy submodule</h2>
+<p>If you are using the <a href="/docs/get-started/other-options/#option-1-docsy-as-a-git-submodule">Docsy theme as a submodule</a> in your project, here&rsquo;s how you update the submodule:</p>
+<ol>
+<li>
+<p>Navigate to the root of your local project, then run:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule update --remote
+</span></span></code></pre></div></li>
+<li>
+<p>Add and then commit the change to your project:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add themes/
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#4e9a06">&#34;Updating theme submodule&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Push the commit to your project repo. For example, run:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push origin master
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="route-2-update-your-docsy-clone">Route 2: Update your Docsy clone</h2>
+<p>If you <a href="/docs/get-started/other-options/#option-2-clone-the-docsy-theme">cloned the Docsy theme</a> into
+the <code>themes</code> folder in your project, then you use the <code>git pull</code> command:</p>
+<ol>
+<li>
+<p>Navigate to the <code>themes</code> directory in your local project:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#204a87">cd</span> themes
+</span></span></code></pre></div></li>
+<li>
+<p>Ensure that <code>origin</code> is set to <code>https://github.com/google/docsy.git</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v
+</span></span></code></pre></div></li>
+<li>
+<p>Update your local clone:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git pull origin master
+</span></span></code></pre></div></li>
+</ol>
+<p>If you have made any local changes to the cloned theme, <strong>you must manually resolve any merge conflicts</strong>.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-3290803c30e81772c02d0fc32c08441b">3 - Migrate to Hugo Modules</h1>
+    <div class="lead">Convert an existing site to use Docsy as a Hugo Module</div>
+	<h2 id="tldr-conversion-for-the-impatient-expert">TL;DR: Conversion for the impatient expert</h2>
+<p>Run the following from the command line:</p>
+
+
+
+
+<ul class="nav nav-tabs" id="tabs-0" role="tablist">
+  <li class="nav-item">
+      <button class="nav-link disabled"
+          id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+          aria-controls="tabs-00-00" aria-selected="false">
+        CLI:
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link active"
+          id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+          data-td-tp-persist="bash" aria-controls="tabs-00-01" aria-selected="true">
+        Unix shell
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-00-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-02" role="tab"
+          data-td-tp-persist="batchfile" aria-controls="tabs-00-02" aria-selected="false">
+        Windows command line
+      </button>
+    </li>
+</ul>
+
+<div class="tab-content" id="tabs-0-content">
+    <div class="tab-pane fade"
+        id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
+        <pre tabindex="0"><code></code></pre>
+    </div>
+    <div class="tab-pane fade show active"
+        id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
+        <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span><span style="color:#204a87">cd</span> /path/to/my-existing-site
+</span></span><span style="display:flex;"><span>hugo mod init github.com/me-at-github/my-existing-site
+</span></span><span style="display:flex;"><span>hugo mod get github.com/google/docsy@v0.9.1
+</span></span><span style="display:flex;"><span>sed -i <span style="color:#4e9a06">&#39;/theme = \[&#34;docsy&#34;\]/d&#39;</span> config.toml
+</span></span><span style="display:flex;"><span>mv config.toml hugo.toml
+</span></span><span style="display:flex;"><span>cat &gt;&gt; hugo.toml <span style="color:#4e9a06">&lt;&lt;EOL
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">[module]
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">proxy = &#34;direct&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">[[module.imports]]
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">path = &#34;github.com/google/docsy&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">EOL</span>
+</span></span><span style="display:flex;"><span>hugo server</span></span></code></pre></div>
+    </div>
+    <div class="tab-pane fade"
+        id="tabs-00-02" role="tabpanel" aria-labelled-by="tabs-00-02-tab" tabindex="0">
+        <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Batchfile" data-lang="Batchfile"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">cd</span>  my-existing-site
+</span></span><span style="display:flex;"><span>hugo mod init github.com/me-at-github/my-existing-site
+</span></span><span style="display:flex;"><span>hugo mod get github.com/google/docsy@v0.9.1
+</span></span><span style="display:flex;"><span>findstr /v /c:<span style="color:#4e9a06">&#34;theme = [\&#34;</span>docsy\<span style="color:#4e9a06">&#34;]&#34;</span> config.toml <span style="color:#000;font-weight:bold">&gt;</span> hugo.toml
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">echo</span> [module]<span style="color:#4e9a06">^
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06"></span>proxy = <span style="color:#4e9a06">&#34;direct&#34;</span><span style="color:#4e9a06">^
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06"></span>[[module.imports]]<span style="color:#4e9a06">^
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06">
+</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06"></span>path = <span style="color:#4e9a06">&#34;github.com/google/docsy&#34;</span><span style="color:#000;font-weight:bold">)&gt;&gt;</span>hugo.toml
+</span></span><span style="display:flex;"><span>hugo server</span></span></code></pre></div>
+    </div>
+</div>
+
+<h2 id="detailed-conversion-instructions">Detailed conversion instructions</h2>
+<h3 id="import-the-docsy-theme-module-as-a-dependency-of-your-site">Import the Docsy theme module as a dependency of your site</h3>
+<p>At the command prompt, change to the root directory of your existing site.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#204a87">cd</span> /path/to/my-existing-site
+</span></span></code></pre></div><p>Only sites that are Hugo Modules themselves can import other Hugo Modules. Turn your existing site into a Hugo Module by running the following command from your site directory, replacing <code>github.com/me/my-existing-site</code> with your site repository:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod init github.com/me/my-existing-site
+</span></span></code></pre></div><p>This creates two new files, <code>go.mod</code> for the module definitions and <code>go.sum</code> which holds the checksums for module verification.</p>
+<p>Next declare the Docsy theme module as a dependency for your site.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod get github.com/google/docsy@v0.9.1
+</span></span></code></pre></div><p>This command adds the <code>docsy</code> theme module to your definition file <code>go.mod</code>.</p>
+<h3 id="update-your-config-file">Update your config file</h3>
+<p>In your <code>hugo.toml</code>/<code>hugo.yaml</code>/<code>hugo.json</code> file, update the theme setting to use Hugo Modules. Find the following line:</p>
+
+
+
+
+
+<ul class="nav nav-tabs" id="tabs-2" role="tablist">
+  <li class="nav-item">
+      <button class="nav-link disabled"
+          id="tabs-02-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-00" role="tab"
+          aria-controls="tabs-02-00" aria-selected="false">
+        Configuration file:
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link active"
+          id="tabs-02-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-01" role="tab"
+          data-td-tp-persist="toml" aria-controls="tabs-02-01" aria-selected="true">
+        hugo.toml
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-02-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-02" role="tab"
+          data-td-tp-persist="yaml" aria-controls="tabs-02-02" aria-selected="false">
+        config.yaml
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-02-03-tab" data-bs-toggle="tab" data-bs-target="#tabs-02-03" role="tab"
+          data-td-tp-persist="json" aria-controls="tabs-02-03" aria-selected="false">
+        config.json
+      </button>
+    </li>
+</ul>
+
+<div class="tab-content" id="tabs-2-content">
+    <div class="tab-pane fade"
+        id="tabs-02-00" role="tabpanel" aria-labelled-by="tabs-02-00-tab" tabindex="2">
+        <pre tabindex="0"><code></code></pre>
+    </div>
+    <div class="tab-pane fade show active"
+        id="tabs-02-01" role="tabpanel" aria-labelled-by="tabs-02-01-tab" tabindex="2">
+        <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#000">theme</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;docsy&#34;</span><span style="color:#000;font-weight:bold">]</span></span></span></code></pre></div>
+    </div>
+    <div class="tab-pane fade"
+        id="tabs-02-02" role="tabpanel" aria-labelled-by="tabs-02-02-tab" tabindex="2">
+        <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">theme</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">docsy</span></span></span></code></pre></div>
+    </div>
+    <div class="tab-pane fade"
+        id="tabs-02-03" role="tabpanel" aria-labelled-by="tabs-02-03-tab" tabindex="2">
+        <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;theme&#34;</span><span style="color:#a40000">:</span> <span style="color:#4e9a06">&#34;docsy&#34;</span></span></span></code></pre></div>
+    </div>
+</div>
+
+<p>Change this line to:</p>
+
+
+
+
+
+<ul class="nav nav-tabs" id="tabs-3" role="tablist">
+  <li class="nav-item">
+      <button class="nav-link disabled"
+          id="tabs-03-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-03-00" role="tab"
+          aria-controls="tabs-03-00" aria-selected="false">
+        Configuration file:
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link active"
+          id="tabs-03-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-03-01" role="tab"
+          data-td-tp-persist="toml" aria-controls="tabs-03-01" aria-selected="true">
+        hugo.toml
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-03-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-03-02" role="tab"
+          data-td-tp-persist="yaml" aria-controls="tabs-03-02" aria-selected="false">
+        config.yaml
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-03-03-tab" data-bs-toggle="tab" data-bs-target="#tabs-03-03" role="tab"
+          data-td-tp-persist="json" aria-controls="tabs-03-03" aria-selected="false">
+        hugo.json
+      </button>
+    </li>
+</ul>
+
+<div class="tab-content" id="tabs-3-content">
+    <div class="tab-pane fade"
+        id="tabs-03-00" role="tabpanel" aria-labelled-by="tabs-03-00-tab" tabindex="3">
+        <pre tabindex="0"><code></code></pre>
+    </div>
+    <div class="tab-pane fade show active"
+        id="tabs-03-01" role="tabpanel" aria-labelled-by="tabs-03-01-tab" tabindex="3">
+        <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#000">theme</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;github.com/google/docsy&#34;</span><span style="color:#000;font-weight:bold">]</span></span></span></code></pre></div>
+    </div>
+    <div class="tab-pane fade"
+        id="tabs-03-02" role="tabpanel" aria-labelled-by="tabs-03-02-tab" tabindex="3">
+        <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">theme</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  </span>- <span style="color:#000">github.com/google/docsy</span></span></span></code></pre></div>
+    </div>
+    <div class="tab-pane fade"
+        id="tabs-03-03" role="tabpanel" aria-labelled-by="tabs-03-03-tab" tabindex="3">
+        <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#4e9a06">&#34;theme&#34;</span><span style="color:#a40000">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#4e9a06">&#34;github.com/google/docsy&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">]</span></span></span></code></pre></div>
+    </div>
+</div>
+
+<p>Alternatively, you can omit this line altogether and replace it with the settings given in the following snippet:</p>
+
+
+
+
+
+<ul class="nav nav-tabs" id="tabs-4" role="tablist">
+  <li class="nav-item">
+      <button class="nav-link disabled"
+          id="tabs-04-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-04-00" role="tab"
+          aria-controls="tabs-04-00" aria-selected="false">
+        Configuration file:
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link active"
+          id="tabs-04-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-04-01" role="tab"
+          data-td-tp-persist="toml" aria-controls="tabs-04-01" aria-selected="true">
+        hugo.toml
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-04-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-04-02" role="tab"
+          data-td-tp-persist="yaml" aria-controls="tabs-04-02" aria-selected="false">
+        hugo.yaml
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-04-03-tab" data-bs-toggle="tab" data-bs-target="#tabs-04-03" role="tab"
+          data-td-tp-persist="json" aria-controls="tabs-04-03" aria-selected="false">
+        hugo.json
+      </button>
+    </li>
+</ul>
+
+<div class="tab-content" id="tabs-4-content">
+    <div class="tab-pane fade"
+        id="tabs-04-00" role="tabpanel" aria-labelled-by="tabs-04-00-tab" tabindex="4">
+        <pre tabindex="0"><code></code></pre>
+    </div>
+    <div class="tab-pane fade show active"
+        id="tabs-04-01" role="tabpanel" aria-labelled-by="tabs-04-01-tab" tabindex="4">
+        <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">module</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000">proxy</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;direct&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic"># uncomment line below for temporary local development of module</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8f5902;font-style:italic"># replacements = &#34;github.com/google/docsy -&gt; ../../docsy&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">[</span><span style="color:#000">module</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">hugoVersion</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">extended</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">min</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;0.73.0&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">[[</span><span style="color:#000">module</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">imports</span><span style="color:#000;font-weight:bold">]]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">path</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;github.com/google/docsy&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">disable</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">false</span></span></span></code></pre></div>
+    </div>
+    <div class="tab-pane fade"
+        id="tabs-04-02" role="tabpanel" aria-labelled-by="tabs-04-02-tab" tabindex="4">
+        <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">module</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">proxy</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">direct</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">hugoVersion</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">extended</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">min</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">0.73.0</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">imports</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span>- <span style="color:#204a87;font-weight:bold">path</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">github.com/google/docsy</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">disable</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">false</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span>- <span style="color:#204a87;font-weight:bold">path</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">github.com/google/docsy/dependencies</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">disable</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">false</span></span></span></code></pre></div>
+    </div>
+    <div class="tab-pane fade"
+        id="tabs-04-03" role="tabpanel" aria-labelled-by="tabs-04-03-tab" tabindex="4">
+        <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#204a87;font-weight:bold">&#34;module&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;proxy&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;direct&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;hugoVersion&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#204a87;font-weight:bold">&#34;extended&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#204a87;font-weight:bold">&#34;min&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;0.73.0&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">&#34;imports&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;path&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;github.com/google/docsy&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;disable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;path&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;github.com/google/docsy/dependencies&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">&#34;disable&#34;</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span></span></span></code></pre></div>
+    </div>
+</div>
+
+<p>You can find details of what these configuration settings do in the <a href="https://gohugo.io/hugo-modules/configuration/#module-config-top-level">Hugo modules documentation</a>.
+Depending on your environment you may need to tweak them slightly, for example by adding a proxy to use when downloading remote modules.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Tip</h4>
+
+    In Hugo 0.110.0 the default config base filename was changed to <code>hugo.toml</code>.
+If you are using hugo 0.110 or above, we recommend renaming your <code>config.toml</code> to <code>hugo.toml</code>!
+
+</div>
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Attention</h4>
+
+    If you have a multi language installation, please make sure that the section <code>[languages]</code> inside your <code>hugo.toml</code> is declared before the section <code>[module]</code> with the module imports. Otherwise you will run into trouble!
+
+</div>
+
+<h3 id="check-validity-of-your-configuration-settings">Check validity of your configuration settings</h3>
+<p>To make sure that your configuration settings are correct, run the command <code>hugo mod graph</code> which prints a module dependency graph:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod graph
+</span></span><span style="display:flex;"><span>hugo: collected modules in <span style="color:#0000cf;font-weight:bold">1092</span> ms
+</span></span><span style="display:flex;"><span>github.com/me/my-existing-site github.com/google/docsy@v0.9.1
+</span></span><span style="display:flex;"><span>github.com/google/docsy@v0.9.1 github.com/twbs/bootstrap@v5.2.3+incompatible
+</span></span><span style="display:flex;"><span>github.com/google/docsy@v0.9.1 github.com/FortAwesome/Font-Awesome@ v0.0.0-20230802202706-f0c25837a3fe
+</span></span></code></pre></div><p>Make sure that three lines with dependencies <code>docsy</code>, <code>bootstrap</code> and <code>Font-Awesome</code> are listed. If not, please double check your config settings.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Tip</h4>
+
+    <p>In order to clean up your module cache, issue the command <code>hugo mod clean</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod clean
+</span></span><span style="display:flex;"><span>hugo: collected modules in <span style="color:#0000cf;font-weight:bold">995</span> ms
+</span></span><span style="display:flex;"><span>hugo: cleaned module cache <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#4e9a06">&#34;github.com/FortAwesome/Font-Awesome&#34;</span>
+</span></span><span style="display:flex;"><span>hugo: cleaned module cache <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#4e9a06">&#34;github.com/google/docsy&#34;</span>
+</span></span><span style="display:flex;"><span>hugo: cleaned module cache <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#4e9a06">&#34;github.com/twbs/bootstrap&#34;</span>
+</span></span></code></pre></div>
+
+</div>
+
+<h2 id="clean-up-your-repository">Clean up your repository</h2>
+<p>Since your site now uses Hugo Modules, you can remove <code>docsy</code> from the <code>themes</code> directory, as instructed below.
+First, change to the root directory of your site:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#204a87">cd</span> /path/to/my-existing-site
+</span></span></code></pre></div><h3 id="previous-use-of-docsy-theme-as-git-clone">Previous use of Docsy theme as git clone</h3>
+<p>Simply remove the subdirectory <code>docsy</code> inside your <code>themes</code> directory:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm -rf themes/docsy
+</span></span></code></pre></div><h3 id="previous-use-of-docsy-theme-as-git-submodule">Previous use of Docsy theme as git submodule</h3>
+<p>If your Docsy theme was installed as submodule, use git&rsquo;s <code>rm</code> subcommand to remove the subdirectory <code>docsy</code> inside your <code>themes</code> directory:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm -rf themes/docsy
+</span></span></code></pre></div><p>You are now ready to commit your changes to your repository:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit -m <span style="color:#4e9a06">&#34;Removed docsy git submodule&#34;</span>
+</span></span></code></pre></div>
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Attention</h4>
+
+    Be careful when using the <code>rm -rf</code> command, make sure that you don&rsquo;t inadvertently delete any productive data files!
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub Discussions" aria-label="GitHub Discussions">
+    <a target="_blank" rel="noopener" href="https://github.com/google/docsy/discussions" aria-label="GitHub Discussions">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="User mailing list" aria-label="User mailing list">
+    <a target="_blank" rel="noopener" href="https://groups.google.com/forum/#!forum/docsy-users" aria-label="User mailing list">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Twitter" aria-label="Twitter">
+    <a target="_blank" rel="noopener" href="https://twitter.com/docsydocs" aria-label="Twitter">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Stack Overflow" aria-label="Stack Overflow">
+    <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/tagged/docsy" aria-label="Stack Overflow">
+      <i class="fa-brands fa-stack-overflow"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/google/docsy" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2019&ndash;2024
+    <span class="td-footer__authors">FHS-BAP Data Core Team | <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a> |</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src='/js/deflate.js'></script>
+<script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

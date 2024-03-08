@@ -1,0 +1,321 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs/best-practices/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/best-practices/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Best Practices | FHS-BAP-Docs</title>
+<meta name="description" content="Optional guidance and recommendations about organizing, authoring, and managing your technical documentation.
+">
+<meta property="og:title" content="Best Practices" />
+<meta property="og:description" content="Optional guidance and recommendations about organizing, authoring, and managing your technical documentation.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/docs/best-practices/" /><meta property="og:site_name" content="FHS-BAP-Docs" />
+
+<meta itemprop="name" content="Best Practices">
+<meta itemprop="description" content="Optional guidance and recommendations about organizing, authoring, and managing your technical documentation.
+"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Best Practices"/>
+<meta name="twitter:description" content="Optional guidance and recommendations about organizing, authoring, and managing your technical documentation.
+"/>
+
+
+
+
+
+<link href="/scss/main.css" rel="stylesheet">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar navbar-dark js-navbar-scroll">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1200 1200"><path fill="#fff" d="M1.422 630.365C-.4 620.378.049 611.896.049 601.507v-2.748c163.322-14.011 341.241-55.15 473.665-149.787 37.996 17.409 75.363 15.034 111.208-2.748 75.104 75.855 148.807 128.574 247.13 159.405 10.067 25.652 26.086 45.35 48.054 59.091-26.543 65.961-63.612 124.136-111.209 174.521-70.346-50.674-163.23-13.979-194.957 59.091-220.012-2.384-441.761-98.642-572.518-267.967m571.143 354.54c-112.313 58.005-230.856 89.276-351.474 82.451C127.796 989.072 60.567 886.74 26.135 780.151c151.522 130.23 352.912 204.549 546.43 204.754m248.503-16.49c127.807-26.659 245.244-78.05 340.488-156.657-125.012 325.938-501.479 474.94-810.035 336.676 100.162-14.432 194.251-49.025 274.588-94.817 80.286 46.004 175.832-2.388 194.959-85.202m236.146-335.302c49.196-3.631 97.167-7.251 142.786-15.116-.089 12.283-1.357 24.374-1.373 35.729-85.771 109.767-214.696 184.762-343.235 219.87 47.966-58.233 83.545-122.923 108.462-188.264 39.174-5.082 71.173-23.077 93.36-52.219m21.968-87.948c-5.416-40.734-25.791-73.796-57.664-94.819 10.072-93.269 11.733-184.275 4.119-272.089 96.156 99.264 154.383 225.964 170.244 351.792-34.781 7.329-73.682 12.368-116.699 15.116M410.559 387.133C289.275 463.55 147.263 500.671 6.914 512.185 41.964 293.143 191.16 112.112 391.337 38.09c5.438 71.134 21.91 139.81 48.054 199.257-41.973 42.622-51.941 97.264-28.832 149.786m236.145-101.69c63.215-78.489 115.77-158.695 145.532-252.851C843.492 50 889.715 72.444 930.903 99.928c14.386 113.183 16.386 225.917 5.491 331.18-49.729 8.487-88.823 38.744-105.717 82.45-73.416-26.576-133.514-76.068-186.72-129.174 13.364-34.477 13.869-66.794 2.747-98.941m-127.683-81.077c-25.545-63.148-42.218-124.34-42.562-191.012 76.599-17.623 159.296-17.036 232.027-2.748-27.786 77.786-71.688 149.88-118.073 208.876-16.321-6.971-56.075-22.499-71.392-15.116"/></svg></span><span class="navbar-brand__name">FHS-BAP-Docs</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/about/"><span>About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/docs/"><span>Documentation</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/community/"><span>Community</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.bumc.bu.edu/fhs-bap/" target="_blank" rel="noopener"><span>FHS-BAP Site</span><sup><i class="ps-1 fa-solid fa-up-right-from-square fa-xs" aria-hidden="true"></i></sup></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/blog/"><span>Blog</span></a>
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    <div class="td-search">
+  <div class="td-search__icon"></div>
+  <input type="search" class="td-search__input form-control td-search-input" placeholder="Search this site…" aria-label="Search this site…" autocomplete="off">
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/docs/best-practices/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Best Practices</h1>
+<div class="lead">Optional guidance and recommendations about organizing, authoring, and managing your technical documentation.</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-02588cd60c9b09de6bdfe85a5cf63bd1">Hugo Content Tips</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-a44052a6e2fad131904a9916e5fa4d79">Organizing Your Content</a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      <p>Use this section to learn about some of the best practices around creating technical documentation with Docsy.</p>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-02588cd60c9b09de6bdfe85a5cf63bd1">1 - Hugo Content Tips</h1>
+    <div class="lead">Tips for authoring content for your Docsy-themed Hugo site.</div>
+	<p>Docsy is a theme for the <a href="https://gohugo.io/">Hugo</a> static site generator.
+If you&rsquo;re not already familiar with Hugo this page provides some useful tips and
+potential gotchas for adding and editing content for your site. Feel free to add your own!</p>
+<h2 id="linking">Linking</h2>
+<p>By default, regular relative URLs in links are left unchanged by Hugo (they&rsquo;re still relative links in your site&rsquo;s generated HTML), hence some hardcoded relative links like <code>[relative cross-link](../../peer-folder/sub-file.md)</code> might behave unexpectedly compared to how they work on your local file system. You may find it helpful to use some of Hugo&rsquo;s built-in <a href="https://gohugo.io/content-management/cross-references/#use-ref-and-relref">link shortcodes</a> to avoid broken links in your generated site. For example a <code>{{&lt; ref &quot;filename.md&quot; &gt;}}</code> link in Hugo will actually
+find and automatically link to your file named <code>filename.md</code>.</p>
+<p>Note, however, that <code>ref</code> and <code>relref</code> links don&rsquo;t work with <code>_index</code> or <code>index</code> files (for example, this site&rsquo;s <a href="/docs/adding-content/">content landing page</a>): you&rsquo;ll need to use regular Markdown links to section landing or other index pages. Specify these links relative to the site&rsquo;s root URL, for example: <code>/docs/adding-content/</code>.</p>
+<p><a href="/docs/adding-content/content/#working-with-links">Learn more about linking</a>.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a44052a6e2fad131904a9916e5fa4d79">2 - Organizing Your Content</h1>
+    <div class="lead">Optional guidance and recommendations on how to organize your documentation site.</div>
+	<p>If you have a look at our <a href="https://example.docsy.dev/about/">Example Site</a>, you&rsquo;ll see that we&rsquo;ve organized
+the Documentation section into a number of subsections, each with some recommendations about what you might put
+in that section.</p>
+<h2 id="do-i-need-to-use-this-structure">Do I need to use this structure?</h2>
+<p>Absolutely not! The site structure in the Example Site was created to meet the needs of large docsets for large
+products with lots of features, potential tasks, and reference elements. For a simpler docset (like this one!),
+it&rsquo;s fine to just structure your docs around specific features that your users need to know about.  Even for larger
+documentation sets, you may find that the structure isn&rsquo;t useful &ldquo;as is&rdquo;, or that you don&rsquo;t need to use all the
+section types.</p>
+<p>We do recommend that (as we&rsquo;ve done here) you provide at least:</p>
+<ul>
+<li>An <strong>Overview</strong> of the product (either on the docs landing page or a separate Overview page) that tells the user
+why they should be interested in your project.</li>
+<li>A <strong>Getting Started</strong> page.</li>
+<li>Some <strong>Examples</strong>.</li>
+</ul>
+<p>You may also want to create some tasks/how-tos for your project&rsquo;s features. Feel free to copy this Docsy user guide
+site or even just the docs section instead if you like this simpler structure better.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Tip</h4>
+
+    If you want to copy this guide, be aware that its <a href="https://github.com/google/docsy/tree/main/userguide">source files</a> are <em>inside</em> the Docsy theme repo, and so it doesn&rsquo;t have its own <code>themes/</code> directory: instead, we run <code>hugo server --themesDir ../..</code> to use Docsy from its parent directory. You may want to either copy the site and <a href="/docs/get-started/other-options/#option-2-clone-the-docsy-theme">add a <code>themes/</code> directory with Docsy</a>, or just copy the <code>docs/</code> folder into your existing site&rsquo;s content root.
+
+</div>
+
+<p><a href="/docs/adding-content/content/#organizing-your-documentation">Learn more about how Hugo and Docsy use folders and other files to organize your site</a>.</p>
+<h2 id="why-this-structure">Why this structure?</h2>
+<p>We based the Example Site structure on our own experiences creating (and using) large documentation sets for
+different types of project and on user research carried out on some of our bigger sites. In user studies we saw that
+users cared most about and immediately looked for a Get Started or Getting Started section
+(so they could, well, get started), and some examples to explore and copy, so we made those into prominent top-level doc
+sections in our site. Users also wanted to find &ldquo;recipes&rdquo; that they could easily look up to perform specific tasks and
+put together to create their own applications or projects, so we suggest that you add this kind of content as Tasks.
+Other content types such as conceptual docs, reference docs, and end-to-end tutorials are less important for all doc sets,
+particularly for smaller projects. We emphasize in our Example Site that these sections are optional.</p>
+<p>We hope to improve the Example Site structure further as we learn more about how users interact with technical
+documentation, particularly for Open Source projects.</p>
+<h2 id="writing-style-guide">Writing style guide</h2>
+<p>This guide and the example site just address how to organize your documentation content into pages and sections. For some guidance on how to organize and write the content in each page, we recommend the
+<a href="https://developers.google.com/style/">Google Developer Documentation Style Guide</a>, particularly the
+<a href="https://developers.google.com/style/highlights">Style Guide Highlights</a>.</p>
+
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub Discussions" aria-label="GitHub Discussions">
+    <a target="_blank" rel="noopener" href="https://github.com/google/docsy/discussions" aria-label="GitHub Discussions">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="User mailing list" aria-label="User mailing list">
+    <a target="_blank" rel="noopener" href="https://groups.google.com/forum/#!forum/docsy-users" aria-label="User mailing list">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Twitter" aria-label="Twitter">
+    <a target="_blank" rel="noopener" href="https://twitter.com/docsydocs" aria-label="Twitter">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Stack Overflow" aria-label="Stack Overflow">
+    <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/tagged/docsy" aria-label="Stack Overflow">
+      <i class="fa-brands fa-stack-overflow"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/google/docsy" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2019&ndash;2024
+    <span class="td-footer__authors">FHS-BAP Data Core Team | <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a> |</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src='/js/deflate.js'></script>
+<script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FHS-BAP-Docs – Tutorial</title>
+    <link>http://localhost:1313/tags/tutorial/</link>
+    <description>Recent content in Tutorial on FHS-BAP-Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 27 Feb 2024 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Blog: YouTube videos</title>
+      <link>http://localhost:1313/blog/youtube-demo/</link>
+      <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/youtube-demo/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This is a simple placeholder written in the article&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Scenario 1: Across columns&#34; src=&#34;http://localhost:1313/images/FHS_logo.jpg&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;section-1&#34;&gt;Section 1&lt;/h1&gt;
+&lt;p&gt;Hello world!&lt;/p&gt;
+&lt;h2 id=&#34;a-new-hugo-site-in-under-2-minutes-wave&#34;&gt;A New Hugo Site in Under 2 Minutes &amp;#x1f44b;&lt;/h2&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/youtube.svg&#34; width=&#34;50&#34; height=&#34;50&#34;&gt;
+&lt;p&gt;A quick overview of how to go from a an empty folder to a simple web site using Hugo, the static site generator.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Click me&lt;/summary&gt;
+&lt;h3 id=&#34;heading&#34;&gt;Heading&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Foo&lt;/li&gt;
+&lt;li&gt;Bar
+&lt;ul&gt;
+&lt;li&gt;Baz&lt;/li&gt;
+&lt;li&gt;Qux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;some-javascript&#34;&gt;Some Javascript&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;logSomething&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;something&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000&#34;&gt;console&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Something&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;something&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/details&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>
