@@ -1,6 +1,7 @@
 .*
 !/.gitignore
-.Rmarkdown
+# include this one otherwise the R blog page will not show.
+# .Rmarkdown
 .Rproj.user
 .Rhistory
 .RData
