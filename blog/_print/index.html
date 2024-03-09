@@ -120,16 +120,6 @@ This is the multi-page printable view of this section.
     
 	
 
-    <li><a href="#pg-d56638ec821208f7dcd3881429470a11">R plot 001</a></li>
-
-
-
-    
-  
-    
-    
-	
-
     <li><a href="#pg-48e142edff33954d2a8fac7600f02629">YouTube videos</a></li>
 
 
@@ -214,49 +204,6 @@ This is the multi-page printable view of this section.
   
 
 <div class="td-content" style="">
-    <h1 id="pg-d56638ec821208f7dcd3881429470a11">R plot 001</h1>
-	
-	<div class="td-byline mb-4">
-		By <b>Admin</b> |
-        
-		<time datetime="2024-03-08" class="text-muted">Friday, March 08, 2024</time>
-        
-	</div>
-	<h1 id="loading-data-update-for-fix-figure-link">Loading data (update for fix figure link)</h1>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">head</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mtcars</span><span style="color:#000;font-weight:bold">)</span>
-</span></span></code></pre></div><pre tabindex="0"><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
-## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
-## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
-## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
-## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
-## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
-## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
-</code></pre><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># summary(mtcars)</span>
-</span></span></code></pre></div><h2 id="make-a-plot">Make a plot</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">ggplot</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mtcars</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">mapping</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">aes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">disp</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">y</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mpg</span><span style="color:#000;font-weight:bold">,</span> 
-</span></span><span style="display:flex;"><span>    <span style="color:#000">col</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factor</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">gear</span><span style="color:#000;font-weight:bold">)))</span> <span style="color:#ce5c00;font-weight:bold">+</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">geom_point</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">aes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">shape</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factor</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">gear</span><span style="color:#000;font-weight:bold">)),</span> <span style="color:#000">size</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">+</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">theme_gray</span><span style="color:#000;font-weight:bold">()</span> 
-</span></span></code></pre></div><img src="https://drqiuslab.github.io/blog/demo_001/index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
-
-</div>
-
-
-
-
-
-    
-	
-  
-    
-    
-	
-    
-
-
-  
-
-<div class="td-content" style="page-break-before: always">
     <h1 id="pg-48e142edff33954d2a8fac7600f02629">YouTube videos</h1>
 	<div class="lead">the description is typically rendered within a meta element within the head element of the published HTML file. Access this value from a template using the Description method on a Page object.</div>
 	<div class="td-byline mb-4">
