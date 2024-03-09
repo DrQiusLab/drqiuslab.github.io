@@ -103,6 +103,7 @@ Over the decades, the FHS has expanded to include subsequent generations and div
     });
   </script>
   <div id="td-sidebar-menu" class="td-sidebar__inner d-none">
+  <div id="content-mobile">
   <form class="td-sidebar__search d-flex align-items-center">
     <div class="td-search">
   <div class="td-search--algolia" id="docsearch-0"></div>
@@ -110,7 +111,9 @@ Over the decades, the FHS has expanded to include subsequent generations and div
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
-  <nav class="td-sidebar-nav collapse" id="td-section-nav">
+  </div>
+  <div id="content-desktop"></div>
+  <nav class="td-sidebar-nav collapse td-sidebar-nav--search-disabled" id="td-section-nav">
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-li">
   <a href="/docs/" title="Welcome to Docsy" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Documentation</span></a>
