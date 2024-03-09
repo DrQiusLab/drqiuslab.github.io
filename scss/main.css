@@ -3858,9 +3858,9 @@ div.drawio .input-group-sm > button,
     border-top: 0; }
   .accordion-flush > .accordion-item:last-child {
     border-bottom: 0; }
-  .accordion-flush > .accordion-item > .accordion-collapse,
-  .accordion-flush > .accordion-item > .accordion-header .accordion-button,
-  .accordion-flush > .accordion-item > .accordion-header .accordion-button.collapsed {
+  .accordion-flush > .accordion-item > .accordion-header .accordion-button, .accordion-flush > .accordion-item > .accordion-header .accordion-button.collapsed {
+    border-radius: 0; }
+  .accordion-flush > .accordion-item > .accordion-collapse {
     border-radius: 0; }
 
 [data-bs-theme="dark"] .accordion-button::after {

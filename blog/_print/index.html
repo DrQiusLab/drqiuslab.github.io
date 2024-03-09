@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="https://drqiuslab.github.io/blog/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://drqiuslab.github.io/blog/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/blog/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/blog/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -24,7 +24,7 @@
 <meta property="og:title" content="Blog" />
 <meta property="og:description" content="Docsy does docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://drqiuslab.github.io/blog/" /><meta property="og:site_name" content="FHS-BAP-Docs" />
+<meta property="og:url" content="http://localhost:1313/blog/" /><meta property="og:site_name" content="FHS-BAP-Docs" />
 
 <meta itemprop="name" content="Blog">
 <meta itemprop="description" content="Docsy does docs"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Blog"/>
@@ -33,8 +33,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.f218e6ba263de6273c808e8b6407095cd4cc1127f939505c7906cc4ec2c5c37f.css" as="style">
-<link href="/scss/main.min.f218e6ba263de6273c808e8b6407095cd4cc1127f939505c7906cc4ec2c5c37f.css" rel="stylesheet" integrity="">
+
+<link href="/scss/main.css" rel="stylesheet">
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -71,7 +71,7 @@
   </div>
   <div class="d-none d-lg-block">
     <div class="td-search">
-  <div class="td-search--algolia" id="docsearch-0"></div>
+  <div class="td-search--algolia" id="docsearch-1"></div>
 </div>
   </div>
 </div>
@@ -115,6 +115,26 @@ This is the multi-page printable view of this section.
   
   
 
+  
+    
+    
+	
+
+    <li><a href="#pg-d29f43ec97b718c8ae1060500e28019d">Demo_002</a></li>
+
+
+
+    
+  
+    
+    
+	
+
+    <li><a href="#pg-f14cd2e0890e21fec555cd98d4c50a14">Plot test 001</a></li>
+
+
+
+    
   
     
     
@@ -204,6 +224,112 @@ This is the multi-page printable view of this section.
   
 
 <div class="td-content" style="">
+    <h1 id="pg-d29f43ec97b718c8ae1060500e28019d">Demo_002</h1>
+	
+	<div class="td-byline mb-4">
+		
+        
+		<time datetime="2024-03-09" class="text-muted">Saturday, March 09, 2024</time>
+        
+	</div>
+	<h1 id="loading-data-update-for-fix-figure-link">Loading data (update for fix figure link)</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">head</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mtcars</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><pre tabindex="0"><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+</code></pre><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># summary(mtcars)</span>
+</span></span></code></pre></div><h2 id="make-the-first-figure">make the first figure.</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">set.seed</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">101</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">x1</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#000">rnorm</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1000</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">summary</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x1</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><pre tabindex="0"><code>##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+## -3.17721 -0.69176 -0.05439 -0.03486  0.58546  3.17849
+</code></pre><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">old.par</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#000">par</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mar</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">0.5</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">0.5</span><span style="color:#000;font-weight:bold">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">hist</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">col</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;cyan4&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">main</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">NULL</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><img src="http://localhost:1313/blog/2024/03/09/demo_002/index_files/figure-html/fig01-1.png" width="300" />
+<h2 id="make-a-plot-test-2">Make a plot, test 2</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">ggplot</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mtcars</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">mapping</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">aes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">disp</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">y</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mpg</span><span style="color:#000;font-weight:bold">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#000">col</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factor</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">gear</span><span style="color:#000;font-weight:bold">)))</span> <span style="color:#ce5c00;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">geom_point</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">aes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">shape</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factor</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">gear</span><span style="color:#000;font-weight:bold">)),</span> <span style="color:#000">size</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">theme_gray</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#000">theme</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">legend.position</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">0.85</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">0.78</span><span style="color:#000;font-weight:bold">))</span>
+</span></span></code></pre></div><img src="http://localhost:1313/blog/2024/03/09/demo_002/index_files/figure-html/fig02-1.png" width="450" />
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
+    <h1 id="pg-f14cd2e0890e21fec555cd98d4c50a14">Plot test 001</h1>
+	
+	<div class="td-byline mb-4">
+		
+        
+		<time datetime="2024-03-09" class="text-muted">Saturday, March 09, 2024</time>
+        
+	</div>
+	<h1 id="loading-data-first-try">Loading data (first try&hellip;)</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">head</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mtcars</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><pre tabindex="0"><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+</code></pre><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># summary(mtcars)</span>
+</span></span></code></pre></div><h2 id="make-the-first-figure-repost">Make the first figure (repost).</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">set.seed</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">101</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">x1</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#000">rnorm</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1000</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">summary</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x1</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><pre tabindex="0"><code>##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+## -3.17721 -0.69176 -0.05439 -0.03486  0.58546  3.17849
+</code></pre><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">old.par</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#000">par</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mar</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">0.5</span><span style="color:#000;font-weight:bold">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">hist</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">col</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;cyan4&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">main</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;First plot&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><img src="http://localhost:1313/blog/2024/03/09/rplot_001/index_files/figure-html/fig01-1.png" width="300" />
+<h2 id="make-a-plot-test-3">Make a plot, test 3</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">ggplot</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mtcars</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">mapping</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">aes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">disp</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">y</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mpg</span><span style="color:#000;font-weight:bold">,</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#000">col</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factor</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">gear</span><span style="color:#000;font-weight:bold">)))</span> <span style="color:#ce5c00;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">geom_point</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">aes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">shape</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factor</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">gear</span><span style="color:#000;font-weight:bold">)),</span> <span style="color:#000">size</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">theme_gray</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#000">theme</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">legend.position</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">0.85</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">0.78</span><span style="color:#000;font-weight:bold">))</span>
+</span></span></code></pre></div><img src="http://localhost:1313/blog/2024/03/09/rplot_001/index_files/figure-html/fig02-1.png" width="450" />
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
     <h1 id="pg-48e142edff33954d2a8fac7600f02629">YouTube videos</h1>
 	<div class="lead">the description is typically rendered within a meta element within the head element of the published HTML file. Access this value from a template using the Description method on a Page object.</div>
 	<div class="td-byline mb-4">
@@ -271,9 +397,9 @@ This is the multi-page printable view of this section.
 that has some breaking and notable changes worth calling out, namely those
 related to:</p>
 <ul>
-<li><a href="/blog/2024/0.9.0/#footer">Footer improvements</a></li>
-<li><a href="/blog/2024/0.9.0/#page-meta">Repository links and other page info</a></li>
-<li><a href="/blog/2024/0.9.0/#look-and-feel">Look and feel</a></li>
+<li><a href="/blog/2024/02/09/docsy-0.9.0-release-report/#footer">Footer improvements</a></li>
+<li><a href="/blog/2024/02/09/docsy-0.9.0-release-report/#page-meta">Repository links and other page info</a></li>
+<li><a href="/blog/2024/02/09/docsy-0.9.0-release-report/#look-and-feel">Look and feel</a></li>
 </ul>
 <p>Thank you to all <a href="https://github.com/google/docsy/releases/tag/v0.9.0">contributors</a>!</p>
 <h2 id="footer">Footer improvements</h2>
@@ -346,13 +472,13 @@ addressed in a future release through further layout refactoring and extension.<
 <h3 id="last-modified-page-info">Last-modified page info</h3>
 <p>You can configure your site to display page-source last-modified metadata at the
 bottom of documentation and blog pages. For details, see the newly added User
-Guide section <a href="/docs/adding-content/repository-links/#last-modified-page-metadata">Last-modified page metadata</a>.</p>
+Guide section <a href="/docs/1/01/01/repository-links-and-other-page-information/#last-modified-page-metadata">Last-modified page metadata</a>.</p>
 <h2 id="look-and-feel">Look and feel</h2>
 <h3 id="heading-self-links">Heading self links</h3>
 <p>Docsy has switched to build-time generation of heading self links using Hugo&rsquo;s
 <code>render-heading.html</code> <a href="https://gohugo.io/templates/render-hooks/">hook</a>, replacing client-side rendering via
 <code>assets/js/anchor.js</code> (dropped in <a href="https://github.com/google/docsy/issues/1460">#1460</a>). Projects must now explicitly enable
-the feature. For details, see <a href="/docs/adding-content/navigation/#heading-self-links">Heading self links</a>.</p>
+the feature. For details, see <a href="/docs/2017/01/05/navigation-and-menus/#heading-self-links">Heading self links</a>.</p>
 <p>Formerly an embedded SVG, the default self-link symbol is now CSS-defined to be
 <code>#</code>, a common choice for websites. Projects can customize the appearance of the
 heading self link through the <a href="https://github.com/chalin/docsy/blob/849dea0790bbaef5f4f71659824f44045afcd65e/assets/scss/_content.scss#L98">.td-heading-self-link</a> class.</p>
@@ -517,7 +643,7 @@ was the result of
 <a href="https://github.com/google/docsy/issues/470">six months of meticulous work (#470)</a>
 focused on the migration to Bootstrap 5.2. For highlights and the rationale
 behind that journey, see
-<a href="/blog/2023/bootstrap-5-migration/">Migrating to Bootstrap 5.2</a>.</p>
+<a href="/blog/2023/06/05/migrating-to-bootstrap-5.2/">Migrating to Bootstrap 5.2</a>.</p>
 <p>This blog post is intended to help those who are upgrading to Docsy 0.7 and
 Bootstrap 5, based on my Docsy 0.7 upgrade experiences, specifically related to
 Bootstrap. The post starts with general guidance for Docsy-based projects
@@ -528,7 +654,7 @@ process easier and faster.</p>
 let&rsquo;s jump in!</p>
 <h2 id="upgrading-your-project">Upgrading your project</h2>
 <p>As was mentioned in the
-<a href="/blog/2023/bootstrap-5-migration/#migrating-docsy-based-projects">first post</a>,
+<a href="/blog/2023/06/05/migrating-to-bootstrap-5.2/#migrating-docsy-based-projects">first post</a>,
 each project uses its own specific set of Bootstrap and Docsy features, so in
 all likelihood, <strong>your upgrade journey will be unique</strong>. This section offers
 some general guidance.</p>
@@ -564,16 +690,16 @@ adjust data attribute names, which are now &ldquo;namespaced&rdquo; using the <c
 prefix. For example, use <code>data-bs-toggle</code> instead of <code>data-toggle</code>.</p>
 <p>Other Bootstrap breaking changes will require more work to address, such as the
 following that were mentioned in the
-<a href="/blog/2023/bootstrap-5-migration/#tldr">TL;DR</a> of the first post:</p>
+<a href="/blog/2023/06/05/migrating-to-bootstrap-5.2/#tldr">TL;DR</a> of the first post:</p>
 <ul>
-<li><a href="/blog/2023/bootstrap-5-migration/#mixin-media-breakpoint-down-argument-shift">Mixin <code>media-breakpoint-down()</code> argument shift</a></li>
-<li><a href="/blog/2023/bootstrap-5-migration/#grid-row-and-col-style-changes-are-breaking">Grid <code>.row</code> and <code>.col</code> style changes</a></li>
-<li><a href="/blog/2023/bootstrap-5-migration/#import-ordering-of-bootstrap-sass-files-functions-first">Import ordering of Bootstrap Sass files: functions first</a></li>
+<li><a href="/blog/2023/06/05/migrating-to-bootstrap-5.2/#mixin-media-breakpoint-down-argument-shift">Mixin <code>media-breakpoint-down()</code> argument shift</a></li>
+<li><a href="/blog/2023/06/05/migrating-to-bootstrap-5.2/#grid-row-and-col-style-changes-are-breaking">Grid <code>.row</code> and <code>.col</code> style changes</a></li>
+<li><a href="/blog/2023/06/05/migrating-to-bootstrap-5.2/#import-ordering-of-bootstrap-sass-files-functions-first">Import ordering of Bootstrap Sass files: functions first</a></li>
 </ul>
 <p>The Docsy blog layout used the <code>.media</code> class, which was
 <a href="https://getbootstrap.com/docs/5.2/migration/#grid-updates">dropped from Bootstrap 5</a>.
 This, and the
-<a href="/blog/2023/bootstrap-5-migration/#grid-row-and-col-style-changes-are-breaking"><code>.row</code> and <code>.col</code> style changes</a>,
+<a href="/blog/2023/06/05/migrating-to-bootstrap-5.2/#grid-row-and-col-style-changes-are-breaking"><code>.row</code> and <code>.col</code> style changes</a>,
 required a couple of iterated changes to the blog layouts, such as
 <a href="https://github.com/google/docsy/pull/1566">PR #1566</a>. If your project
 customizes blog layouts, then you&rsquo;ll want to walk through the updates carefully.
@@ -627,7 +753,7 @@ instead.</li>
 <p>The <a href="https://github.com/google/docsy-example">docsy-example</a> repository is a
 <a href="https://gitprotect.io/blog/how-to-use-github-repository-templates/">GitHub template</a>
 that we suggest as a possible starting point for users looking to adopt
-<a href="/docs/get-started/docsy-as-module/example-site-as-template/">Docsy for a new website</a>.
+<a href="/docs/2021/12/08/create-a-new-site-start-with-a-prepopulated-site/">Docsy for a new website</a>.
 The example site features <a href="/docs/language/">multi-language support</a>, which had
 an impact on the required upgrades.</p>
 <p>The example-site upgrade was even simpler than for the OTel website. The key
@@ -635,7 +761,7 @@ changes (<a href="https://github.com/google/docsy-example/pull/221">PR #221</a>)
 mainly confined to the landing page of each natural language:</p>
 <ul>
 <li>Utility-class renames, such as <code>.ml-*</code> and <code>.mr-*</code> to <code>.ms-*</code> and <code>.me-*</code></li>
-<li><a href="/docs/adding-content/shortcodes/#blockssection">blocks/section</a> changes
+<li><a href="/docs/2017/01/05/docsy-shortcodes/#blockssection">blocks/section</a> changes
 (<a href="https://github.com/google/docsy/pull/1472">PR #1472</a>):
 <ul>
 <li>Language landing pages had to be renamed from <code>.html</code> to <code>.md</code> in support of
@@ -897,7 +1023,7 @@ The main pain point of the OTel website was upgrading to Bootstrap 5
 migration that didn&rsquo;t apply to Docsy since Docsy uses only the most trivial of
 forms.</p>
 <p>We&rsquo;ll have more to share about the OTel migration effort as well as general
-project-specific migration advice in a <a href="/blog/2023/docsy-0.7/">followup blog post</a>. In the meantime,
+project-specific migration advice in a <a href="/blog/2023/08/03/upgrading-to-docsy-0.7-bootstrap-5/">followup blog post</a>. In the meantime,
 I hope that you have found parts of this technical article helpful for your own
 migration efforts.</p>
 <p><a href="https://www.cncf.io/projects/">CNCF project</a> websites eager to migrate can send
@@ -1048,8 +1174,8 @@ window.markmap = {
 </script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
 <script src='/js/deflate.js'></script>
-<script src="/js/main.min.d3318b626beabca2e352debf2c1efd8347e282517eeb2b0e770128c3aec202ea.js" integrity="sha256-0zGLYmvqvKLjUt6/LB79g0figlF&#43;6ysOdwEow67CAuo=" crossorigin="anonymous"></script>
-<script defer src="/js/click-to-copy.min.f724d3de49218995223b7316aa2e53e2b34bf42026bf399ebb21bb02212402d1.js" integrity="sha256-9yTT3kkhiZUiO3MWqi5T4rNL9CAmvzmeuyG7AiEkAtE=" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.5.2"
   integrity="sha512-LzxWPDNELae1RSIsDRSitKYPJpRtjYo22GbOl+d+xLcjKiZQRRdxSTI3cRRHw7O05e0MbIIu33QnU2rt6ymQ6A=="
   crossorigin="anonymous" ></script>

@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="https://drqiuslab.github.io/docs/best-practices/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://drqiuslab.github.io/docs/best-practices/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs/best-practices/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/best-practices/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -26,7 +26,7 @@
 <meta property="og:description" content="Optional guidance and recommendations about organizing, authoring, and managing your technical documentation.
 " />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://drqiuslab.github.io/docs/best-practices/" /><meta property="og:site_name" content="FHS-BAP-Docs" />
+<meta property="og:url" content="http://localhost:1313/docs/best-practices/" /><meta property="og:site_name" content="FHS-BAP-Docs" />
 
 <meta itemprop="name" content="Best Practices">
 <meta itemprop="description" content="Optional guidance and recommendations about organizing, authoring, and managing your technical documentation.
@@ -37,8 +37,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.f218e6ba263de6273c808e8b6407095cd4cc1127f939505c7906cc4ec2c5c37f.css" as="style">
-<link href="/scss/main.min.f218e6ba263de6273c808e8b6407095cd4cc1127f939505c7906cc4ec2c5c37f.css" rel="stylesheet" integrity="">
+
+<link href="/scss/main.css" rel="stylesheet">
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -168,7 +168,7 @@ potential gotchas for adding and editing content for your site. Feel free to add
 <p>By default, regular relative URLs in links are left unchanged by Hugo (they&rsquo;re still relative links in your site&rsquo;s generated HTML), hence some hardcoded relative links like <code>[relative cross-link](../../peer-folder/sub-file.md)</code> might behave unexpectedly compared to how they work on your local file system. You may find it helpful to use some of Hugo&rsquo;s built-in <a href="https://gohugo.io/content-management/cross-references/#use-ref-and-relref">link shortcodes</a> to avoid broken links in your generated site. For example a <code>{{&lt; ref &quot;filename.md&quot; &gt;}}</code> link in Hugo will actually
 find and automatically link to your file named <code>filename.md</code>.</p>
 <p>Note, however, that <code>ref</code> and <code>relref</code> links don&rsquo;t work with <code>_index</code> or <code>index</code> files (for example, this site&rsquo;s <a href="/docs/adding-content/">content landing page</a>): you&rsquo;ll need to use regular Markdown links to section landing or other index pages. Specify these links relative to the site&rsquo;s root URL, for example: <code>/docs/adding-content/</code>.</p>
-<p><a href="/docs/adding-content/content/#working-with-links">Learn more about linking</a>.</p>
+<p><a href="/docs/1/01/01/adding-content/#working-with-links">Learn more about linking</a>.</p>
 
 </div>
 
@@ -209,11 +209,11 @@ site or even just the docs section instead if you like this simpler structure be
 <div class="alert alert-primary" role="alert">
 <h4 class="alert-heading">Tip</h4>
 
-    If you want to copy this guide, be aware that its <a href="https://github.com/google/docsy/tree/main/userguide">source files</a> are <em>inside</em> the Docsy theme repo, and so it doesn&rsquo;t have its own <code>themes/</code> directory: instead, we run <code>hugo server --themesDir ../..</code> to use Docsy from its parent directory. You may want to either copy the site and <a href="/docs/get-started/other-options/#option-2-clone-the-docsy-theme">add a <code>themes/</code> directory with Docsy</a>, or just copy the <code>docs/</code> folder into your existing site&rsquo;s content root.
+    If you want to copy this guide, be aware that its <a href="https://github.com/google/docsy/tree/main/userguide">source files</a> are <em>inside</em> the Docsy theme repo, and so it doesn&rsquo;t have its own <code>themes/</code> directory: instead, we run <code>hugo server --themesDir ../..</code> to use Docsy from its parent directory. You may want to either copy the site and <a href="/docs/2021/12/08/other-setup-options/#option-2-clone-the-docsy-theme">add a <code>themes/</code> directory with Docsy</a>, or just copy the <code>docs/</code> folder into your existing site&rsquo;s content root.
 
 </div>
 
-<p><a href="/docs/adding-content/content/#organizing-your-documentation">Learn more about how Hugo and Docsy use folders and other files to organize your site</a>.</p>
+<p><a href="/docs/1/01/01/adding-content/#organizing-your-documentation">Learn more about how Hugo and Docsy use folders and other files to organize your site</a>.</p>
 <h2 id="why-this-structure">Why this structure?</h2>
 <p>We based the Example Site structure on our own experiences creating (and using) large documentation sets for
 different types of project and on user research carried out on some of our bigger sites. In user studies we saw that
@@ -315,8 +315,8 @@ window.markmap = {
 </script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
 <script src='/js/deflate.js'></script>
-<script src="/js/main.min.d3318b626beabca2e352debf2c1efd8347e282517eeb2b0e770128c3aec202ea.js" integrity="sha256-0zGLYmvqvKLjUt6/LB79g0figlF&#43;6ysOdwEow67CAuo=" crossorigin="anonymous"></script>
-<script defer src="/js/click-to-copy.min.f724d3de49218995223b7316aa2e53e2b34bf42026bf399ebb21bb02212402d1.js" integrity="sha256-9yTT3kkhiZUiO3MWqi5T4rNL9CAmvzmeuyG7AiEkAtE=" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.5.2"
   integrity="sha512-LzxWPDNELae1RSIsDRSitKYPJpRtjYo22GbOl+d+xLcjKiZQRRdxSTI3cRRHw7O05e0MbIIu33QnU2rt6ymQ6A=="
   crossorigin="anonymous" ></script>

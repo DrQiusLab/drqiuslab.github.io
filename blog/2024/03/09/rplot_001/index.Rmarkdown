@@ -1,0 +1,44 @@
+---
+title: Plot test 001
+author: ''
+date: '2024-03-09'
+slug: rplot_001
+categories: []
+tags: []
+draft: yes
+---
+
+
+```{r, echo=FALSE, include=FALSE}
+library(scales)
+library(ggplot2)
+library(dplyr)
+```
+
+# Loading data (first try...)
+
+```{r}
+head(mtcars)
+# summary(mtcars)
+```
+
+
+## Make the first figure (repost).
+
+```{r fig01, fig.width=3, fig.height=2.5, fig.dpi=100}
+set.seed(101)
+x1 <- rnorm(1000)
+summary(x1)
+old.par <- par(mar = c(4,4,3,0.5))
+hist(x1, col = "cyan4", main = "First plot")
+```
+
+
+## Make a plot, test 3
+```{r fig02, fig.width=4.5, fig.height=3.5, fig.dpi=100}
+ggplot(data = mtcars, mapping = aes(x = disp, y = mpg, 
+    col = factor(gear))) +
+    geom_point(aes(shape = factor(gear)), size = 3) +
+    theme_gray() + 
+    theme(legend.position = c(0.85, 0.78))
+```

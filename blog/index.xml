@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FHS-BAP-Docs – Blog</title>
-    <link>https://drqiuslab.github.io/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in Blog on FHS-BAP-Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://drqiuslab.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,16 +15,94 @@
     
     
     <item>
+      <title>Blog: Demo_002</title>
+      <link>http://localhost:1313/blog/2024/03/09/demo_002/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2024/03/09/demo_002/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;loading-data-update-for-fix-figure-link&#34;&gt;Loading data (update for fix figure link)&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;mtcars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# summary(mtcars)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;make-the-first-figure&#34;&gt;make the first figure.&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;set.seed&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;101&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;x1&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;rnorm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1000&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;summary&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+## -3.17721 -0.69176 -0.05439 -0.03486  0.58546  3.17849
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;old.par&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;par&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;mar&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.5&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.5&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;hist&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;col&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;cyan4&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;main&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;NULL&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;img src=&#34;http://localhost:1313/blog/2024/03/09/demo_002/index_files/figure-html/fig01-1.png&#34; width=&#34;300&#34; /&gt;
+&lt;h2 id=&#34;make-a-plot-test-2&#34;&gt;Make a plot, test 2&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;ggplot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mtcars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mapping&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;aes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;disp&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mpg&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;col&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;factor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;gear&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)))&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;geom_point&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;aes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;shape&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;factor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;gear&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)),&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;theme_gray&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;theme&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;legend.position&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.85&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.78&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;img src=&#34;http://localhost:1313/blog/2024/03/09/demo_002/index_files/figure-html/fig02-1.png&#34; width=&#34;450&#34; /&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Blog: Plot test 001</title>
+      <link>http://localhost:1313/blog/2024/03/09/rplot_001/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/2024/03/09/rplot_001/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;loading-data-first-try&#34;&gt;Loading data (first try&amp;hellip;)&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;head&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;mtcars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# summary(mtcars)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;make-the-first-figure-repost&#34;&gt;Make the first figure (repost).&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;set.seed&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;101&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;x1&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;rnorm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1000&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;summary&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+## -3.17721 -0.69176 -0.05439 -0.03486  0.58546  3.17849
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;old.par&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;par&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;mar&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.5&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;hist&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;col&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;cyan4&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;main&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;First plot&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;img src=&#34;http://localhost:1313/blog/2024/03/09/rplot_001/index_files/figure-html/fig01-1.png&#34; width=&#34;300&#34; /&gt;
+&lt;h2 id=&#34;make-a-plot-test-3&#34;&gt;Make a plot, test 3&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;ggplot&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mtcars&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mapping&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;aes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;disp&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mpg&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;col&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;factor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;gear&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)))&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;geom_point&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;aes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;shape&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;factor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;gear&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)),&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;size&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;theme_gray&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;+&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#000&#34;&gt;theme&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;legend.position&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.85&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0.78&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;img src=&#34;http://localhost:1313/blog/2024/03/09/rplot_001/index_files/figure-html/fig02-1.png&#34; width=&#34;450&#34; /&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Blog: YouTube videos</title>
-      <link>https://drqiuslab.github.io/blog/youtube-demo/</link>
+      <link>http://localhost:1313/blog/2024/02/27/youtube-demo/</link>
       <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://drqiuslab.github.io/blog/youtube-demo/</guid>
+      <guid>http://localhost:1313/blog/2024/02/27/youtube-demo/</guid>
       <description>
         
         
         &lt;p&gt;This is a simple placeholder written in the article&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Scenario 1: Across columns&#34; src=&#34;https://drqiuslab.github.io/images/FHS_logo.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Scenario 1: Across columns&#34; src=&#34;http://localhost:1313/images/FHS_logo.jpg&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;section-1&#34;&gt;Section 1&lt;/h1&gt;
 &lt;p&gt;Hello world!&lt;/p&gt;
 &lt;h2 id=&#34;a-new-hugo-site-in-under-2-minutes-wave&#34;&gt;A New Hugo Site in Under 2 Minutes &amp;#x1f44b;&lt;/h2&gt;
@@ -57,10 +135,10 @@
     
     <item>
       <title>Blog: Docsy 0.9.0 release report</title>
-      <link>https://drqiuslab.github.io/blog/2024/0.9.0/</link>
+      <link>http://localhost:1313/blog/2024/02/09/docsy-0.9.0-release-report/</link>
       <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://drqiuslab.github.io/blog/2024/0.9.0/</guid>
+      <guid>http://localhost:1313/blog/2024/02/09/docsy-0.9.0-release-report/</guid>
       <description>
         
         
@@ -68,9 +146,9 @@
 that has some breaking and notable changes worth calling out, namely those
 related to:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/blog/2024/0.9.0/#footer&#34;&gt;Footer improvements&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/blog/2024/0.9.0/#page-meta&#34;&gt;Repository links and other page info&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/blog/2024/0.9.0/#look-and-feel&#34;&gt;Look and feel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2024/02/09/docsy-0.9.0-release-report/#footer&#34;&gt;Footer improvements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2024/02/09/docsy-0.9.0-release-report/#page-meta&#34;&gt;Repository links and other page info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2024/02/09/docsy-0.9.0-release-report/#look-and-feel&#34;&gt;Look and feel&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Thank you to all &lt;a href=&#34;https://github.com/google/docsy/releases/tag/v0.9.0&#34;&gt;contributors&lt;/a&gt;!&lt;/p&gt;
 &lt;h2 id=&#34;footer&#34;&gt;Footer improvements&lt;/h2&gt;
@@ -143,13 +221,13 @@ addressed in a future release through further layout refactoring and extension.&
 &lt;h3 id=&#34;last-modified-page-info&#34;&gt;Last-modified page info&lt;/h3&gt;
 &lt;p&gt;You can configure your site to display page-source last-modified metadata at the
 bottom of documentation and blog pages. For details, see the newly added User
-Guide section &lt;a href=&#34;https://drqiuslab.github.io/docs/adding-content/repository-links/#last-modified-page-metadata&#34;&gt;Last-modified page metadata&lt;/a&gt;.&lt;/p&gt;
+Guide section &lt;a href=&#34;http://localhost:1313/docs/1/01/01/repository-links-and-other-page-information/#last-modified-page-metadata&#34;&gt;Last-modified page metadata&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;look-and-feel&#34;&gt;Look and feel&lt;/h2&gt;
 &lt;h3 id=&#34;heading-self-links&#34;&gt;Heading self links&lt;/h3&gt;
 &lt;p&gt;Docsy has switched to build-time generation of heading self links using Hugo&amp;rsquo;s
 &lt;code&gt;render-heading.html&lt;/code&gt; &lt;a href=&#34;https://gohugo.io/templates/render-hooks/&#34;&gt;hook&lt;/a&gt;, replacing client-side rendering via
 &lt;code&gt;assets/js/anchor.js&lt;/code&gt; (dropped in &lt;a href=&#34;https://github.com/google/docsy/issues/1460&#34;&gt;#1460&lt;/a&gt;). Projects must now explicitly enable
-the feature. For details, see &lt;a href=&#34;https://drqiuslab.github.io/docs/adding-content/navigation/#heading-self-links&#34;&gt;Heading self links&lt;/a&gt;.&lt;/p&gt;
+the feature. For details, see &lt;a href=&#34;http://localhost:1313/docs/2017/01/05/navigation-and-menus/#heading-self-links&#34;&gt;Heading self links&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Formerly an embedded SVG, the default self-link symbol is now CSS-defined to be
 &lt;code&gt;#&lt;/code&gt;, a common choice for websites. Projects can customize the appearance of the
 heading self link through the &lt;a href=&#34;https://github.com/chalin/docsy/blob/849dea0790bbaef5f4f71659824f44045afcd65e/assets/scss/_content.scss#L98&#34;&gt;.td-heading-self-link&lt;/a&gt; class.&lt;/p&gt;
@@ -196,10 +274,10 @@ specifically:&lt;/p&gt;
     
     <item>
       <title>Blog: Docsy priorities for 2024</title>
-      <link>https://drqiuslab.github.io/blog/2023/priorities-for-2024/</link>
+      <link>http://localhost:1313/blog/2023/11/28/docsy-priorities-for-2024/</link>
       <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://drqiuslab.github.io/blog/2023/priorities-for-2024/</guid>
+      <guid>http://localhost:1313/blog/2023/11/28/docsy-priorities-for-2024/</guid>
       <description>
         
         
@@ -273,10 +351,10 @@ one) Mermaid support.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote
     
     <item>
       <title>Blog: Upgrading to Docsy 0.7 &amp; Bootstrap 5</title>
-      <link>https://drqiuslab.github.io/blog/2023/docsy-0.7/</link>
+      <link>http://localhost:1313/blog/2023/08/03/upgrading-to-docsy-0.7-bootstrap-5/</link>
       <pubDate>Thu, 03 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://drqiuslab.github.io/blog/2023/docsy-0.7/</guid>
+      <guid>http://localhost:1313/blog/2023/08/03/upgrading-to-docsy-0.7-bootstrap-5/</guid>
       <description>
         
         
@@ -286,7 +364,7 @@ was the result of
 &lt;a href=&#34;https://github.com/google/docsy/issues/470&#34;&gt;six months of meticulous work (#470)&lt;/a&gt;
 focused on the migration to Bootstrap 5.2. For highlights and the rationale
 behind that journey, see
-&lt;a href=&#34;https://drqiuslab.github.io/blog/2023/bootstrap-5-migration/&#34;&gt;Migrating to Bootstrap 5.2&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/blog/2023/06/05/migrating-to-bootstrap-5.2/&#34;&gt;Migrating to Bootstrap 5.2&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This blog post is intended to help those who are upgrading to Docsy 0.7 and
 Bootstrap 5, based on my Docsy 0.7 upgrade experiences, specifically related to
 Bootstrap. The post starts with general guidance for Docsy-based projects
@@ -297,7 +375,7 @@ process easier and faster.&lt;/p&gt;
 let&amp;rsquo;s jump in!&lt;/p&gt;
 &lt;h2 id=&#34;upgrading-your-project&#34;&gt;Upgrading your project&lt;/h2&gt;
 &lt;p&gt;As was mentioned in the
-&lt;a href=&#34;https://drqiuslab.github.io/blog/2023/bootstrap-5-migration/#migrating-docsy-based-projects&#34;&gt;first post&lt;/a&gt;,
+&lt;a href=&#34;http://localhost:1313/blog/2023/06/05/migrating-to-bootstrap-5.2/#migrating-docsy-based-projects&#34;&gt;first post&lt;/a&gt;,
 each project uses its own specific set of Bootstrap and Docsy features, so in
 all likelihood, &lt;strong&gt;your upgrade journey will be unique&lt;/strong&gt;. This section offers
 some general guidance.&lt;/p&gt;
@@ -333,16 +411,16 @@ adjust data attribute names, which are now &amp;ldquo;namespaced&amp;rdquo; usin
 prefix. For example, use &lt;code&gt;data-bs-toggle&lt;/code&gt; instead of &lt;code&gt;data-toggle&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Other Bootstrap breaking changes will require more work to address, such as the
 following that were mentioned in the
-&lt;a href=&#34;https://drqiuslab.github.io/blog/2023/bootstrap-5-migration/#tldr&#34;&gt;TL;DR&lt;/a&gt; of the first post:&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/blog/2023/06/05/migrating-to-bootstrap-5.2/#tldr&#34;&gt;TL;DR&lt;/a&gt; of the first post:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/blog/2023/bootstrap-5-migration/#mixin-media-breakpoint-down-argument-shift&#34;&gt;Mixin &lt;code&gt;media-breakpoint-down()&lt;/code&gt; argument shift&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/blog/2023/bootstrap-5-migration/#grid-row-and-col-style-changes-are-breaking&#34;&gt;Grid &lt;code&gt;.row&lt;/code&gt; and &lt;code&gt;.col&lt;/code&gt; style changes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/blog/2023/bootstrap-5-migration/#import-ordering-of-bootstrap-sass-files-functions-first&#34;&gt;Import ordering of Bootstrap Sass files: functions first&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2023/06/05/migrating-to-bootstrap-5.2/#mixin-media-breakpoint-down-argument-shift&#34;&gt;Mixin &lt;code&gt;media-breakpoint-down()&lt;/code&gt; argument shift&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2023/06/05/migrating-to-bootstrap-5.2/#grid-row-and-col-style-changes-are-breaking&#34;&gt;Grid &lt;code&gt;.row&lt;/code&gt; and &lt;code&gt;.col&lt;/code&gt; style changes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/blog/2023/06/05/migrating-to-bootstrap-5.2/#import-ordering-of-bootstrap-sass-files-functions-first&#34;&gt;Import ordering of Bootstrap Sass files: functions first&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The Docsy blog layout used the &lt;code&gt;.media&lt;/code&gt; class, which was
 &lt;a href=&#34;https://getbootstrap.com/docs/5.2/migration/#grid-updates&#34;&gt;dropped from Bootstrap 5&lt;/a&gt;.
 This, and the
-&lt;a href=&#34;https://drqiuslab.github.io/blog/2023/bootstrap-5-migration/#grid-row-and-col-style-changes-are-breaking&#34;&gt;&lt;code&gt;.row&lt;/code&gt; and &lt;code&gt;.col&lt;/code&gt; style changes&lt;/a&gt;,
+&lt;a href=&#34;http://localhost:1313/blog/2023/06/05/migrating-to-bootstrap-5.2/#grid-row-and-col-style-changes-are-breaking&#34;&gt;&lt;code&gt;.row&lt;/code&gt; and &lt;code&gt;.col&lt;/code&gt; style changes&lt;/a&gt;,
 required a couple of iterated changes to the blog layouts, such as
 &lt;a href=&#34;https://github.com/google/docsy/pull/1566&#34;&gt;PR #1566&lt;/a&gt;. If your project
 customizes blog layouts, then you&amp;rsquo;ll want to walk through the updates carefully.
@@ -396,15 +474,15 @@ instead.&lt;/li&gt;
 &lt;p&gt;The &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;docsy-example&lt;/a&gt; repository is a
 &lt;a href=&#34;https://gitprotect.io/blog/how-to-use-github-repository-templates/&#34;&gt;GitHub template&lt;/a&gt;
 that we suggest as a possible starting point for users looking to adopt
-&lt;a href=&#34;https://drqiuslab.github.io/docs/get-started/docsy-as-module/example-site-as-template/&#34;&gt;Docsy for a new website&lt;/a&gt;.
-The example site features &lt;a href=&#34;https://drqiuslab.github.io/docs/language/&#34;&gt;multi-language support&lt;/a&gt;, which had
+&lt;a href=&#34;http://localhost:1313/docs/2021/12/08/create-a-new-site-start-with-a-prepopulated-site/&#34;&gt;Docsy for a new website&lt;/a&gt;.
+The example site features &lt;a href=&#34;http://localhost:1313/docs/language/&#34;&gt;multi-language support&lt;/a&gt;, which had
 an impact on the required upgrades.&lt;/p&gt;
 &lt;p&gt;The example-site upgrade was even simpler than for the OTel website. The key
 changes (&lt;a href=&#34;https://github.com/google/docsy-example/pull/221&#34;&gt;PR #221&lt;/a&gt;) were
 mainly confined to the landing page of each natural language:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Utility-class renames, such as &lt;code&gt;.ml-*&lt;/code&gt; and &lt;code&gt;.mr-*&lt;/code&gt; to &lt;code&gt;.ms-*&lt;/code&gt; and &lt;code&gt;.me-*&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/docs/adding-content/shortcodes/#blockssection&#34;&gt;blocks/section&lt;/a&gt; changes
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/2017/01/05/docsy-shortcodes/#blockssection&#34;&gt;blocks/section&lt;/a&gt; changes
 (&lt;a href=&#34;https://github.com/google/docsy/pull/1472&#34;&gt;PR #1472&lt;/a&gt;):
 &lt;ul&gt;
 &lt;li&gt;Language landing pages had to be renamed from &lt;code&gt;.html&lt;/code&gt; to &lt;code&gt;.md&lt;/code&gt; in support of
@@ -433,10 +511,10 @@ of Docsy and the Docsy example!&lt;/p&gt;
     
     <item>
       <title>Blog: Migrating to Bootstrap 5.2</title>
-      <link>https://drqiuslab.github.io/blog/2023/bootstrap-5-migration/</link>
+      <link>http://localhost:1313/blog/2023/06/05/migrating-to-bootstrap-5.2/</link>
       <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://drqiuslab.github.io/blog/2023/bootstrap-5-migration/</guid>
+      <guid>http://localhost:1313/blog/2023/06/05/migrating-to-bootstrap-5.2/</guid>
       <description>
         
         
@@ -652,7 +730,7 @@ The main pain point of the OTel website was upgrading to Bootstrap 5
 migration that didn&amp;rsquo;t apply to Docsy since Docsy uses only the most trivial of
 forms.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll have more to share about the OTel migration effort as well as general
-project-specific migration advice in a &lt;a href=&#34;https://drqiuslab.github.io/blog/2023/docsy-0.7/&#34;&gt;followup blog post&lt;/a&gt;. In the meantime,
+project-specific migration advice in a &lt;a href=&#34;http://localhost:1313/blog/2023/08/03/upgrading-to-docsy-0.7-bootstrap-5/&#34;&gt;followup blog post&lt;/a&gt;. In the meantime,
 I hope that you have found parts of this technical article helpful for your own
 migration efforts.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.cncf.io/projects/&#34;&gt;CNCF project&lt;/a&gt; websites eager to migrate can send
@@ -682,10 +760,10 @@ on May 30. There will be a separate migration effort to bring
     
     <item>
       <title>Blog: Hello Docsy!</title>
-      <link>https://drqiuslab.github.io/blog/2022/hello/</link>
+      <link>http://localhost:1313/blog/2022/04/07/hello-docsy/</link>
       <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://drqiuslab.github.io/blog/2022/hello/</guid>
+      <guid>http://localhost:1313/blog/2022/04/07/hello-docsy/</guid>
       <description>
         
         

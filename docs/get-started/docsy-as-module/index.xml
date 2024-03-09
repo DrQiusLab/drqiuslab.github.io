@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FHS-BAP-Docs – Use Docsy as a Hugo Module</title>
-    <link>https://drqiuslab.github.io/docs/get-started/docsy-as-module/</link>
+    <link>http://localhost:1313/docs/get-started/docsy-as-module/</link>
     <description>Recent content in Use Docsy as a Hugo Module on FHS-BAP-Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 08 Dec 2021 10:33:16 +0100</lastBuildDate>
     
-	  <atom:link href="https://drqiuslab.github.io/docs/get-started/docsy-as-module/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/docs/get-started/docsy-as-module/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>Docs: Before you begin</title>
-      <link>https://drqiuslab.github.io/docs/get-started/docsy-as-module/installation-prerequisites/</link>
+      <link>http://localhost:1313/docs/2021/12/08/before-you-begin/</link>
       <pubDate>Wed, 08 Dec 2021 11:12:59 +0100</pubDate>
       
-      <guid>https://drqiuslab.github.io/docs/get-started/docsy-as-module/installation-prerequisites/</guid>
+      <guid>http://localhost:1313/docs/2021/12/08/before-you-begin/</guid>
       <description>
         
         
@@ -127,8 +127,8 @@ SyntaxError: Unexpected identifier
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
 &lt;p&gt;With all prerequisites installed, choose how to start off with your new Hugo site&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/docs/get-started/docsy-as-module/example-site-as-template/&#34;&gt;Start with a prepopulated site (for beginners)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/docs/get-started/docsy-as-module/start-from-scratch/&#34;&gt;Start site from scratch (for experts)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/2021/12/08/create-a-new-site-start-with-a-prepopulated-site/&#34;&gt;Start with a prepopulated site (for beginners)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/2021/12/08/create-a-new-site-start-a-new-site-from-scratch/&#34;&gt;Start site from scratch (for experts)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -136,14 +136,14 @@ SyntaxError: Unexpected identifier
     
     <item>
       <title>Docs: Create a new site: start with a prepopulated site</title>
-      <link>https://drqiuslab.github.io/docs/get-started/docsy-as-module/example-site-as-template/</link>
+      <link>http://localhost:1313/docs/2021/12/08/create-a-new-site-start-with-a-prepopulated-site/</link>
       <pubDate>Wed, 08 Dec 2021 09:21:54 +0100</pubDate>
       
-      <guid>https://drqiuslab.github.io/docs/get-started/docsy-as-module/example-site-as-template/</guid>
+      <guid>http://localhost:1313/docs/2021/12/08/create-a-new-site-start-with-a-prepopulated-site/</guid>
       <description>
         
         
-        &lt;p&gt;The simplest way to create a new Docsy site is to use the source of the &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Docsy example site&lt;/a&gt; as starting point. This approach gives you a skeleton structure for your site, with top-level and documentation sections and templates that you can modify as necessary. The example site automatically pulls in the Docsy theme as a &lt;a href=&#34;https://gohugo.io/hugo-modules/&#34;&gt;Hugo Module&lt;/a&gt;, so it&amp;rsquo;s easy to &lt;a href=&#34;https://drqiuslab.github.io/docs/updating/updating-hugo-module/&#34;&gt;keep up to date&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;The simplest way to create a new Docsy site is to use the source of the &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Docsy example site&lt;/a&gt; as starting point. This approach gives you a skeleton structure for your site, with top-level and documentation sections and templates that you can modify as necessary. The example site automatically pulls in the Docsy theme as a &lt;a href=&#34;https://gohugo.io/hugo-modules/&#34;&gt;Hugo Module&lt;/a&gt;, so it&amp;rsquo;s easy to &lt;a href=&#34;http://localhost:1313/docs/1/01/01/update-your-docsy-hugo-module/&#34;&gt;keep up to date&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you prefer to create a site from scratch, follow the instructions in Start a site from scratch.&lt;/p&gt;
 &lt;h2 id=&#34;tldr-setup-for-the-impatient-expert&#34;&gt;TL;DR: Setup for the impatient expert&lt;/h2&gt;
 &lt;p&gt;At your Unix shell or Windows command line, run the following command:&lt;/p&gt;
@@ -204,13 +204,13 @@ You can find details of what these configuration settings do in the &lt;a href=&
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Preview your site in your browser at: &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313&lt;/a&gt;.
 Thanks to Hugo&amp;rsquo;s live preview, you can immediately see the effect of changes that you are making to the source files of your local repo.
 Use &lt;code&gt;Ctrl + c&lt;/code&gt; to stop the Hugo server whenever you like.
-&lt;a href=&#34;https://drqiuslab.github.io/docs/get-started/known_issues/#macos&#34;&gt;See the known issues on MacOS&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://localhost:1313/docs/2021/12/08/known-issues/#macos&#34;&gt;See the known issues on MacOS&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Add some &lt;a href=&#34;https://drqiuslab.github.io/docs/get-started/basic-configuration/&#34;&gt;basic configuration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/docs/adding-content/&#34;&gt;Edit existing content and add more pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/docs/adding-content/lookandfeel/&#34;&gt;Customize your site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add some &lt;a href=&#34;http://localhost:1313/docs/2021/12/08/basic-site-configuration/&#34;&gt;basic configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/&#34;&gt;Edit existing content and add more pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/2017/01/05/look-and-feel/&#34;&gt;Customize your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -218,15 +218,15 @@ Use &lt;code&gt;Ctrl + c&lt;/code&gt; to stop the Hugo server whenever you like.
     
     <item>
       <title>Docs: Create a new site: Start a new site from scratch</title>
-      <link>https://drqiuslab.github.io/docs/get-started/docsy-as-module/start-from-scratch/</link>
+      <link>http://localhost:1313/docs/2021/12/08/create-a-new-site-start-a-new-site-from-scratch/</link>
       <pubDate>Wed, 08 Dec 2021 09:21:54 +0100</pubDate>
       
-      <guid>https://drqiuslab.github.io/docs/get-started/docsy-as-module/start-from-scratch/</guid>
+      <guid>http://localhost:1313/docs/2021/12/08/create-a-new-site-start-a-new-site-from-scratch/</guid>
       <description>
         
         
-        &lt;p&gt;The simplest approach to creating a Docsy site is &lt;a href=&#34;https://drqiuslab.github.io/docs/get-started/docsy-as-module/example-site-as-template/&#34;&gt;copying our example site&lt;/a&gt;. However, if you&amp;rsquo;re an experienced Hugo user or the site structure of our example site doesn&amp;rsquo;t meet your needs, you may prefer to create a new site from scratch. With this option, you&amp;rsquo;ll get Docsy look and feel, navigation, and other features, but you&amp;rsquo;ll need to specify your own site structure.&lt;/p&gt;
-&lt;p&gt;These instructions give you a minimum file structure for your site project only, so that you build and extend your actual site step by step. The first step is adding the Docsy theme as a &lt;a href=&#34;https://gohugo.io/hugo-modules/&#34;&gt;Hugo Module&lt;/a&gt; to your site. If needed, you can easily &lt;a href=&#34;https://drqiuslab.github.io/docs/updating/&#34;&gt;update&lt;/a&gt; the module to the latest revision from the Docsy GitHub repo.&lt;/p&gt;
+        &lt;p&gt;The simplest approach to creating a Docsy site is &lt;a href=&#34;http://localhost:1313/docs/2021/12/08/create-a-new-site-start-with-a-prepopulated-site/&#34;&gt;copying our example site&lt;/a&gt;. However, if you&amp;rsquo;re an experienced Hugo user or the site structure of our example site doesn&amp;rsquo;t meet your needs, you may prefer to create a new site from scratch. With this option, you&amp;rsquo;ll get Docsy look and feel, navigation, and other features, but you&amp;rsquo;ll need to specify your own site structure.&lt;/p&gt;
+&lt;p&gt;These instructions give you a minimum file structure for your site project only, so that you build and extend your actual site step by step. The first step is adding the Docsy theme as a &lt;a href=&#34;https://gohugo.io/hugo-modules/&#34;&gt;Hugo Module&lt;/a&gt; to your site. If needed, you can easily &lt;a href=&#34;http://localhost:1313/docs/updating/&#34;&gt;update&lt;/a&gt; the module to the latest revision from the Docsy GitHub repo.&lt;/p&gt;
 &lt;h2 id=&#34;tldr-setup-for-the-impatient-expert&#34;&gt;TL;DR: Setup for the impatient expert&lt;/h2&gt;
 &lt;p&gt;At your command prompt, run the following:&lt;/p&gt;
 
@@ -405,14 +405,14 @@ Depending on your environment you may need to tweak them slightly, for example b
 &lt;h3 id=&#34;preview-your-site&#34;&gt;Preview your site&lt;/h3&gt;
 &lt;p&gt;To build and preview your site locally:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By default, your site will be available at &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313&lt;/a&gt;. When encountering problems, have a look at the &lt;a href=&#34;https://drqiuslab.github.io/docs/get-started/known_issues/#macos&#34;&gt;known issues&lt;/a&gt; on MacOS.&lt;/p&gt;
-&lt;p&gt;You may get Hugo errors for missing parameters and values when you try to build your site. This is usually because you&amp;rsquo;re missing default values for some configuration settings that Docsy uses - once you add them your site should build correctly. You can find out how to add configuration in &lt;a href=&#34;https://drqiuslab.github.io/docs/get-started/basic-configuration/&#34;&gt;Basic site configuration&lt;/a&gt; - we recommend copying the example site configuration even if you&amp;rsquo;re creating a site from scratch as it provides defaults for many required configuration parameters.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By default, your site will be available at &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313&lt;/a&gt;. When encountering problems, have a look at the &lt;a href=&#34;http://localhost:1313/docs/2021/12/08/known-issues/#macos&#34;&gt;known issues&lt;/a&gt; on MacOS.&lt;/p&gt;
+&lt;p&gt;You may get Hugo errors for missing parameters and values when you try to build your site. This is usually because you&amp;rsquo;re missing default values for some configuration settings that Docsy uses - once you add them your site should build correctly. You can find out how to add configuration in &lt;a href=&#34;http://localhost:1313/docs/2021/12/08/basic-site-configuration/&#34;&gt;Basic site configuration&lt;/a&gt; - we recommend copying the example site configuration even if you&amp;rsquo;re creating a site from scratch as it provides defaults for many required configuration parameters.&lt;/p&gt;
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Add some &lt;a href=&#34;https://drqiuslab.github.io/docs/get-started/basic-configuration/&#34;&gt;basic configuration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/docs/adding-content/&#34;&gt;Add content and customize your site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Get some ideas from our &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Example Site&lt;/a&gt; and other &lt;a href=&#34;https://drqiuslab.github.io/docs/examples/&#34;&gt;Examples&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drqiuslab.github.io/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add some &lt;a href=&#34;http://localhost:1313/docs/2021/12/08/basic-site-configuration/&#34;&gt;basic configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/&#34;&gt;Add content and customize your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Get some ideas from our &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Example Site&lt;/a&gt; and other &lt;a href=&#34;http://localhost:1313/docs/examples/&#34;&gt;Examples&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
