@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="http://localhost:1313/blog/">
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/blog/index.xml">
+<link rel="canonical" type="text/html" href="https://drqiuslab.github.io/blog/">
+<link rel="alternate" type="application/rss&#43;xml" href="https://drqiuslab.github.io/blog/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -24,7 +24,7 @@
 <meta property="og:title" content="Blog" />
 <meta property="og:description" content="Docsy does docs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/blog/" /><meta property="og:site_name" content="FHS-BAP-Docs" />
+<meta property="og:url" content="https://drqiuslab.github.io/blog/" /><meta property="og:site_name" content="FHS-BAP-Docs" />
 
 <meta itemprop="name" content="Blog">
 <meta itemprop="description" content="Docsy does docs"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Blog"/>
@@ -33,8 +33,8 @@
 
 
 
-
-<link href="/scss/main.css" rel="stylesheet">
+<link rel="preload" href="/scss/main.min.f218e6ba263de6273c808e8b6407095cd4cc1127f939505c7906cc4ec2c5c37f.css" as="style">
+<link href="/scss/main.min.f218e6ba263de6273c808e8b6407095cd4cc1127f939505c7906cc4ec2c5c37f.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -71,7 +71,7 @@
   </div>
   <div class="d-none d-lg-block">
     <div class="td-search">
-  <div class="td-search--algolia" id="docsearch-1"></div>
+  <div class="td-search--algolia" id="docsearch-0"></div>
 </div>
   </div>
 </div>
@@ -250,14 +250,14 @@ This is the multi-page printable view of this section.
 ## -3.17721 -0.69176 -0.05439 -0.03486  0.58546  3.17849
 </code></pre><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">old.par</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#000">par</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mar</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">0.5</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">0.5</span><span style="color:#000;font-weight:bold">))</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">hist</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">col</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;cyan4&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">main</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">NULL</span><span style="color:#000;font-weight:bold">)</span>
-</span></span></code></pre></div><img src="http://localhost:1313/blog/2024/03/09/demo_002/index_files/figure-html/fig01-1.png" width="300" />
+</span></span></code></pre></div><img src="https://drqiuslab.github.io/blog/2024/03/09/demo_002/index_files/figure-html/fig01-1.png" width="300" />
 <h2 id="make-a-plot-test-2">Make a plot, test 2</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">ggplot</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mtcars</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">mapping</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">aes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">disp</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">y</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mpg</span><span style="color:#000;font-weight:bold">,</span> 
 </span></span><span style="display:flex;"><span>    <span style="color:#000">col</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factor</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">gear</span><span style="color:#000;font-weight:bold">)))</span> <span style="color:#ce5c00;font-weight:bold">+</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">geom_point</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">aes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">shape</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factor</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">gear</span><span style="color:#000;font-weight:bold">)),</span> <span style="color:#000">size</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">+</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">theme_gray</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">+</span> 
 </span></span><span style="display:flex;"><span>    <span style="color:#000">theme</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">legend.position</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">0.85</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">0.78</span><span style="color:#000;font-weight:bold">))</span>
-</span></span></code></pre></div><img src="http://localhost:1313/blog/2024/03/09/demo_002/index_files/figure-html/fig02-1.png" width="450" />
+</span></span></code></pre></div><img src="https://drqiuslab.github.io/blog/2024/03/09/demo_002/index_files/figure-html/fig02-1.png" width="450" />
 
 </div>
 
@@ -303,14 +303,14 @@ This is the multi-page printable view of this section.
 ## -3.17721 -0.69176 -0.05439 -0.03486  0.58546  3.17849
 </code></pre><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">old.par</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#000">par</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mar</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">0.5</span><span style="color:#000;font-weight:bold">))</span>
 </span></span><span style="display:flex;"><span><span style="color:#000">hist</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">col</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;cyan4&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">main</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;First plot&#34;</span><span style="color:#000;font-weight:bold">)</span>
-</span></span></code></pre></div><img src="http://localhost:1313/blog/2024/03/09/rplot_001/index_files/figure-html/fig01-1.png" width="300" />
+</span></span></code></pre></div><img src="https://drqiuslab.github.io/blog/2024/03/09/rplot_001/index_files/figure-html/fig01-1.png" width="300" />
 <h2 id="make-a-plot-test-3">Make a plot, test 3</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000">ggplot</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mtcars</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">mapping</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">aes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">disp</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">y</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">mpg</span><span style="color:#000;font-weight:bold">,</span> 
 </span></span><span style="display:flex;"><span>    <span style="color:#000">col</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factor</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">gear</span><span style="color:#000;font-weight:bold">)))</span> <span style="color:#ce5c00;font-weight:bold">+</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">geom_point</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">aes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">shape</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factor</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">gear</span><span style="color:#000;font-weight:bold">)),</span> <span style="color:#000">size</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">+</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">theme_gray</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">+</span> 
 </span></span><span style="display:flex;"><span>    <span style="color:#000">theme</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">legend.position</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">0.85</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">0.78</span><span style="color:#000;font-weight:bold">))</span>
-</span></span></code></pre></div><img src="http://localhost:1313/blog/2024/03/09/rplot_001/index_files/figure-html/fig02-1.png" width="450" />
+</span></span></code></pre></div><img src="https://drqiuslab.github.io/blog/2024/03/09/rplot_001/index_files/figure-html/fig02-1.png" width="450" />
 
 </div>
 
@@ -1174,8 +1174,8 @@ window.markmap = {
 </script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
 <script src='/js/deflate.js'></script>
-<script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src="/js/main.min.d3318b626beabca2e352debf2c1efd8347e282517eeb2b0e770128c3aec202ea.js" integrity="sha256-0zGLYmvqvKLjUt6/LB79g0figlF&#43;6ysOdwEow67CAuo=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.f724d3de49218995223b7316aa2e53e2b34bf42026bf399ebb21bb02212402d1.js" integrity="sha256-9yTT3kkhiZUiO3MWqi5T4rNL9CAmvzmeuyG7AiEkAtE=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.5.2"
   integrity="sha512-LzxWPDNELae1RSIsDRSitKYPJpRtjYo22GbOl+d+xLcjKiZQRRdxSTI3cRRHw7O05e0MbIIu33QnU2rt6ymQ6A=="
   crossorigin="anonymous" ></script>

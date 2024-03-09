@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FHS-BAP-Docs – Update Docsy</title>
-    <link>http://localhost:1313/docs/updating/</link>
+    <link>https://drqiuslab.github.io/docs/updating/</link>
     <description>Recent content in Update Docsy on FHS-BAP-Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/docs/updating/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://drqiuslab.github.io/docs/updating/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Update your Docsy Hugo Module</title>
-      <link>http://localhost:1313/docs/1/01/01/update-your-docsy-hugo-module/</link>
+      <link>https://drqiuslab.github.io/docs/1/01/01/update-your-docsy-hugo-module/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/1/01/01/update-your-docsy-hugo-module/</guid>
+      <guid>https://drqiuslab.github.io/docs/1/01/01/update-your-docsy-hugo-module/</guid>
       <description>
         
         
@@ -51,10 +51,10 @@ theme, for example:&lt;/p&gt;
     
     <item>
       <title>Docs: Update Docsy without Hugo Modules</title>
-      <link>http://localhost:1313/docs/1/01/01/update-docsy-without-hugo-modules/</link>
+      <link>https://drqiuslab.github.io/docs/1/01/01/update-docsy-without-hugo-modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/1/01/01/update-docsy-without-hugo-modules/</guid>
+      <guid>https://drqiuslab.github.io/docs/1/01/01/update-docsy-without-hugo-modules/</guid>
       <description>
         
         
@@ -64,12 +64,12 @@ theme, for example:&lt;/p&gt;
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
 
-    If you intend to update your site, consider &lt;a href=&#34;http://localhost:1313/docs/1/01/01/migrate-to-hugo-modules/&#34;&gt;converting your site to Hugo Modules&lt;/a&gt;. After conversion, it&amp;rsquo;s even simpler to update Docsy!
+    If you intend to update your site, consider &lt;a href=&#34;https://drqiuslab.github.io/docs/1/01/01/migrate-to-hugo-modules/&#34;&gt;converting your site to Hugo Modules&lt;/a&gt;. After conversion, it&amp;rsquo;s even simpler to update Docsy!
 
 &lt;/div&gt;
 
 &lt;h2 id=&#34;update-your-docsy-submodule&#34;&gt;Update your Docsy submodule&lt;/h2&gt;
-&lt;p&gt;If you are using the &lt;a href=&#34;http://localhost:1313/docs/2021/12/08/other-setup-options/#option-1-docsy-as-a-git-submodule&#34;&gt;Docsy theme as a submodule&lt;/a&gt; in your project, here&amp;rsquo;s how you update the submodule:&lt;/p&gt;
+&lt;p&gt;If you are using the &lt;a href=&#34;https://drqiuslab.github.io/docs/2021/12/08/other-setup-options/#option-1-docsy-as-a-git-submodule&#34;&gt;Docsy theme as a submodule&lt;/a&gt; in your project, here&amp;rsquo;s how you update the submodule:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Navigate to the root of your local project, then run:&lt;/p&gt;
@@ -86,7 +86,7 @@ theme, for example:&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;route-2-update-your-docsy-clone&#34;&gt;Route 2: Update your Docsy clone&lt;/h2&gt;
-&lt;p&gt;If you &lt;a href=&#34;http://localhost:1313/docs/2021/12/08/other-setup-options/#option-2-clone-the-docsy-theme&#34;&gt;cloned the Docsy theme&lt;/a&gt; into
+&lt;p&gt;If you &lt;a href=&#34;https://drqiuslab.github.io/docs/2021/12/08/other-setup-options/#option-2-clone-the-docsy-theme&#34;&gt;cloned the Docsy theme&lt;/a&gt; into
 the &lt;code&gt;themes&lt;/code&gt; folder in your project, then you use the &lt;code&gt;git pull&lt;/code&gt; command:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -109,10 +109,10 @@ the &lt;code&gt;themes&lt;/code&gt; folder in your project, then you use the &lt
     
     <item>
       <title>Docs: Migrate to Hugo Modules</title>
-      <link>http://localhost:1313/docs/1/01/01/migrate-to-hugo-modules/</link>
+      <link>https://drqiuslab.github.io/docs/1/01/01/migrate-to-hugo-modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/1/01/01/migrate-to-hugo-modules/</guid>
+      <guid>https://drqiuslab.github.io/docs/1/01/01/migrate-to-hugo-modules/</guid>
       <description>
         
         
