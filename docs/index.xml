@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FHS-BAP-Docs – Welcome to Docsy</title>
-    <link>http://localhost:1313/docs/</link>
+    <link>http://localhost:4321/docs/</link>
     <description>Recent content in Welcome to Docsy on FHS-BAP-Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:4321/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Before you begin</title>
-      <link>http://localhost:1313/docs/get-started/docsy-as-module/installation-prerequisites/</link>
+      <link>http://localhost:4321/docs/get-started/docsy-as-module/installation-prerequisites/</link>
       <pubDate>Wed, 08 Dec 2021 11:12:59 +0100</pubDate>
       
-      <guid>http://localhost:1313/docs/get-started/docsy-as-module/installation-prerequisites/</guid>
+      <guid>http://localhost:4321/docs/get-started/docsy-as-module/installation-prerequisites/</guid>
       <description>
         
         
@@ -126,8 +126,8 @@ SyntaxError: Unexpected identifier
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
 &lt;p&gt;With all prerequisites installed, choose how to start off with your new Hugo site&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/get-started/docsy-as-module/example-site-as-template/&#34;&gt;Start with a prepopulated site (for beginners)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/get-started/docsy-as-module/start-from-scratch/&#34;&gt;Start site from scratch (for experts)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/get-started/docsy-as-module/example-site-as-template/&#34;&gt;Start with a prepopulated site (for beginners)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/get-started/docsy-as-module/start-from-scratch/&#34;&gt;Start site from scratch (for experts)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -135,16 +135,16 @@ SyntaxError: Unexpected identifier
     
     <item>
       <title>Docs: Adding Content</title>
-      <link>http://localhost:1313/docs/adding-content/content/</link>
+      <link>http://localhost:4321/docs/adding-content/content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/content/</guid>
+      <guid>http://localhost:4321/docs/adding-content/content/</guid>
       <description>
         
         
         &lt;p&gt;So you&amp;rsquo;ve got a new Hugo website with Docsy, now it&amp;rsquo;s time to add some content! This page tells you how to use the theme to add and structure your site content.&lt;/p&gt;
 &lt;h2 id=&#34;content-root-directory&#34;&gt;Content root directory&lt;/h2&gt;
-&lt;p&gt;You add content for your site under the &lt;strong&gt;content root directory&lt;/strong&gt; of your Hugo site project - either &lt;code&gt;content/&lt;/code&gt; or a &lt;a href=&#34;http://localhost:1313/docs/language/&#34;&gt;language-specific&lt;/a&gt; root like &lt;code&gt;content/en/&lt;/code&gt;. The main exception here is static files that you don&amp;rsquo;t want built into your site: you can find out more about where you add these below in &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#adding-static-content&#34;&gt;Adding static content&lt;/a&gt;. The files in your content root directory are typically grouped in subdirectories corresponding to your site&amp;rsquo;s sections and templates, which we&amp;rsquo;ll look at in &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#content-sections-and-templates&#34;&gt;Content sections and templates&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You add content for your site under the &lt;strong&gt;content root directory&lt;/strong&gt; of your Hugo site project - either &lt;code&gt;content/&lt;/code&gt; or a &lt;a href=&#34;http://localhost:4321/docs/language/&#34;&gt;language-specific&lt;/a&gt; root like &lt;code&gt;content/en/&lt;/code&gt;. The main exception here is static files that you don&amp;rsquo;t want built into your site: you can find out more about where you add these below in &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#adding-static-content&#34;&gt;Adding static content&lt;/a&gt;. The files in your content root directory are typically grouped in subdirectories corresponding to your site&amp;rsquo;s sections and templates, which we&amp;rsquo;ll look at in &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#content-sections-and-templates&#34;&gt;Content sections and templates&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can find out more about Hugo directory structure in &lt;a href=&#34;https://gohugo.io/getting-started/directory-structure/#directory-structure-explained&#34;&gt;Directory Structure Explained&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;content-sections-and-templates&#34;&gt;Content sections and templates&lt;/h2&gt;
 &lt;p&gt;Hugo builds your site pages using the content files you provide plus any templates provided by your site&amp;rsquo;s theme. These templates (or &lt;em&gt;&amp;ldquo;layouts&amp;rdquo;&lt;/em&gt; in Hugo terminology) include things like your page&amp;rsquo;s headers, footers, navigation, and links to stylesheets: essentially, everything except your page&amp;rsquo;s specific content. The templates in turn can be made up of &lt;em&gt;partials&lt;/em&gt;: little reusable snippets of HTML for page elements like headers, search boxes, and more.&lt;/p&gt;
@@ -154,11 +154,11 @@ SyntaxError: Unexpected identifier
 &lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/tree/main/layouts/blog&#34;&gt;&lt;code&gt;blog&lt;/code&gt;&lt;/a&gt; is for pages in your site&amp;rsquo;s Blog.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/tree/main/layouts/community&#34;&gt;&lt;code&gt;community&lt;/code&gt;&lt;/a&gt; is for your site&amp;rsquo;s Community page.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;It also provides a &lt;a href=&#34;https://github.com/google/docsy/tree/main/layouts/_default&#34;&gt;default &amp;ldquo;landing page&amp;rdquo; type of template&lt;/a&gt; with the site header and footer, but no left nav, that you can use for any other section. In this site and our example site it&amp;rsquo;s used for the site &lt;a href=&#34;http://localhost:1313/&#34;&gt;home page&lt;/a&gt; and the &lt;a href=&#34;http://localhost:1313/about/&#34;&gt;About&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;It also provides a &lt;a href=&#34;https://github.com/google/docsy/tree/main/layouts/_default&#34;&gt;default &amp;ldquo;landing page&amp;rdquo; type of template&lt;/a&gt; with the site header and footer, but no left nav, that you can use for any other section. In this site and our example site it&amp;rsquo;s used for the site &lt;a href=&#34;http://localhost:4321/&#34;&gt;home page&lt;/a&gt; and the &lt;a href=&#34;http://localhost:4321/about/&#34;&gt;About&lt;/a&gt; page.&lt;/p&gt;
 &lt;p&gt;Each top-level &lt;strong&gt;section&lt;/strong&gt; in your site corresponds to a &lt;strong&gt;directory&lt;/strong&gt; in your site content root. Hugo automatically applies the appropriate &lt;strong&gt;template&lt;/strong&gt; for that section, depending on which folder the content is in. For example, this page is in the &lt;code&gt;docs&lt;/code&gt; subdirectory of the site&amp;rsquo;s content root directory &lt;code&gt;content/en/&lt;/code&gt;, so Hugo automatically applies the &lt;code&gt;docs&lt;/code&gt; template. You can override this by explicitly specifying a template or content type for a particular page.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;ve copied the example site, you already have appropriately named top-level section directories for using Docsy&amp;rsquo;s templates, each with an index page ( &lt;code&gt;_index.md&lt;/code&gt; or &lt;code&gt;index.html&lt;/code&gt;) page for users to land on. These top-level sections also appear in the example site&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/docs/adding-content/navigation/#top-level-menu&#34;&gt;top-level menu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve copied the example site, you already have appropriately named top-level section directories for using Docsy&amp;rsquo;s templates, each with an index page ( &lt;code&gt;_index.md&lt;/code&gt; or &lt;code&gt;index.html&lt;/code&gt;) page for users to land on. These top-level sections also appear in the example site&amp;rsquo;s &lt;a href=&#34;http://localhost:4321/docs/adding-content/navigation/#top-level-menu&#34;&gt;top-level menu&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;custom-sections&#34;&gt;Custom sections&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;ve copied the example site and &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; want to use one of the provided content sections, just delete the appropriate content subdirectory. Similarly, if you want to add a top-level section, just add a new subdirectory, though you&amp;rsquo;ll need to specify the layout or content type explicitly in the &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#page-frontmatter&#34;&gt;frontmatter&lt;/a&gt; of each page if you want to use any existing Docsy template other than the default one. For example, if you create a new directory &lt;code&gt;content/en/amazing&lt;/code&gt; and want one or more pages in that custom section to use Docsy&amp;rsquo;s &lt;code&gt;docs&lt;/code&gt; template, you add &lt;code&gt;type: docs&lt;/code&gt; to the frontmatter of each page:&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve copied the example site and &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; want to use one of the provided content sections, just delete the appropriate content subdirectory. Similarly, if you want to add a top-level section, just add a new subdirectory, though you&amp;rsquo;ll need to specify the layout or content type explicitly in the &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#page-frontmatter&#34;&gt;frontmatter&lt;/a&gt; of each page if you want to use any existing Docsy template other than the default one. For example, if you create a new directory &lt;code&gt;content/en/amazing&lt;/code&gt; and want one or more pages in that custom section to use Docsy&amp;rsquo;s &lt;code&gt;docs&lt;/code&gt; template, you add &lt;code&gt;type: docs&lt;/code&gt; to the frontmatter of each page:&lt;/p&gt;
 
 
 
@@ -490,9 +490,9 @@ SyntaxError: Unexpected identifier
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The minimum frontmatter you need to provide is a title: everything else is up to you! However, if you leave out the page weight, your &lt;a href=&#34;http://localhost:1313/docs/adding-content/navigation/&#34;&gt;navigation&lt;/a&gt; may get a little disorganized. You may also want to include &lt;code&gt;description&lt;/code&gt; since Docsy uses that to generate the meta &lt;code&gt;description&lt;/code&gt; tag used by search engines. See &lt;a href=&#34;http://localhost:1313/docs/adding-content/feedback/#search-engine-optimization-meta-tags&#34;&gt;Search Engine Optimization (SEO) meta tags&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;The minimum frontmatter you need to provide is a title: everything else is up to you! However, if you leave out the page weight, your &lt;a href=&#34;http://localhost:4321/docs/adding-content/navigation/&#34;&gt;navigation&lt;/a&gt; may get a little disorganized. You may also want to include &lt;code&gt;description&lt;/code&gt; since Docsy uses that to generate the meta &lt;code&gt;description&lt;/code&gt; tag used by search engines. See &lt;a href=&#34;http://localhost:4321/docs/adding-content/feedback/#search-engine-optimization-meta-tags&#34;&gt;Search Engine Optimization (SEO) meta tags&lt;/a&gt; for details.&lt;/p&gt;
 &lt;h2 id=&#34;page-contents-and-markup&#34;&gt;Page contents and markup&lt;/h2&gt;
-&lt;p&gt;By default you create pages in a Docsy site as simple &lt;a href=&#34;https://gohugo.io/content-management/formats/&#34;&gt;Markdown or HTML files&lt;/a&gt; with &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#page-frontmatter&#34;&gt;page frontmatter&lt;/a&gt;, as described above.
+&lt;p&gt;By default you create pages in a Docsy site as simple &lt;a href=&#34;https://gohugo.io/content-management/formats/&#34;&gt;Markdown or HTML files&lt;/a&gt; with &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#page-frontmatter&#34;&gt;page frontmatter&lt;/a&gt;, as described above.
 As of version 0.100, &lt;a href=&#34;https://github.com/yuin/goldmark/&#34;&gt;Goldmark&lt;/a&gt; is the only Markdown parser supported by Hugo.&lt;/p&gt;
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
@@ -564,14 +564,14 @@ As of version 0.100, &lt;a href=&#34;https://github.com/yuin/goldmark/&#34;&gt;G
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;p&gt;In addition to your marked-up text, you can also use Hugo and Docsy&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;: reusable chunks of HTML that you can use to quickly build your pages. Find out more about shortcodes in &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/&#34;&gt;Docsy Shortcodes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In addition to your marked-up text, you can also use Hugo and Docsy&amp;rsquo;s &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;: reusable chunks of HTML that you can use to quickly build your pages. Find out more about shortcodes in &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/&#34;&gt;Docsy Shortcodes&lt;/a&gt;.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
 
     &lt;p&gt;Hugo also supports adding content using other markups using &lt;a href=&#34;https://gohugo.io/content-management/formats/#additional-formats-through-external-helpers&#34;&gt;external parsers as helpers&lt;/a&gt;. For example, you can add content in RST using &lt;code&gt;rst2html&lt;/code&gt; as an external parser (though be aware this does not support all flavors of RST, such as Sphinx RST). Similarly, you can use &lt;code&gt;asciidoctor&lt;/code&gt; to parse Asciidoc files, or &lt;code&gt;pandoc&lt;/code&gt; for other formats.&lt;/p&gt;
-&lt;p&gt;External parsers may not be suitable for use with all deployment options, as you&amp;rsquo;ll need to install the external parser and run Hugo yourself to generate your site (so, for example, you won&amp;rsquo;t be able to use &lt;a href=&#34;http://localhost:1313/docs/deployment/#deployment-with-netlify&#34;&gt;Netlify&amp;rsquo;s continuous deployment feature&lt;/a&gt;). In addition, adding an external parser may cause performance issues building larger sites.&lt;/p&gt;
+&lt;p&gt;External parsers may not be suitable for use with all deployment options, as you&amp;rsquo;ll need to install the external parser and run Hugo yourself to generate your site (so, for example, you won&amp;rsquo;t be able to use &lt;a href=&#34;http://localhost:4321/docs/deployment/#deployment-with-netlify&#34;&gt;Netlify&amp;rsquo;s continuous deployment feature&lt;/a&gt;). In addition, adding an external parser may cause performance issues building larger sites.&lt;/p&gt;
 
 
 &lt;/div&gt;
@@ -579,12 +579,12 @@ As of version 0.100, &lt;a href=&#34;https://github.com/yuin/goldmark/&#34;&gt;G
 &lt;h3 id=&#34;working-with-links&#34;&gt;Working with links&lt;/h3&gt;
 &lt;p&gt;Hugo lets you specify links using normal Markdown syntax, though remember that you need to specify links relative to your site&amp;rsquo;s root URL, and that relative URLs are left unchanged by Hugo in your site&amp;rsquo;s generated HTML.&lt;/p&gt;
 &lt;p&gt;Alternatively you can use Hugo&amp;rsquo;s helper &lt;a href=&#34;https://gohugo.io/content-management/cross-references/&#34;&gt;&lt;code&gt;ref&lt;/code&gt; and &lt;code&gt;relref&lt;/code&gt; shortcodes&lt;/a&gt; for creating internal links that resolve to the correct URL. However, be aware this means your links will not appear as links at all if a user views your page outside your generated site, for example using the rendered Markdown feature in GitHub&amp;rsquo;s web UI.&lt;/p&gt;
-&lt;p&gt;You can find (or add!) tips and gotchas for working with Hugo links in &lt;a href=&#34;http://localhost:1313/docs/best-practices/site-guidance/&#34;&gt;Hugo Tips&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find (or add!) tips and gotchas for working with Hugo links in &lt;a href=&#34;http://localhost:4321/docs/best-practices/site-guidance/&#34;&gt;Hugo Tips&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;content-style&#34;&gt;Content style&lt;/h3&gt;
 &lt;p&gt;We don&amp;rsquo;t mandate any particular style for your page contents. However, if you&amp;rsquo;d like some guidance on how to write and format clear, concise technical documentation, we recommend the &lt;a href=&#34;https://developers.google.com/style/&#34;&gt;Google Developer Documentation Style Guide&lt;/a&gt;, particularly the &lt;a href=&#34;https://developers.google.com/style/highlights&#34;&gt;Style Guide Highlights&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;page-bundles&#34;&gt;Page bundles&lt;/h2&gt;
 &lt;p&gt;You can create site pages as standalone files in their section or subsection directory, or as folders where the content is in the folder&amp;rsquo;s index page. Creating a folder for your page lets you &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;bundle&lt;/a&gt; images and other resources together with the content.&lt;/p&gt;
-&lt;p&gt;You can see examples of both approaches in this and our example site. For example, the source for this page is just a standalone file &lt;code&gt;/content/en/docs/adding-content.md&lt;/code&gt;. However the source for &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/&#34;&gt;Docsy Shortcodes&lt;/a&gt; in this site lives in &lt;code&gt;/content/en/docs/adding-content/shortcodes/index.md&lt;/code&gt;, with the image resource used by the page in the same &lt;code&gt;/shortcodes/&lt;/code&gt; directory. In Hugo terminology, this is called a &lt;em&gt;leaf bundle&lt;/em&gt; because it&amp;rsquo;s a folder containing all the data for a single site page without any child pages (and uses &lt;code&gt;index.md&lt;/code&gt; without an underscore).&lt;/p&gt;
+&lt;p&gt;You can see examples of both approaches in this and our example site. For example, the source for this page is just a standalone file &lt;code&gt;/content/en/docs/adding-content.md&lt;/code&gt;. However the source for &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/&#34;&gt;Docsy Shortcodes&lt;/a&gt; in this site lives in &lt;code&gt;/content/en/docs/adding-content/shortcodes/index.md&lt;/code&gt;, with the image resource used by the page in the same &lt;code&gt;/shortcodes/&lt;/code&gt; directory. In Hugo terminology, this is called a &lt;em&gt;leaf bundle&lt;/em&gt; because it&amp;rsquo;s a folder containing all the data for a single site page without any child pages (and uses &lt;code&gt;index.md&lt;/code&gt; without an underscore).&lt;/p&gt;
 &lt;p&gt;You can find out much more about managing resources with Hugo bundles in &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;Page Bundles&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;adding-docs-and-blog-posts&#34;&gt;Adding docs and blog posts&lt;/h2&gt;
 &lt;p&gt;The template you&amp;rsquo;ll probably use most often is the &lt;a href=&#34;https://github.com/google/docsy/blob/main/layouts/docs/baseof.html&#34;&gt;&lt;code&gt;docs&lt;/code&gt; template&lt;/a&gt; (as used in this page) or the very similar &lt;a href=&#34;https://github.com/google/docsy/blob/main/layouts/blog/baseof.html&#34;&gt;&lt;code&gt;blog&lt;/code&gt; template&lt;/a&gt;. Both these templates include:&lt;/p&gt;
@@ -593,14 +593,14 @@ As of version 0.100, &lt;a href=&#34;https://github.com/yuin/goldmark/&#34;&gt;G
 &lt;li&gt;GitHub links (populated from your site config) for readers to edit the page or create issues&lt;/li&gt;
 &lt;li&gt;a page menu&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;as well as the common header and footer used by all your site&amp;rsquo;s pages. Which template is applied depends on whether you&amp;rsquo;ve added the content to the &lt;code&gt;blog&lt;/code&gt; or &lt;code&gt;docs&lt;/code&gt; content directory. You can find out more about how the nav and page menu are created in &lt;a href=&#34;http://localhost:1313/docs/adding-content/navigation/&#34;&gt;Navigation and Search&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;as well as the common header and footer used by all your site&amp;rsquo;s pages. Which template is applied depends on whether you&amp;rsquo;ve added the content to the &lt;code&gt;blog&lt;/code&gt; or &lt;code&gt;docs&lt;/code&gt; content directory. You can find out more about how the nav and page menu are created in &lt;a href=&#34;http://localhost:4321/docs/adding-content/navigation/&#34;&gt;Navigation and Search&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;organizing-your-documentation&#34;&gt;Organizing your documentation&lt;/h3&gt;
 &lt;p&gt;While Docsy&amp;rsquo;s top-level sections let you create site sections for different types of content, you may also want to organize your docs content within your &lt;code&gt;docs&lt;/code&gt; section. For example, this site&amp;rsquo;s &lt;code&gt;docs&lt;/code&gt; section directory has multiple subdirectories for &lt;strong&gt;Getting Started&lt;/strong&gt;, &lt;strong&gt;Content and Customization&lt;/strong&gt;, and so on. Each subdirectory has an &lt;code&gt;_index.md&lt;/code&gt; (it could also be an &lt;code&gt;_index.html&lt;/code&gt;), which acts as a section index page and tells Hugo that the relevant directory is a subsection of your docs.&lt;/p&gt;
 &lt;p&gt;Docsy&amp;rsquo;s &lt;code&gt;docs&lt;/code&gt; layout gives you a left nav pane with an autogenerated nested menu based on your &lt;code&gt;docs&lt;/code&gt; file structure. Each standalone page or subsection &lt;code&gt;_index.md&lt;/code&gt; or &lt;code&gt;_index.html&lt;/code&gt;  page in the &lt;code&gt;docs/&lt;/code&gt; directory gets a top level menu item, using the link name and &lt;code&gt;weight&lt;/code&gt; metadata from the page or index.&lt;/p&gt;
-&lt;p&gt;To add docs to a subsection, just add your page files to the relevant subdirectory. Any pages that you add to a subsection in addition to the subsection index page will appear in a submenu (look to the left to see one in action!), again ordered by page &lt;code&gt;weight&lt;/code&gt;. Find out more about adding Docsy&amp;rsquo;s navigation metadata in &lt;a href=&#34;http://localhost:1313/docs/adding-content/navigation/&#34;&gt;Navigation and Search&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;ve copied the example site, you&amp;rsquo;ll already have some suggested subdirectories in your &lt;code&gt;docs&lt;/code&gt; directory, with guidance for what types of content to put in them and some example Markdown pages. You can find out more about organizing your content with Docsy in &lt;a href=&#34;http://localhost:1313/docs/best-practices/organizing-content/&#34;&gt;Organizing Your Content&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To add docs to a subsection, just add your page files to the relevant subdirectory. Any pages that you add to a subsection in addition to the subsection index page will appear in a submenu (look to the left to see one in action!), again ordered by page &lt;code&gt;weight&lt;/code&gt;. Find out more about adding Docsy&amp;rsquo;s navigation metadata in &lt;a href=&#34;http://localhost:4321/docs/adding-content/navigation/&#34;&gt;Navigation and Search&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve copied the example site, you&amp;rsquo;ll already have some suggested subdirectories in your &lt;code&gt;docs&lt;/code&gt; directory, with guidance for what types of content to put in them and some example Markdown pages. You can find out more about organizing your content with Docsy in &lt;a href=&#34;http://localhost:4321/docs/best-practices/organizing-content/&#34;&gt;Organizing Your Content&lt;/a&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;docs-section-landing-pages&#34;&gt;Docs section landing pages&lt;/h4&gt;
-&lt;p&gt;By default a docs section landing page (the &lt;code&gt;_index.md&lt;/code&gt; or &lt;code&gt;_index.html&lt;/code&gt; in the section directory) uses a layout that adds a formatted list of links to the pages in the section, with their frontmatter descriptions. The &lt;a href=&#34;http://localhost:1313/docs/adding-content/&#34;&gt;Content and Customization&lt;/a&gt; landing page in this site is a good example.&lt;/p&gt;
+&lt;p&gt;By default a docs section landing page (the &lt;code&gt;_index.md&lt;/code&gt; or &lt;code&gt;_index.html&lt;/code&gt; in the section directory) uses a layout that adds a formatted list of links to the pages in the section, with their frontmatter descriptions. The &lt;a href=&#34;http://localhost:4321/docs/adding-content/&#34;&gt;Content and Customization&lt;/a&gt; landing page in this site is a good example.&lt;/p&gt;
 &lt;p&gt;To display a simple bulleted list of links to the section&amp;rsquo;s pages instead, specify &lt;code&gt;simple_list: true&lt;/code&gt; in the landing page&amp;rsquo;s frontmatter:&lt;/p&gt;
 
 
@@ -894,11 +894,11 @@ As of version 0.100, &lt;a href=&#34;https://github.com/yuin/goldmark/&#34;&gt;G
 &lt;h2 id=&#34;working-with-top-level-landing-pages&#34;&gt;Working with top-level landing pages.&lt;/h2&gt;
 &lt;p&gt;Docsy&amp;rsquo;s &lt;a href=&#34;https://github.com/google/docsy/blob/main/layouts/docs/baseof.html&#34;&gt;default page template&lt;/a&gt; has no left nav and is useful for creating a home page for your site or other &amp;ldquo;landing&amp;rdquo; type pages.&lt;/p&gt;
 &lt;h3 id=&#34;customizing-the-example-site-pages&#34;&gt;Customizing the example site pages&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;ve copied the example site, you already have a simple site landing page in &lt;code&gt;content/en/_index.html&lt;/code&gt;. This is made up of Docsy&amp;rsquo;s provided Hugo shortcode &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;page blocks&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To customize the large landing image, which is in a &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/#blockscover&#34;&gt;cover&lt;/a&gt; block, replace the &lt;code&gt;content/en/featured-background.jpg&lt;/code&gt; file in your project with your own image (it can be called whatever you like as long as it has &lt;code&gt;background&lt;/code&gt; in the file name). You can remove or add as many blocks as you like, as well as adding your own custom content.&lt;/p&gt;
-&lt;p&gt;The example site also has an About page in &lt;code&gt;content/en/about/_index.html&lt;/code&gt; using the same Docsy template. Again, this is made up of &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;page blocks&lt;/a&gt;, including another background image in &lt;code&gt;content/en/about/featured-background.jpg&lt;/code&gt;. As with the site landing page, you can replace the image, remove or add blocks, or just add your own content.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve copied the example site, you already have a simple site landing page in &lt;code&gt;content/en/_index.html&lt;/code&gt;. This is made up of Docsy&amp;rsquo;s provided Hugo shortcode &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;page blocks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To customize the large landing image, which is in a &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/#blockscover&#34;&gt;cover&lt;/a&gt; block, replace the &lt;code&gt;content/en/featured-background.jpg&lt;/code&gt; file in your project with your own image (it can be called whatever you like as long as it has &lt;code&gt;background&lt;/code&gt; in the file name). You can remove or add as many blocks as you like, as well as adding your own custom content.&lt;/p&gt;
+&lt;p&gt;The example site also has an About page in &lt;code&gt;content/en/about/_index.html&lt;/code&gt; using the same Docsy template. Again, this is made up of &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;page blocks&lt;/a&gt;, including another background image in &lt;code&gt;content/en/about/featured-background.jpg&lt;/code&gt;. As with the site landing page, you can replace the image, remove or add blocks, or just add your own content.&lt;/p&gt;
 &lt;h3 id=&#34;building-your-own-landing-pages&#34;&gt;Building your own landing pages&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;ve just used the theme, you can still use all Docsy&amp;rsquo;s provided &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;page blocks&lt;/a&gt; (or any other content you want) to build your own landing pages in the same file locations.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve just used the theme, you can still use all Docsy&amp;rsquo;s provided &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;page blocks&lt;/a&gt; (or any other content you want) to build your own landing pages in the same file locations.&lt;/p&gt;
 &lt;h2 id=&#34;adding-a-community-page&#34;&gt;Adding a community page&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;community&lt;/code&gt; landing page template has boilerplate content that&amp;rsquo;s automatically filled in with the project name and community links specified in &lt;code&gt;hugo.toml&lt;/code&gt;/&lt;code&gt;hugo.yaml&lt;/code&gt;/&lt;code&gt;hugo.json&lt;/code&gt;, providing your users with quick links to resources that help them get involved in your project. The same links are also added by default to your site footer.&lt;/p&gt;
 
@@ -1187,7 +1187,7 @@ As of version 0.100, &lt;a href=&#34;https://github.com/yuin/goldmark/&#34;&gt;G
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
-&lt;p&gt;If you have enabled our &lt;a href=&#34;http://localhost:1313/docs/adding-content/print/&#34;&gt;print feature&lt;/a&gt; or otherwise specified section-level output formats in &lt;code&gt;hugo.toml&lt;/code&gt;/&lt;code&gt;hugo.yaml&lt;/code&gt;/&lt;code&gt;hugo.json&lt;/code&gt;, make sure that &lt;code&gt;&amp;quot;RSS&amp;quot;&lt;/code&gt; is listed as an output format, otherwise you won&amp;rsquo;t get section-level RSS feeds (and your blog section won&amp;rsquo;t get a nice orange RSS button). Your &lt;code&gt;hugo.toml&lt;/code&gt;/&lt;code&gt;hugo.yaml&lt;/code&gt;/&lt;code&gt;hugo.json&lt;/code&gt; specification overrides the Hugo default &lt;a href=&#34;https://gohugo.io/templates/output-formats/&#34;&gt;output formats&lt;/a&gt; for sections, which are HTML and RSS.&lt;/p&gt;
+&lt;p&gt;If you have enabled our &lt;a href=&#34;http://localhost:4321/docs/adding-content/print/&#34;&gt;print feature&lt;/a&gt; or otherwise specified section-level output formats in &lt;code&gt;hugo.toml&lt;/code&gt;/&lt;code&gt;hugo.yaml&lt;/code&gt;/&lt;code&gt;hugo.json&lt;/code&gt;, make sure that &lt;code&gt;&amp;quot;RSS&amp;quot;&lt;/code&gt; is listed as an output format, otherwise you won&amp;rsquo;t get section-level RSS feeds (and your blog section won&amp;rsquo;t get a nice orange RSS button). Your &lt;code&gt;hugo.toml&lt;/code&gt;/&lt;code&gt;hugo.yaml&lt;/code&gt;/&lt;code&gt;hugo.json&lt;/code&gt; specification overrides the Hugo default &lt;a href=&#34;https://gohugo.io/templates/output-formats/&#34;&gt;output formats&lt;/a&gt; for sections, which are HTML and RSS.&lt;/p&gt;
 
 
 
@@ -1255,7 +1255,7 @@ As of version 0.100, &lt;a href=&#34;https://github.com/yuin/goldmark/&#34;&gt;G
 
 &lt;/div&gt;
 &lt;h2 id=&#34;sitemap&#34;&gt;Sitemap&lt;/h2&gt;
-&lt;p&gt;Hugo creates a &lt;code&gt;sitemap.xml&lt;/code&gt; file for your generated site by default: for example, &lt;a href=&#34;http://localhost:1313/sitemap.xml&#34;&gt;here&amp;rsquo;s the sitemap&lt;/a&gt; for this site.&lt;/p&gt;
+&lt;p&gt;Hugo creates a &lt;code&gt;sitemap.xml&lt;/code&gt; file for your generated site by default: for example, &lt;a href=&#34;http://localhost:4321/sitemap.xml&#34;&gt;here&amp;rsquo;s the sitemap&lt;/a&gt; for this site.&lt;/p&gt;
 &lt;p&gt;You can configure the frequency with which your sitemap is updated, your sitemap filename, and the default page priority in your &lt;code&gt;hugo.toml&lt;/code&gt;/&lt;code&gt;hugo.yaml&lt;/code&gt;/&lt;code&gt;hugo.json&lt;/code&gt;:&lt;/p&gt;
 
 
@@ -1406,10 +1406,10 @@ As of version 0.100, &lt;a href=&#34;https://github.com/yuin/goldmark/&#34;&gt;G
     
     <item>
       <title>Docs: Update your Docsy Hugo Module</title>
-      <link>http://localhost:1313/docs/updating/updating-hugo-module/</link>
+      <link>http://localhost:4321/docs/updating/updating-hugo-module/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/updating/updating-hugo-module/</guid>
+      <guid>http://localhost:4321/docs/updating/updating-hugo-module/</guid>
       <description>
         
         
@@ -1441,15 +1441,15 @@ theme, for example:&lt;/p&gt;
     
     <item>
       <title>Docs: Other setup options</title>
-      <link>http://localhost:1313/docs/get-started/other-options/</link>
+      <link>http://localhost:4321/docs/get-started/other-options/</link>
       <pubDate>Wed, 08 Dec 2021 09:22:27 +0100</pubDate>
       
-      <guid>http://localhost:1313/docs/get-started/other-options/</guid>
+      <guid>http://localhost:4321/docs/get-started/other-options/</guid>
       <description>
         
         
         &lt;p&gt;If you don&amp;rsquo;t want to use
-&lt;a href=&#34;http://localhost:1313/docs/get-started/docsy-as-module/&#34;&gt;Docsy as a Hugo Module&lt;/a&gt; (for example if you
+&lt;a href=&#34;http://localhost:4321/docs/get-started/docsy-as-module/&#34;&gt;Docsy as a Hugo Module&lt;/a&gt; (for example if you
 do not want to install Go) but still don&amp;rsquo;t want to copy the theme files into
 your own repo, you can &lt;strong&gt;use Docsy as a
 &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Tools-Submodules&#34;&gt;Git submodule&lt;/a&gt;&lt;/strong&gt;. Using
@@ -1457,14 +1457,14 @@ submodules also lets Hugo use the theme files from Docsy repo, though is more
 complicated to maintain than the Hugo Modules approach. This is the approach
 used in older versions of the Docsy example site, and is still supported. If you
 are using Docsy as a submodule but would like to migrate to Hugo Modules, see
-our &lt;a href=&#34;http://localhost:1313/&#34;&gt;migration guide&lt;/a&gt;.&lt;/p&gt;
+our &lt;a href=&#34;http://localhost:4321/&#34;&gt;migration guide&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Alternatively if you don’t want Hugo to have to get the theme files from an
 external repo (for example, if you want to customize and maintain your own copy
 of the theme directly, or your deployment choice requires you to include a copy
 of the theme in your repository), you can &lt;strong&gt;clone the files directly into your
 site source&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Finally, you can &lt;strong&gt;install
-&lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#option-3-docsy-as-an-npm-package&#34;&gt;Docsy as an NPM package&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://localhost:4321/docs/get-started/other-options/#option-3-docsy-as-an-npm-package&#34;&gt;Docsy as an NPM package&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This guide provides instructions for all of these options, along with common
 prerequisites.&lt;/p&gt;
 &lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
@@ -1544,7 +1544,7 @@ shown):&lt;/p&gt;
 
     The PostCSS package installed by some older versions of Node is incompatible
 with Docsy. Check your version of Node against the &lt;strong&gt;active &lt;a href=&#34;https://nodejs.org/en/about/releases/&#34;&gt;LTS release&lt;/a&gt;&lt;/strong&gt;
-and upgrade, if necessary. For details, see &lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#node-get-the-latest-lts-release&#34;&gt;Node: Get the latest LTS
+and upgrade, if necessary. For details, see &lt;a href=&#34;http://localhost:4321/docs/get-started/other-options/#node-get-the-latest-lts-release&#34;&gt;Node: Get the latest LTS
 release&lt;/a&gt;.
 
 &lt;/div&gt;
@@ -1563,7 +1563,7 @@ following commands:&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Install postCSS as &lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#install-postcss&#34;&gt;instructed earlier&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Install postCSS as &lt;a href=&#34;http://localhost:4321/docs/get-started/other-options/#install-postcss&#34;&gt;instructed earlier&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Follow the instructions below for an existing site.&lt;/p&gt;
@@ -1600,7 +1600,7 @@ If you are using hugo 0.110 or above, consider renaming your &lt;code&gt;config.
 &lt;p&gt;Get Docsy dependencies:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; themes/docsy &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; npm install&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: read the &lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#docsy-npm-install-side-effect&#34;&gt;Docsy NPM install side-effect&lt;/a&gt; note.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: read the &lt;a href=&#34;http://localhost:4321/docs/get-started/other-options/#docsy-npm-install-side-effect&#34;&gt;Docsy NPM install side-effect&lt;/a&gt; note.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -1636,7 +1636,7 @@ the following commands from your project&amp;rsquo;s root directory:&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; docsy
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;npm install
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: read the &lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#docsy-npm-install-side-effect&#34;&gt;Docsy NPM install side-effect&lt;/a&gt; note.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: read the &lt;a href=&#34;http://localhost:4321/docs/get-started/other-options/#docsy-npm-install-side-effect&#34;&gt;Docsy NPM install side-effect&lt;/a&gt; note.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;To work from the development version of Docsy (not recommended unless, for
 example, you plan to upstream changes to Docsy), omit the &lt;code&gt;-b v0.9.1&lt;/code&gt; argument from the clone command above.&lt;/p&gt;
@@ -1654,10 +1654,10 @@ example, you plan to upstream changes to Docsy), omit the &lt;code&gt;-b v0.9.1&
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;theme = &amp;#34;docsy&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; hugo.toml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Install Docsy, and postCSS (as &lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#install-postcss&#34;&gt;instructed earlier&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;Install Docsy, and postCSS (as &lt;a href=&#34;http://localhost:4321/docs/get-started/other-options/#install-postcss&#34;&gt;instructed earlier&lt;/a&gt;):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-style:italic&#34;&gt;npm install --save-dev google/docsy#semver:0.9.1 autoprefixer postcss-cli
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: read the &lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#docsy-npm-install-side-effect&#34;&gt;Docsy NPM install side-effect&lt;/a&gt; note.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: read the &lt;a href=&#34;http://localhost:4321/docs/get-started/other-options/#docsy-npm-install-side-effect&#34;&gt;Docsy NPM install side-effect&lt;/a&gt; note.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -1689,7 +1689,7 @@ commands shown, executed from the site root folder):&lt;/p&gt;
 directory will create a sibling folder named &lt;code&gt;github.com&lt;/code&gt;, for example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902&#34;&gt;$&lt;/span&gt; ls themes
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-style:italic&#34;&gt;docsy                   github.com
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is a workaround necessary to support Docsy&amp;rsquo;s use as a single &lt;a href=&#34;http://localhost:1313/docs/get-started/docsy-as-module/&#34;&gt;Hugo module&lt;/a&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is a workaround necessary to support Docsy&amp;rsquo;s use as a single &lt;a href=&#34;http://localhost:4321/docs/get-started/docsy-as-module/&#34;&gt;Hugo module&lt;/a&gt;
 (&lt;a href=&#34;https://github.com/google/docsy/issues/1120&#34;&gt;#1120&lt;/a&gt;).&lt;/p&gt;
 
 
@@ -1700,22 +1700,22 @@ directory will create a sibling folder named &lt;code&gt;github.com&lt;/code&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; myproject
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By default, your site will be available at &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;.
-&lt;a href=&#34;http://localhost:1313/docs/get-started/known_issues/#macos&#34;&gt;See the known issues on MacOS&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://localhost:4321/docs/get-started/known_issues/#macos&#34;&gt;See the known issues on MacOS&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You may get Hugo errors for missing parameters and values when you try to build
 your site. This is usually because you’re missing default values for some
 configuration settings that Docsy uses - once you add them your site should
 build correctly. You can find out how to add configuration in
-&lt;a href=&#34;http://localhost:1313/docs/get-started/basic-configuration/&#34;&gt;Basic site configuration&lt;/a&gt; - we
+&lt;a href=&#34;http://localhost:4321/docs/get-started/basic-configuration/&#34;&gt;Basic site configuration&lt;/a&gt; - we
 recommend copying the example site configuration even if you’re creating a site
 from scratch as it provides defaults for many required configuration parameters.&lt;/p&gt;
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Add some &lt;a href=&#34;http://localhost:1313/docs/get-started/basic-configuration/&#34;&gt;basic site configuration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/&#34;&gt;Add content and customize your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add some &lt;a href=&#34;http://localhost:4321/docs/get-started/basic-configuration/&#34;&gt;basic site configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/&#34;&gt;Add content and customize your site&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Get some ideas from our
 &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Example Site&lt;/a&gt; and other
-&lt;a href=&#34;http://localhost:1313/docs/examples/&#34;&gt;Examples&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
+&lt;a href=&#34;http://localhost:4321/docs/examples/&#34;&gt;Examples&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -1723,14 +1723,14 @@ from scratch as it provides defaults for many required configuration parameters.
     
     <item>
       <title>Docs: Create a new site: start with a prepopulated site</title>
-      <link>http://localhost:1313/docs/get-started/docsy-as-module/example-site-as-template/</link>
+      <link>http://localhost:4321/docs/get-started/docsy-as-module/example-site-as-template/</link>
       <pubDate>Wed, 08 Dec 2021 09:21:54 +0100</pubDate>
       
-      <guid>http://localhost:1313/docs/get-started/docsy-as-module/example-site-as-template/</guid>
+      <guid>http://localhost:4321/docs/get-started/docsy-as-module/example-site-as-template/</guid>
       <description>
         
         
-        &lt;p&gt;The simplest way to create a new Docsy site is to use the source of the &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Docsy example site&lt;/a&gt; as starting point. This approach gives you a skeleton structure for your site, with top-level and documentation sections and templates that you can modify as necessary. The example site automatically pulls in the Docsy theme as a &lt;a href=&#34;https://gohugo.io/hugo-modules/&#34;&gt;Hugo Module&lt;/a&gt;, so it&amp;rsquo;s easy to &lt;a href=&#34;http://localhost:1313/docs/updating/updating-hugo-module/&#34;&gt;keep up to date&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;The simplest way to create a new Docsy site is to use the source of the &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Docsy example site&lt;/a&gt; as starting point. This approach gives you a skeleton structure for your site, with top-level and documentation sections and templates that you can modify as necessary. The example site automatically pulls in the Docsy theme as a &lt;a href=&#34;https://gohugo.io/hugo-modules/&#34;&gt;Hugo Module&lt;/a&gt;, so it&amp;rsquo;s easy to &lt;a href=&#34;http://localhost:4321/docs/updating/updating-hugo-module/&#34;&gt;keep up to date&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you prefer to create a site from scratch, follow the instructions in Start a site from scratch.&lt;/p&gt;
 &lt;h2 id=&#34;tldr-setup-for-the-impatient-expert&#34;&gt;TL;DR: Setup for the impatient expert&lt;/h2&gt;
 &lt;p&gt;At your Unix shell or Windows command line, run the following command:&lt;/p&gt;
@@ -1791,13 +1791,13 @@ You can find details of what these configuration settings do in the &lt;a href=&
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Preview your site in your browser at: &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313&lt;/a&gt;.
 Thanks to Hugo&amp;rsquo;s live preview, you can immediately see the effect of changes that you are making to the source files of your local repo.
 Use &lt;code&gt;Ctrl + c&lt;/code&gt; to stop the Hugo server whenever you like.
-&lt;a href=&#34;http://localhost:1313/docs/get-started/known_issues/#macos&#34;&gt;See the known issues on MacOS&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://localhost:4321/docs/get-started/known_issues/#macos&#34;&gt;See the known issues on MacOS&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Add some &lt;a href=&#34;http://localhost:1313/docs/get-started/basic-configuration/&#34;&gt;basic configuration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/&#34;&gt;Edit existing content and add more pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/lookandfeel/&#34;&gt;Customize your site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add some &lt;a href=&#34;http://localhost:4321/docs/get-started/basic-configuration/&#34;&gt;basic configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/&#34;&gt;Edit existing content and add more pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/lookandfeel/&#34;&gt;Customize your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -1805,10 +1805,10 @@ Use &lt;code&gt;Ctrl + c&lt;/code&gt; to stop the Hugo server whenever you like.
     
     <item>
       <title>Docs: Look and Feel</title>
-      <link>http://localhost:1313/docs/adding-content/lookandfeel/</link>
+      <link>http://localhost:4321/docs/adding-content/lookandfeel/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/lookandfeel/</guid>
+      <guid>http://localhost:4321/docs/adding-content/lookandfeel/</guid>
       <description>
         
         
@@ -1816,7 +1816,7 @@ Use &lt;code&gt;Ctrl + c&lt;/code&gt; to stop the Hugo server whenever you like.
 general look and feel. However, if you want your own color scheme (and you
 probably will!) you can very easily override the theme defaults with your own
 project-specific values - Hugo will look in your project files first when
-looking for information to build your site. And because &lt;a href=&#34;http://localhost:1313/blog/2023/bootstrap-5-migration/&#34;&gt;Docsy uses Bootstrap 5&lt;/a&gt;
+looking for information to build your site. And because &lt;a href=&#34;http://localhost:4321/blog/2023/bootstrap-5-migration/&#34;&gt;Docsy uses Bootstrap 5&lt;/a&gt;
 and SCSS for styling, you can override just single values (such as project
 colors and fonts) in its special SCSS project variables file, or do more serious
 customization by creating your own styles.&lt;/p&gt;
@@ -1828,7 +1828,7 @@ both of the following Docsy placeholder files (note the &lt;strong&gt;&lt;code&g
 suffixes):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/google/docsy/blob/main/assets/scss/_variables_project.scss&#34;&gt;&lt;code&gt;assets/scss/&lt;/code&gt;&lt;strong&gt;&lt;code&gt;_variables_project.scss&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; is where you
-add project-specific definitions of theme variables such as &lt;a href=&#34;http://localhost:1313/docs/adding-content/lookandfeel/#site-colors&#34;&gt;site
+add project-specific definitions of theme variables such as &lt;a href=&#34;http://localhost:4321/docs/adding-content/lookandfeel/#site-colors&#34;&gt;site
 colors&lt;/a&gt;, as well as any additional Bootstrap variable values you
 want to set. You can find a list of Docsy&amp;rsquo;s theme variables and their default
 values in &lt;a href=&#34;https://github.com/google/docsy/blob/main/assets/scss/_variables.scss&#34;&gt;&lt;code&gt;assets/scss/&lt;/code&gt;&lt;strong&gt;&lt;code&gt;_variables.scss&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;.  For information
@@ -1869,7 +1869,7 @@ your project variables file by setting the variables to &lt;code&gt;false&lt;/co
 &lt;li&gt;&lt;code&gt;.-bg-&amp;lt;color&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;.-text-&amp;lt;color&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;You can use these classes, for example, to style your text in an appropriate color when you don&amp;rsquo;t know if the &lt;code&gt;primary&lt;/code&gt; color is dark or light, to ensure proper color contrast. They are also useful when you receive the color code as a &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/&#34;&gt;shortcode&lt;/a&gt; parameter.&lt;/p&gt;
+&lt;p&gt;You can use these classes, for example, to style your text in an appropriate color when you don&amp;rsquo;t know if the &lt;code&gt;primary&lt;/code&gt; color is dark or light, to ensure proper color contrast. They are also useful when you receive the color code as a &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/&#34;&gt;shortcode&lt;/a&gt; parameter.&lt;/p&gt;
 &lt;p&gt;The value of &lt;code&gt;&amp;lt;color&amp;gt;&lt;/code&gt; can be any of the color names, &lt;code&gt;primary&lt;/code&gt;, &lt;code&gt;white&lt;/code&gt;, &lt;code&gt;dark&lt;/code&gt;, &lt;code&gt;warning&lt;/code&gt;, &lt;code&gt;light&lt;/code&gt;, &lt;code&gt;success&lt;/code&gt;, &lt;code&gt;300&lt;/code&gt;, &lt;code&gt;blue&lt;/code&gt;, &lt;code&gt;orange&lt;/code&gt; etc.&lt;/p&gt;
 &lt;p&gt;When you use &lt;code&gt;.-bg-&amp;lt;color&amp;gt;&lt;/code&gt;, the text colors will be adjusted to get proper contrast:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;-bg-primary p-3 display-4&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;Background: Primary&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;div&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -2097,12 +2097,12 @@ file:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;navbar&#34;&gt;Navbar&lt;/h2&gt;
-&lt;p&gt;For pages containing a &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/#blockscover&#34;&gt;blocks/cover&lt;/a&gt; shortcode, like most homepages, the
+&lt;p&gt;For pages containing a &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/#blockscover&#34;&gt;blocks/cover&lt;/a&gt; shortcode, like most homepages, the
 navbar is translucent as long as the hero image hasn&amp;rsquo;t scrolled up past the
 navbar. For an example, see the &lt;a href=&#34;https://www.docsy.dev/about/&#34;&gt;About Docsy&lt;/a&gt; page. This initial translucent
 setting ensures that the hero image is maximally visible.&lt;/p&gt;
 &lt;p&gt;After the hero image has scrolled past the navbar, the navbar&amp;rsquo;s (opaque)
-background color is set &amp;ndash; usually to the site&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/docs/adding-content/lookandfeel/#site-colors&#34;&gt;primary color&lt;/a&gt;.&lt;/p&gt;
+background color is set &amp;ndash; usually to the site&amp;rsquo;s &lt;a href=&#34;http://localhost:4321/docs/adding-content/lookandfeel/#site-colors&#34;&gt;primary color&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The text of navbar entries can be difficult to read with some hero images. In
 these cases, you can disable navbar translucency by setting the
 &lt;code&gt;params.ui.navbar_translucent_over_cover_disable&lt;/code&gt; option to &lt;code&gt;true&lt;/code&gt; in your
@@ -2112,17 +2112,17 @@ site&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/getting-started/configuration
 of the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/iconsimages/#add-your-logo&#34;&gt;Your logo&lt;/a&gt;, which is included in the navbar as an inline SVG, styled by
+&lt;p&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/iconsimages/#add-your-logo&#34;&gt;Your logo&lt;/a&gt;, which is included in the navbar as an inline SVG, styled by
 &lt;code&gt;.td-navbar .navbar-brand svg&lt;/code&gt;. For the style details, see &lt;a href=&#34;https://github.com/google/docsy/blob/main/assets/scss/_nav.scss&#34;&gt;_nav.scss&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To ensure your logo displays correctly, you may want to resize it and ensure
 that it doesn&amp;rsquo;t have height and width attributes so that its size is fully
-responsive. &lt;a href=&#34;http://localhost:1313/docs/adding-content/lookandfeel/#project-style-files&#34;&gt;Override the default styling&lt;/a&gt; of &lt;code&gt;.td-navbar .navbar-brand svg&lt;/code&gt; or (equivalently) &lt;code&gt;.td-navbar .navbar-brand__logo&lt;/code&gt; as
+responsive. &lt;a href=&#34;http://localhost:4321/docs/adding-content/lookandfeel/#project-style-files&#34;&gt;Override the default styling&lt;/a&gt; of &lt;code&gt;.td-navbar .navbar-brand svg&lt;/code&gt; or (equivalently) &lt;code&gt;.td-navbar .navbar-brand__logo&lt;/code&gt; as
 needed.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Your project name, which is the site &lt;code&gt;title&lt;/code&gt;. If you don&amp;rsquo;t want your project
 name to appear (for example, because your logo is or contains a
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Wordmark&#34;&gt;wordmark&lt;/a&gt;), then add the following custom styling to your &lt;a href=&#34;http://localhost:1313/docs/adding-content/lookandfeel/#project-style-files&#34;&gt;project&amp;rsquo;s
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Wordmark&#34;&gt;wordmark&lt;/a&gt;), then add the following custom styling to your &lt;a href=&#34;http://localhost:4321/docs/adding-content/lookandfeel/#project-style-files&#34;&gt;project&amp;rsquo;s
 styles&lt;/a&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;td-navbar&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;navbar-brand__name&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;display&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;none&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
@@ -2217,10 +2217,10 @@ illustrated in the following example:&lt;/p&gt;
     
     <item>
       <title>Docs: Update Docsy without Hugo Modules</title>
-      <link>http://localhost:1313/docs/updating/updating-submodules/</link>
+      <link>http://localhost:4321/docs/updating/updating-submodules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/updating/updating-submodules/</guid>
+      <guid>http://localhost:4321/docs/updating/updating-submodules/</guid>
       <description>
         
         
@@ -2230,12 +2230,12 @@ illustrated in the following example:&lt;/p&gt;
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
 
-    If you intend to update your site, consider &lt;a href=&#34;http://localhost:1313/docs/updating/convert-site-to-module/&#34;&gt;converting your site to Hugo Modules&lt;/a&gt;. After conversion, it&amp;rsquo;s even simpler to update Docsy!
+    If you intend to update your site, consider &lt;a href=&#34;http://localhost:4321/docs/updating/convert-site-to-module/&#34;&gt;converting your site to Hugo Modules&lt;/a&gt;. After conversion, it&amp;rsquo;s even simpler to update Docsy!
 
 &lt;/div&gt;
 
 &lt;h2 id=&#34;update-your-docsy-submodule&#34;&gt;Update your Docsy submodule&lt;/h2&gt;
-&lt;p&gt;If you are using the &lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#option-1-docsy-as-a-git-submodule&#34;&gt;Docsy theme as a submodule&lt;/a&gt; in your project, here&amp;rsquo;s how you update the submodule:&lt;/p&gt;
+&lt;p&gt;If you are using the &lt;a href=&#34;http://localhost:4321/docs/get-started/other-options/#option-1-docsy-as-a-git-submodule&#34;&gt;Docsy theme as a submodule&lt;/a&gt; in your project, here&amp;rsquo;s how you update the submodule:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Navigate to the root of your local project, then run:&lt;/p&gt;
@@ -2252,7 +2252,7 @@ illustrated in the following example:&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;route-2-update-your-docsy-clone&#34;&gt;Route 2: Update your Docsy clone&lt;/h2&gt;
-&lt;p&gt;If you &lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#option-2-clone-the-docsy-theme&#34;&gt;cloned the Docsy theme&lt;/a&gt; into
+&lt;p&gt;If you &lt;a href=&#34;http://localhost:4321/docs/get-started/other-options/#option-2-clone-the-docsy-theme&#34;&gt;cloned the Docsy theme&lt;/a&gt; into
 the &lt;code&gt;themes&lt;/code&gt; folder in your project, then you use the &lt;code&gt;git pull&lt;/code&gt; command:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -2275,15 +2275,15 @@ the &lt;code&gt;themes&lt;/code&gt; folder in your project, then you use the &lt
     
     <item>
       <title>Docs: Create a new site: Start a new site from scratch</title>
-      <link>http://localhost:1313/docs/get-started/docsy-as-module/start-from-scratch/</link>
+      <link>http://localhost:4321/docs/get-started/docsy-as-module/start-from-scratch/</link>
       <pubDate>Wed, 08 Dec 2021 09:21:54 +0100</pubDate>
       
-      <guid>http://localhost:1313/docs/get-started/docsy-as-module/start-from-scratch/</guid>
+      <guid>http://localhost:4321/docs/get-started/docsy-as-module/start-from-scratch/</guid>
       <description>
         
         
-        &lt;p&gt;The simplest approach to creating a Docsy site is &lt;a href=&#34;http://localhost:1313/docs/get-started/docsy-as-module/example-site-as-template/&#34;&gt;copying our example site&lt;/a&gt;. However, if you&amp;rsquo;re an experienced Hugo user or the site structure of our example site doesn&amp;rsquo;t meet your needs, you may prefer to create a new site from scratch. With this option, you&amp;rsquo;ll get Docsy look and feel, navigation, and other features, but you&amp;rsquo;ll need to specify your own site structure.&lt;/p&gt;
-&lt;p&gt;These instructions give you a minimum file structure for your site project only, so that you build and extend your actual site step by step. The first step is adding the Docsy theme as a &lt;a href=&#34;https://gohugo.io/hugo-modules/&#34;&gt;Hugo Module&lt;/a&gt; to your site. If needed, you can easily &lt;a href=&#34;http://localhost:1313/docs/updating/&#34;&gt;update&lt;/a&gt; the module to the latest revision from the Docsy GitHub repo.&lt;/p&gt;
+        &lt;p&gt;The simplest approach to creating a Docsy site is &lt;a href=&#34;http://localhost:4321/docs/get-started/docsy-as-module/example-site-as-template/&#34;&gt;copying our example site&lt;/a&gt;. However, if you&amp;rsquo;re an experienced Hugo user or the site structure of our example site doesn&amp;rsquo;t meet your needs, you may prefer to create a new site from scratch. With this option, you&amp;rsquo;ll get Docsy look and feel, navigation, and other features, but you&amp;rsquo;ll need to specify your own site structure.&lt;/p&gt;
+&lt;p&gt;These instructions give you a minimum file structure for your site project only, so that you build and extend your actual site step by step. The first step is adding the Docsy theme as a &lt;a href=&#34;https://gohugo.io/hugo-modules/&#34;&gt;Hugo Module&lt;/a&gt; to your site. If needed, you can easily &lt;a href=&#34;http://localhost:4321/docs/updating/&#34;&gt;update&lt;/a&gt; the module to the latest revision from the Docsy GitHub repo.&lt;/p&gt;
 &lt;h2 id=&#34;tldr-setup-for-the-impatient-expert&#34;&gt;TL;DR: Setup for the impatient expert&lt;/h2&gt;
 &lt;p&gt;At your command prompt, run the following:&lt;/p&gt;
 
@@ -2462,14 +2462,14 @@ Depending on your environment you may need to tweak them slightly, for example b
 &lt;h3 id=&#34;preview-your-site&#34;&gt;Preview your site&lt;/h3&gt;
 &lt;p&gt;To build and preview your site locally:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By default, your site will be available at &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313&lt;/a&gt;. When encountering problems, have a look at the &lt;a href=&#34;http://localhost:1313/docs/get-started/known_issues/#macos&#34;&gt;known issues&lt;/a&gt; on MacOS.&lt;/p&gt;
-&lt;p&gt;You may get Hugo errors for missing parameters and values when you try to build your site. This is usually because you&amp;rsquo;re missing default values for some configuration settings that Docsy uses - once you add them your site should build correctly. You can find out how to add configuration in &lt;a href=&#34;http://localhost:1313/docs/get-started/basic-configuration/&#34;&gt;Basic site configuration&lt;/a&gt; - we recommend copying the example site configuration even if you&amp;rsquo;re creating a site from scratch as it provides defaults for many required configuration parameters.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By default, your site will be available at &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313&lt;/a&gt;. When encountering problems, have a look at the &lt;a href=&#34;http://localhost:4321/docs/get-started/known_issues/#macos&#34;&gt;known issues&lt;/a&gt; on MacOS.&lt;/p&gt;
+&lt;p&gt;You may get Hugo errors for missing parameters and values when you try to build your site. This is usually because you&amp;rsquo;re missing default values for some configuration settings that Docsy uses - once you add them your site should build correctly. You can find out how to add configuration in &lt;a href=&#34;http://localhost:4321/docs/get-started/basic-configuration/&#34;&gt;Basic site configuration&lt;/a&gt; - we recommend copying the example site configuration even if you&amp;rsquo;re creating a site from scratch as it provides defaults for many required configuration parameters.&lt;/p&gt;
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Add some &lt;a href=&#34;http://localhost:1313/docs/get-started/basic-configuration/&#34;&gt;basic configuration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/&#34;&gt;Add content and customize your site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Get some ideas from our &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Example Site&lt;/a&gt; and other &lt;a href=&#34;http://localhost:1313/docs/examples/&#34;&gt;Examples&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Add some &lt;a href=&#34;http://localhost:4321/docs/get-started/basic-configuration/&#34;&gt;basic configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/&#34;&gt;Add content and customize your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Get some ideas from our &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Example Site&lt;/a&gt; and other &lt;a href=&#34;http://localhost:4321/docs/examples/&#34;&gt;Examples&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -2477,10 +2477,10 @@ Depending on your environment you may need to tweak them slightly, for example b
     
     <item>
       <title>Docs: Deploy Docsy inside a Docker container</title>
-      <link>http://localhost:1313/docs/get-started/quickstart-docker/</link>
+      <link>http://localhost:4321/docs/get-started/quickstart-docker/</link>
       <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/get-started/quickstart-docker/</guid>
+      <guid>http://localhost:4321/docs/get-started/quickstart-docker/</guid>
       <description>
         
         
@@ -2549,9 +2549,9 @@ changes will be live-reloaded in your browser.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Learn about &lt;a href=&#34;http://localhost:1313/docs/get-started/basic-configuration/&#34;&gt;basic setup and configurations for Docsy&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/&#34;&gt;Add content and customize your site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Learn about &lt;a href=&#34;http://localhost:4321/docs/get-started/basic-configuration/&#34;&gt;basic setup and configurations for Docsy&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/&#34;&gt;Add content and customize your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -2559,10 +2559,10 @@ changes will be live-reloaded in your browser.&lt;/p&gt;
     
     <item>
       <title>Docs: Navigation and Menus</title>
-      <link>http://localhost:1313/docs/adding-content/navigation/</link>
+      <link>http://localhost:4321/docs/adding-content/navigation/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/navigation/</guid>
+      <guid>http://localhost:4321/docs/adding-content/navigation/</guid>
       <description>
         
         
@@ -2798,10 +2798,10 @@ changes will be live-reloaded in your browser.&lt;/p&gt;
 &lt;p&gt;If you add some &lt;code&gt;[params.versions]&lt;/code&gt; in &lt;code&gt;hugo.toml&lt;/code&gt;, the Docsy theme adds a
 version selector drop down to the top-level menu.&lt;/p&gt;
 &lt;p&gt;You can find out more in the guide to
-&lt;a href=&#34;http://localhost:1313/docs/adding-content/versioning/&#34;&gt;versioning your docs&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://localhost:4321/docs/adding-content/versioning/&#34;&gt;versioning your docs&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;adding-a-language-drop-down&#34;&gt;Adding a language drop-down&lt;/h3&gt;
 &lt;p&gt;If you configure more than one language in &lt;code&gt;hugo.toml&lt;/code&gt;, the Docsy theme adds a language selector drop down to the top-level menu. Selecting a language takes the user to the translated version of the current page, or the home page for the given language.&lt;/p&gt;
-&lt;p&gt;You can find out more in &lt;a href=&#34;http://localhost:1313/docs/language/&#34;&gt;Multi-language support&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find out more in &lt;a href=&#34;http://localhost:4321/docs/language/&#34;&gt;Multi-language support&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;section-menu&#34;&gt;Section menu&lt;/h2&gt;
 &lt;p&gt;The section menu, as shown in the left side of the &lt;code&gt;docs&lt;/code&gt; section, is automatically built from the &lt;code&gt;content&lt;/code&gt; tree. Like the top-level menu, it is ordered by page or section index &lt;code&gt;weight&lt;/code&gt; (or by page creation &lt;code&gt;date&lt;/code&gt; if &lt;code&gt;weight&lt;/code&gt; is not set), with the page or index&amp;rsquo;s &lt;code&gt;Title&lt;/code&gt;, or &lt;code&gt;linkTitle&lt;/code&gt; if different, as its link title in the menu. If a section subfolder has pages other than &lt;code&gt;_index.md&lt;/code&gt; or &lt;code&gt;_index.html&lt;/code&gt;, those pages will appear as a submenu, again ordered by &lt;code&gt;weight&lt;/code&gt;. For example, here&amp;rsquo;s the metadata for this page showing its &lt;code&gt;weight&lt;/code&gt; and &lt;code&gt;title&lt;/code&gt;:&lt;/p&gt;
 
@@ -2878,7 +2878,7 @@ version selector drop down to the top-level menu.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;To hide a page or section from the left navigation menu, set &lt;code&gt;toc_hide: true&lt;/code&gt; in the front matter.&lt;/p&gt;
-&lt;p&gt;To hide a page from the section summary on a &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#docs-section-landing-pages&#34;&gt;docs section landing page&lt;/a&gt;, set &lt;code&gt;hide_summary: true&lt;/code&gt; in the front matter. If you want to hide a page from both the TOC menu and the section summary list, you need to set both &lt;code&gt;toc_hide&lt;/code&gt; and &lt;code&gt;hide_summary&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in the front matter.&lt;/p&gt;
+&lt;p&gt;To hide a page from the section summary on a &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#docs-section-landing-pages&#34;&gt;docs section landing page&lt;/a&gt;, set &lt;code&gt;hide_summary: true&lt;/code&gt; in the front matter. If you want to hide a page from both the TOC menu and the section summary list, you need to set both &lt;code&gt;toc_hide&lt;/code&gt; and &lt;code&gt;hide_summary&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in the front matter.&lt;/p&gt;
 
 
 
@@ -3033,7 +3033,7 @@ version selector drop down to the top-level menu.&lt;/p&gt;
 &lt;p&gt;Out of the box, if you want to use icons, you should define icons for all items on the same menu level in order to ensure an appropriate look. If the icons are used in a different way, individual CSS adjustments are likely necessary.&lt;/p&gt;
 &lt;h3 id=&#34;add-manual-links-to-the-section-menu&#34;&gt;Add manual links to the section menu&lt;/h3&gt;
 &lt;p&gt;By default the section menu is entirely generated from your section&amp;rsquo;s pages. If you want to add a manual link to this menu, such as a link to an external site or a page in a different section of your site, you can do this by creating a &lt;em&gt;placeholder page file&lt;/em&gt; in the doc hierarchy with the appropriate weight and some special parameters in its metadata (frontmatter) to specify the link details.&lt;/p&gt;
-&lt;p&gt;To create a placeholder page, create a page file as usual in the directory where you want the link to show up in the menu, and add a &lt;code&gt;manualLink&lt;/code&gt; parameter to its metadata. If a page has &lt;code&gt;manualLink&lt;/code&gt; in its metadata, Docsy generates a link for it in the section menu for this page and in the section index (the list of the child pages of a section on a landing page - see &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#docs-section-landing-pages&#34;&gt;description in the Docsy docs&lt;/a&gt;), but the link destination is replaced by the value of &lt;code&gt;manualLink&lt;/code&gt;. The link text is the &lt;code&gt;title&lt;/code&gt; (or &lt;code&gt;linkTitle&lt;/code&gt; if set) of your placeholder page. You can optionally also set the &lt;code&gt;title&lt;/code&gt; attribute of the link with the parameter &lt;code&gt;manualLinkTitle&lt;/code&gt; and a link target with &lt;code&gt;manualLinkTarget&lt;/code&gt; - for example if you want an external link to open in a new tab you can set the link target to &lt;code&gt;_blank&lt;/code&gt;. Docsy automatically adds &lt;code&gt;rel=noopener&lt;/code&gt; to links that open new tabs as a security best practice.&lt;/p&gt;
+&lt;p&gt;To create a placeholder page, create a page file as usual in the directory where you want the link to show up in the menu, and add a &lt;code&gt;manualLink&lt;/code&gt; parameter to its metadata. If a page has &lt;code&gt;manualLink&lt;/code&gt; in its metadata, Docsy generates a link for it in the section menu for this page and in the section index (the list of the child pages of a section on a landing page - see &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#docs-section-landing-pages&#34;&gt;description in the Docsy docs&lt;/a&gt;), but the link destination is replaced by the value of &lt;code&gt;manualLink&lt;/code&gt;. The link text is the &lt;code&gt;title&lt;/code&gt; (or &lt;code&gt;linkTitle&lt;/code&gt; if set) of your placeholder page. You can optionally also set the &lt;code&gt;title&lt;/code&gt; attribute of the link with the parameter &lt;code&gt;manualLinkTitle&lt;/code&gt; and a link target with &lt;code&gt;manualLinkTarget&lt;/code&gt; - for example if you want an external link to open in a new tab you can set the link target to &lt;code&gt;_blank&lt;/code&gt;. Docsy automatically adds &lt;code&gt;rel=noopener&lt;/code&gt; to links that open new tabs as a security best practice.&lt;/p&gt;
 &lt;p&gt;You can also use &lt;code&gt;manualLink&lt;/code&gt; to add an additional cross reference to another existing page of your site. For internal links you can choose to use the parameter &lt;code&gt;manualLinkRelref&lt;/code&gt; instead of &lt;code&gt;manualLink&lt;/code&gt; to use the built-in Hugo function &lt;a href=&#34;https://gohugo.io/functions/relref/&#34; title=&#34;External link to official Hugo Docs&#34;&gt;relref&lt;/a&gt;. If &lt;code&gt;relref&lt;/code&gt; can&amp;rsquo;t find a unique page in your site, Hugo throws a error message.&lt;/p&gt;
 
 
@@ -3134,18 +3134,18 @@ override the heading self-link template
     
     <item>
       <title>Docs: Search</title>
-      <link>http://localhost:1313/docs/adding-content/search/</link>
+      <link>http://localhost:4321/docs/adding-content/search/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/search/</guid>
+      <guid>http://localhost:4321/docs/adding-content/search/</guid>
       <description>
         
         
         &lt;p&gt;Docsy offers multiple options that let your readers search your site content, so you can pick one that suits your needs. You can choose from:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/search/#configure-search-with-a-google-custom-search-engine&#34;&gt;Google Custom Search Engine&lt;/a&gt; (GCSE), the default option, which uses Google&amp;rsquo;s index of your public site to generate a search results page.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/search/#algolia-docsearch&#34;&gt;Algolia DocSearch&lt;/a&gt;, which uses Algolia&amp;rsquo;s indexing and search mechanism. Search results are displayed as a pop-up. Algolia DocSearch is free for public documentation sites.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/search/#local-search-with-lunr&#34;&gt;Local search with Lunr&lt;/a&gt;, which uses Javascript to index and search your site without the need to connect to external services. This option doesn&amp;rsquo;t require your site to be public.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/search/#configure-search-with-a-google-custom-search-engine&#34;&gt;Google Custom Search Engine&lt;/a&gt; (GCSE), the default option, which uses Google&amp;rsquo;s index of your public site to generate a search results page.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/search/#algolia-docsearch&#34;&gt;Algolia DocSearch&lt;/a&gt;, which uses Algolia&amp;rsquo;s indexing and search mechanism. Search results are displayed as a pop-up. Algolia DocSearch is free for public documentation sites.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/search/#local-search-with-lunr&#34;&gt;Local search with Lunr&lt;/a&gt;, which uses Javascript to index and search your site without the need to connect to external services. This option doesn&amp;rsquo;t require your site to be public.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you enable any of these search options in your project &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configuration-file&#34;&gt;configuration file&lt;/a&gt;, a search box displays in the right of your top navigation bar. By default a search box also displays at the top of the section menu in the left navigation pane, which you can disable if you prefer, or if you&amp;rsquo;re using a search option that only works with the top search box.&lt;/p&gt;
 
@@ -3223,7 +3223,7 @@ behavior when serving your site.
 &lt;/div&gt;
 
 &lt;h2 id=&#34;configure-search-with-a-google-custom-search-engine&#34;&gt;Configure search with a Google Custom Search Engine&lt;/h2&gt;
-&lt;p&gt;By default Docsy uses a &lt;a href=&#34;https://cse.google.com/cse/all&#34;&gt;Google Custom Search Engine&lt;/a&gt; (GCSE) to search your site. To enable this feature, you&amp;rsquo;ll first need to make sure that you have built and deployed &lt;a href=&#34;http://localhost:1313/docs/deployment/#build-environments-and-indexing&#34;&gt;a production version of your site&lt;/a&gt;, as otherwise your site won&amp;rsquo;t be crawled and indexed.&lt;/p&gt;
+&lt;p&gt;By default Docsy uses a &lt;a href=&#34;https://cse.google.com/cse/all&#34;&gt;Google Custom Search Engine&lt;/a&gt; (GCSE) to search your site. To enable this feature, you&amp;rsquo;ll first need to make sure that you have built and deployed &lt;a href=&#34;http://localhost:4321/docs/deployment/#build-environments-and-indexing&#34;&gt;a production version of your site&lt;/a&gt;, as otherwise your site won&amp;rsquo;t be crawled and indexed.&lt;/p&gt;
 &lt;h3 id=&#34;setting-up-site-search&#34;&gt;Setting up site search&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -3406,7 +3406,7 @@ none are provided. To enable search over the Algolia test, define
 &lt;h3 id=&#34;configure-algolia-docsearch&#34;&gt;Configure Algolia DocSearch&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Ensure that &lt;a href=&#34;http://localhost:1313/docs/adding-content/search/#disabling-gcse-search&#34;&gt;GCSE search&lt;/a&gt; is disabled.&lt;/p&gt;
+&lt;p&gt;Ensure that &lt;a href=&#34;http://localhost:4321/docs/adding-content/search/#disabling-gcse-search&#34;&gt;GCSE search&lt;/a&gt; is disabled.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Add your project&amp;rsquo;s Algolia DocSearch parameters to
@@ -3565,7 +3565,7 @@ configure Algolia DocSearch.&lt;/li&gt;
 
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Remove or comment out any GCSE ID in &lt;code&gt;hugo.toml&lt;/code&gt;/&lt;code&gt;hugo.yaml&lt;/code&gt;/&lt;code&gt;hugo.json&lt;/code&gt; and ensure Algolia DocSearch is set to &lt;code&gt;false&lt;/code&gt;, as you can only have one type of search enabled. See &lt;a href=&#34;http://localhost:1313/docs/adding-content/search/#disabling-gcse-search&#34;&gt;Disabling GCSE search&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Remove or comment out any GCSE ID in &lt;code&gt;hugo.toml&lt;/code&gt;/&lt;code&gt;hugo.yaml&lt;/code&gt;/&lt;code&gt;hugo.json&lt;/code&gt; and ensure Algolia DocSearch is set to &lt;code&gt;false&lt;/code&gt;, as you can only have one type of search enabled. See &lt;a href=&#34;http://localhost:4321/docs/adding-content/search/#disabling-gcse-search&#34;&gt;Disabling GCSE search&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Once you&amp;rsquo;ve completed these steps, local search is enabled for your site and results appear in a drop down when you use the search box.&lt;/p&gt;
@@ -3574,7 +3574,7 @@ configure Algolia DocSearch.&lt;/li&gt;
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
 
-    If you&amp;rsquo;re &lt;a href=&#34;http://localhost:1313/docs/deployment/#serving-your-site-locally&#34;&gt;testing this locally&lt;/a&gt; using Hugo’s local server functionality, you need to build your &lt;code&gt;offline-search-index.xxx.json&lt;/code&gt; file first by running &lt;code&gt;hugo&lt;/code&gt;. If you have the Hugo server running while you build &lt;code&gt;offline-search-index.xxx.json&lt;/code&gt;, you may need to stop the server and restart it in order to see your search results.
+    If you&amp;rsquo;re &lt;a href=&#34;http://localhost:4321/docs/deployment/#serving-your-site-locally&#34;&gt;testing this locally&lt;/a&gt; using Hugo’s local server functionality, you need to build your &lt;code&gt;offline-search-index.xxx.json&lt;/code&gt; file first by running &lt;code&gt;hugo&lt;/code&gt;. If you have the Hugo server running while you build &lt;code&gt;offline-search-index.xxx.json&lt;/code&gt;, you may need to stop the server and restart it in order to see your search results.
 
 &lt;/div&gt;
 
@@ -3783,10 +3783,10 @@ configure Algolia DocSearch.&lt;/li&gt;
     
     <item>
       <title>Docs: Migrate to Hugo Modules</title>
-      <link>http://localhost:1313/docs/updating/convert-site-to-module/</link>
+      <link>http://localhost:4321/docs/updating/convert-site-to-module/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/updating/convert-site-to-module/</guid>
+      <guid>http://localhost:4321/docs/updating/convert-site-to-module/</guid>
       <description>
         
         
@@ -4135,17 +4135,17 @@ First, change to the root directory of your site:&lt;/p&gt;
     
     <item>
       <title>Docs: Basic site configuration</title>
-      <link>http://localhost:1313/docs/get-started/basic-configuration/</link>
+      <link>http://localhost:4321/docs/get-started/basic-configuration/</link>
       <pubDate>Wed, 08 Dec 2021 09:22:27 +0100</pubDate>
       
-      <guid>http://localhost:1313/docs/get-started/basic-configuration/</guid>
+      <guid>http://localhost:4321/docs/get-started/basic-configuration/</guid>
       <description>
         
         
         &lt;p&gt;Site-wide configuration details and parameters are defined in your project&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configuration-file&#34;&gt;configuration file&lt;/a&gt; (&lt;code&gt;hugo.toml&lt;/code&gt; or &lt;code&gt;config.toml&lt;/code&gt;). These include your chosen Hugo theme (Docsy, of course!), project name, community links, Google Analytics configuration, and Markdown parser parameters. See the examples with comments in &lt;a href=&#34;https://github.com/google/docsy-example/blob/main/hugo.toml&#34;&gt;&lt;code&gt;hugo.toml&lt;/code&gt; in the example project&lt;/a&gt; for how to add this information. &lt;strong&gt;We recommend copying this hugo.toml and editing it even if you’re just using the theme and not copying the entire Docsy example site&lt;/strong&gt;, as it includes default values for many parameters that you need to set for your site to build correctly.&lt;/p&gt;
 &lt;p&gt;You may want to remove or customize some defaults of the copied &lt;code&gt;hugo.toml&lt;/code&gt; file straight away:&lt;/p&gt;
 &lt;h2 id=&#34;internationalization&#34;&gt;Internationalization&lt;/h2&gt;
-&lt;p&gt;The copied &lt;code&gt;hugo.toml&lt;/code&gt; file defines content in English, Norwegian and Farsi. You can find out more about how Docsy supports multi-language content in &lt;a href=&#34;http://localhost:1313/docs/language/&#34;&gt;Multi-language support&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The copied &lt;code&gt;hugo.toml&lt;/code&gt; file defines content in English, Norwegian and Farsi. You can find out more about how Docsy supports multi-language content in &lt;a href=&#34;http://localhost:4321/docs/language/&#34;&gt;Multi-language support&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you don&amp;rsquo;t intend to translate your site, you can remove the language switcher by removing the following lines from &lt;code&gt;hugo.toml&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;languages&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;no&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;languageName&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Norsk&amp;#34;&lt;/span&gt;
@@ -4168,12 +4168,12 @@ First, change to the root directory of your site:&lt;/p&gt;
 &lt;p&gt;By default, the Docsy example site uses its own &lt;a href=&#34;https://cse.google.com/cse/all&#34;&gt;Google Custom Search Engine&lt;/a&gt;. To disable this site search, delete or comment out the following lines:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = &amp;#34;...&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To use your own Custom Search Engine, set &lt;code&gt;gcs_engine_id&lt;/code&gt; to your search engine ID. For details, see &lt;a href=&#34;http://localhost:1313/docs/adding-content/search/#configure-search-with-a-google-custom-search-engine&#34;&gt;Configure search with a Google Custom Search Engine&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To use your own Custom Search Engine, set &lt;code&gt;gcs_engine_id&lt;/code&gt; to your search engine ID. For details, see &lt;a href=&#34;http://localhost:4321/docs/adding-content/search/#configure-search-with-a-google-custom-search-engine&#34;&gt;Configure search with a Google Custom Search Engine&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/&#34;&gt;Add content and customize your site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Get some ideas from our &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Example Site&lt;/a&gt; and other &lt;a href=&#34;http://localhost:1313/docs/examples/&#34;&gt;Examples&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/&#34;&gt;Add content and customize your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Get some ideas from our &lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Example Site&lt;/a&gt; and other &lt;a href=&#34;http://localhost:4321/docs/examples/&#34;&gt;Examples&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:4321/docs/deployment/&#34;&gt;Publish your site&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -4181,14 +4181,14 @@ gcs_engine_id = &amp;#34;...&amp;#34;
     
     <item>
       <title>Docs: Known issues</title>
-      <link>http://localhost:1313/docs/get-started/known_issues/</link>
+      <link>http://localhost:4321/docs/get-started/known_issues/</link>
       <pubDate>Wed, 08 Dec 2021 09:22:27 +0100</pubDate>
       
-      <guid>http://localhost:1313/docs/get-started/known_issues/</guid>
+      <guid>http://localhost:4321/docs/get-started/known_issues/</guid>
       <description>
         
         
-        &lt;p&gt;The following issues are know on &lt;a href=&#34;http://localhost:1313/docs/get-started/known_issues/#macos&#34;&gt;MacOS&lt;/a&gt; and on &lt;a href=&#34;http://localhost:1313/docs/get-started/known_issues/#windows-subsystem-for-linux-wsl&#34;&gt;Windows Subsystem for Linux&lt;/a&gt;:&lt;/p&gt;
+        &lt;p&gt;The following issues are know on &lt;a href=&#34;http://localhost:4321/docs/get-started/known_issues/#macos&#34;&gt;MacOS&lt;/a&gt; and on &lt;a href=&#34;http://localhost:4321/docs/get-started/known_issues/#windows-subsystem-for-linux-wsl&#34;&gt;Windows Subsystem for Linux&lt;/a&gt;:&lt;/p&gt;
 &lt;h3 id=&#34;macos&#34;&gt;MacOS&lt;/h3&gt;
 &lt;h4 id=&#34;errors-too-many-open-files-or-fatal-error-pipe-failed&#34;&gt;Errors: &lt;code&gt;too many open files&lt;/code&gt; or &lt;code&gt;fatal error: pipe failed&lt;/code&gt;&lt;/h4&gt;
 &lt;p&gt;By default, MacOS permits a small number of open File Descriptors. For larger sites, or when you&amp;rsquo;re simultaneously running multiple applications,
@@ -4229,10 +4229,10 @@ hard (&lt;code&gt;200000&lt;/code&gt;) limits.&lt;/p&gt;
     
     <item>
       <title>Docs: Doc Versioning</title>
-      <link>http://localhost:1313/docs/adding-content/versioning/</link>
+      <link>http://localhost:4321/docs/adding-content/versioning/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/versioning/</guid>
+      <guid>http://localhost:4321/docs/adding-content/versioning/</guid>
       <description>
         
         
@@ -4398,7 +4398,7 @@ point to the current page in the other version, instead of the main page.
 This can be useful if the document doesn&amp;rsquo;t change much between the different versions.
 Note that if the current page doesn&amp;rsquo;t exist in the other version, the link will be broken.&lt;/p&gt;
 &lt;p&gt;You can read more about Docsy menus in the guide to
-&lt;a href=&#34;http://localhost:1313/docs/adding-content/navigation/&#34;&gt;navigation and search&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://localhost:4321/docs/adding-content/navigation/&#34;&gt;navigation and search&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;displaying-a-banner-on-archived-doc-sites&#34;&gt;Displaying a banner on archived doc sites&lt;/h2&gt;
 &lt;p&gt;If you create archived snapshots for older versions of your docs, you can add a
 note at the top of every page in the archived docs to let readers know that
@@ -4407,7 +4407,7 @@ version.&lt;/p&gt;
 &lt;p&gt;For example, see the archived docs for
 &lt;a href=&#34;https://v0-6.kubeflow.org/docs/&#34;&gt;Kubeflow v0.6&lt;/a&gt;:&lt;/p&gt;
 &lt;figure&gt;
-  &lt;img src=&#34;http://localhost:1313/images/version-banner.png&#34;
+  &lt;img src=&#34;http://localhost:4321/images/version-banner.png&#34;
        alt=&#34;A text box explaining that this is an unmaintained snapshot of the docs.&#34;
        class=&#34;mt-3 mb-3 border border-info rounded&#34; /&gt;
   &lt;figcaption&gt;Figure 1. The banner on the archived docs for Kubeflow v0.6
@@ -4609,10 +4609,10 @@ version of your docs:&lt;/p&gt;
     
     <item>
       <title>Docs: Docsy Shortcodes</title>
-      <link>http://localhost:1313/docs/adding-content/shortcodes/</link>
+      <link>http://localhost:4321/docs/adding-content/shortcodes/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/shortcodes/</guid>
+      <guid>http://localhost:4321/docs/adding-content/shortcodes/</guid>
       <description>
         
         
@@ -4684,7 +4684,7 @@ the shortcode body as Markdown. You can use both styles in your pages.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;To set the background image, place an image with the word &amp;ldquo;background&amp;rdquo; in the name in the page&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#page-bundles&#34;&gt;Page Bundle&lt;/a&gt;. For example, in our the example site the background image in the home page&amp;rsquo;s cover block is &lt;a href=&#34;https://github.com/google/docsy-example/tree/main/content/en&#34;&gt;&lt;code&gt;featured-background.jpg&lt;/code&gt;&lt;/a&gt;, in the same directory.&lt;/p&gt;
+&lt;p&gt;To set the background image, place an image with the word &amp;ldquo;background&amp;rdquo; in the name in the page&amp;rsquo;s &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#page-bundles&#34;&gt;Page Bundle&lt;/a&gt;. For example, in our the example site the background image in the home page&amp;rsquo;s cover block is &lt;a href=&#34;https://github.com/google/docsy-example/tree/main/content/en&#34;&gt;&lt;code&gt;featured-background.jpg&lt;/code&gt;&lt;/a&gt;, in the same directory.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -4714,12 +4714,12 @@ the shortcode body as Markdown. You can use both styles in your pages.&lt;/p&gt;
 &lt;tr&gt;
 &lt;td&gt;height&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;auto&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;See &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;Shortcode blocks&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;See &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;Shortcode blocks&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;color&lt;/td&gt;
 &lt;td&gt;.Ordinal&lt;/td&gt;
-&lt;td&gt;See &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;Shortcode blocks&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;See &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/#shortcode-blocks&#34;&gt;Shortcode blocks&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -4789,7 +4789,7 @@ the shortcode body as Markdown. You can use both styles in your pages.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;url_text&lt;/td&gt;
-&lt;td&gt;The &lt;a href=&#34;http://localhost:1313/docs/language/#internationalization-bundles&#34;&gt;language parameter&lt;/a&gt; value of &lt;a href=&#34;https://github.com/google/docsy/blob/main/i18n/en.toml&#34;&gt;&lt;code&gt;ui_read_more&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;The &lt;a href=&#34;http://localhost:4321/docs/language/#internationalization-bundles&#34;&gt;language parameter&lt;/a&gt; value of &lt;a href=&#34;https://github.com/google/docsy/blob/main/i18n/en.toml&#34;&gt;&lt;code&gt;ui_read_more&lt;/code&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;The link text to use.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -4882,13 +4882,13 @@ the shortcode body as Markdown. You can use both styles in your pages.&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;imgproc&#34;&gt;imgproc&lt;/h3&gt;
-&lt;p&gt;The &lt;strong&gt;imgproc&lt;/strong&gt; shortcode finds an image in the current &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#page-bundles&#34;&gt;Page Bundle&lt;/a&gt; and scales it given a set of processing instructions.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;imgproc&lt;/strong&gt; shortcode finds an image in the current &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#page-bundles&#34;&gt;Page Bundle&lt;/a&gt; and scales it given a set of processing instructions.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;imgproc&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;spruce&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Fill&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;400x450&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;}}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Norway Spruce *Picea abies* shoot with foliage buds.
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;imgproc&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;}}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Use the syntax above if the inner content and/or the &lt;code&gt;byline&lt;/code&gt; parameter of your shortcode is authored in markdown. In case of HTML content, use &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt; as innermost delimiters: &lt;code&gt;{{&amp;lt; imgproc &amp;gt;}}&amp;lt;b&amp;gt;HTML&amp;lt;/b&amp;gt; content{{&amp;lt; /imgproc &amp;gt;}}&lt;/code&gt;.&lt;/p&gt;
 &lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 410px&#34;&gt;
-&lt;img class=&#34;card-img-top&#34; src=&#34;http://localhost:1313/docs/adding-content/shortcodes/spruce_hu0fa7d855ef6295d2886abf8df96c5044_124081_400x450_fill_q75_catmullrom_smart1.jpg&#34; width=&#34;400&#34; height=&#34;450&#34;&gt;
+&lt;img class=&#34;card-img-top&#34; src=&#34;http://localhost:4321/docs/adding-content/shortcodes/spruce_hu0fa7d855ef6295d2886abf8df96c5044_124081_400x450_fill_q75_catmullrom_smart1.jpg&#34; width=&#34;400&#34; height=&#34;450&#34;&gt;
 &lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
 &lt;p class=&#34;card-text&#34;&gt;
 &lt;p&gt;Norway Spruce &lt;em&gt;Picea abies&lt;/em&gt; shoot with foliage buds.
@@ -4992,7 +4992,7 @@ the shortcode body as Markdown. You can use both styles in your pages.&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;swaggerui&#34;&gt;swaggerui&lt;/h3&gt;
-&lt;p&gt;You can place the &lt;code&gt;swaggerui&lt;/code&gt; shortcode anywhere inside a page with the &lt;a href=&#34;https://github.com/google/docsy/tree/main/layouts/swagger&#34;&gt;&lt;code&gt;swagger&lt;/code&gt; layout&lt;/a&gt;; it renders &lt;a href=&#34;https://swagger.io/tools/swagger-ui/&#34;&gt;Swagger UI&lt;/a&gt; using any OpenAPI YAML or JSON file as source. This file can be hosted anywhere you like, for example in your site&amp;rsquo;s root &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#adding-static-content&#34;&gt;&lt;code&gt;/static&lt;/code&gt; folder&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can place the &lt;code&gt;swaggerui&lt;/code&gt; shortcode anywhere inside a page with the &lt;a href=&#34;https://github.com/google/docsy/tree/main/layouts/swagger&#34;&gt;&lt;code&gt;swagger&lt;/code&gt; layout&lt;/a&gt;; it renders &lt;a href=&#34;https://swagger.io/tools/swagger-ui/&#34;&gt;Swagger UI&lt;/a&gt; using any OpenAPI YAML or JSON file as source. This file can be hosted anywhere you like, for example in your site&amp;rsquo;s root &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#adding-static-content&#34;&gt;&lt;code&gt;/static&lt;/code&gt; folder&lt;/a&gt;.&lt;/p&gt;
 
 
 
@@ -5068,7 +5068,7 @@ the shortcode body as Markdown. You can use both styles in your pages.&lt;/p&gt;
 
 &lt;p&gt;You can customize Swagger UI&amp;rsquo;s look and feel by overriding Swagger&amp;rsquo;s CSS in &lt;code&gt;themes/docsy/assets/scss/_swagger.scss&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;redoc&#34;&gt;redoc&lt;/h3&gt;
-&lt;p&gt;The &lt;code&gt;redoc&lt;/code&gt; shortcode uses the open-source &lt;a href=&#34;https://github.com/Redocly/redoc&#34;&gt;Redoc&lt;/a&gt; tool to render reference API documentation from an OpenAPI YAML or JSON file. This can be hosted anywhere you like, for example in your site&amp;rsquo;s root &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#adding-static-content&#34;&gt;&lt;code&gt;/static&lt;/code&gt; folder&lt;/a&gt;, but you can use a URL as well, for example:&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;redoc&lt;/code&gt; shortcode uses the open-source &lt;a href=&#34;https://github.com/Redocly/redoc&#34;&gt;Redoc&lt;/a&gt; tool to render reference API documentation from an OpenAPI YAML or JSON file. This can be hosted anywhere you like, for example in your site&amp;rsquo;s root &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#adding-static-content&#34;&gt;&lt;code&gt;/static&lt;/code&gt; folder&lt;/a&gt;, but you can use a URL as well, for example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Pet Store API&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;docs&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
@@ -5351,7 +5351,7 @@ in the response headers.&amp;rdquo; you &lt;strong&gt;CAN&lt;/strong&gt; embed i
     &lt;/div&gt;
     &lt;div class=&#34;tab-body tab-pane fade show active&#34;
         id=&#34;tabs-08-01&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-08-01-tab&#34; tabindex=&#34;8&#34;&gt;
-        &lt;p&gt;&lt;img alt=&#34;Flag United Kingdom&#34; src=&#34;http://localhost:1313/docs/adding-content/shortcodes/flags/uk.png&#34;&gt;
+        &lt;p&gt;&lt;img alt=&#34;Flag United Kingdom&#34; src=&#34;http://localhost:4321/docs/adding-content/shortcodes/flags/uk.png&#34;&gt;
 &lt;strong&gt;Welcome!&lt;/strong&gt;&lt;/p&gt;
 
     &lt;/div&gt;
@@ -5364,7 +5364,7 @@ in the response headers.&amp;rdquo; you &lt;strong&gt;CAN&lt;/strong&gt; embed i
     &lt;/div&gt;
     &lt;div class=&#34;tab-body tab-pane fade&#34;
         id=&#34;tabs-08-03&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-08-03-tab&#34; tabindex=&#34;8&#34;&gt;
-        &lt;p&gt;&lt;img alt=&#34;Flag Tanzania&#34; src=&#34;http://localhost:1313/docs/adding-content/shortcodes/flags/tz.png&#34;&gt;
+        &lt;p&gt;&lt;img alt=&#34;Flag Tanzania&#34; src=&#34;http://localhost:4321/docs/adding-content/shortcodes/flags/tz.png&#34;&gt;
 &lt;strong&gt;Karibu sana!&lt;/strong&gt;&lt;/p&gt;
 
     &lt;/div&gt;
@@ -5810,10 +5810,10 @@ starting with &lt;code&gt;/&lt;/code&gt;. The root directory is the &lt;code&gt;
     
     <item>
       <title>Docs: Logos and Images</title>
-      <link>http://localhost:1313/docs/adding-content/iconsimages/</link>
+      <link>http://localhost:4321/docs/adding-content/iconsimages/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/iconsimages/</guid>
+      <guid>http://localhost:4321/docs/adding-content/iconsimages/</guid>
       <description>
         
         
@@ -5884,18 +5884,18 @@ to &lt;code&gt;false&lt;/code&gt; in your project&amp;rsquo;s config:&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;For information about styling your logo, see &lt;a href=&#34;http://localhost:1313/docs/adding-content/lookandfeel/#styling-your-project-logo-and-name&#34;&gt;Styling your project logo and
+&lt;p&gt;For information about styling your logo, see &lt;a href=&#34;http://localhost:4321/docs/adding-content/lookandfeel/#styling-your-project-logo-and-name&#34;&gt;Styling your project logo and
 name&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;use-icons&#34;&gt;Use icons&lt;/h2&gt;
 &lt;p&gt;Docsy includes the free FontAwesome icons by default, including logos for sites like GitHub and Stack Overflow. You can view all available icons in the &lt;a href=&#34;https://fontawesome.com/icons/&#34;&gt;FontAwesome documentation&lt;/a&gt;, including the FontAwesome version when the icon was added and whether it is available for free tier users. Check Docsy&amp;rsquo;s &lt;a href=&#34;https://github.com/google/docsy/blob/main/package.json&#34;&gt;&lt;code&gt;package.json&lt;/code&gt;&lt;/a&gt; and release notes for Docsy&amp;rsquo;s currently included version of FontAwesome.&lt;/p&gt;
-&lt;p&gt;You can add FontAwesome icons to your &lt;a href=&#34;http://localhost:1313/docs/adding-content/navigation/#adding-icons-to-the-top-level-menu&#34;&gt;top-level menu&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/docs/adding-content/navigation/#add-icons-to-the-section-menu&#34;&gt;section menu&lt;/a&gt;, or anywhere in your text.&lt;/p&gt;
+&lt;p&gt;You can add FontAwesome icons to your &lt;a href=&#34;http://localhost:4321/docs/adding-content/navigation/#adding-icons-to-the-top-level-menu&#34;&gt;top-level menu&lt;/a&gt;, &lt;a href=&#34;http://localhost:4321/docs/adding-content/navigation/#add-icons-to-the-section-menu&#34;&gt;section menu&lt;/a&gt;, or anywhere in your text.&lt;/p&gt;
 &lt;h2 id=&#34;add-your-favicons&#34;&gt;Add your favicons&lt;/h2&gt;
 &lt;p&gt;The easiest way to do this is to create a set of favicons via &lt;a href=&#34;http://cthedot.de/icongen&#34;&gt;http://cthedot.de/icongen&lt;/a&gt; (which lets you create a huge range of icon sizes and options from a single image) and/or &lt;a href=&#34;https://favicon.io&#34;&gt;https://favicon.io&lt;/a&gt;, and put them in your site project&amp;rsquo;s &lt;code&gt;static/favicons&lt;/code&gt; directory. This will override the default favicons from the theme.&lt;/p&gt;
 &lt;p&gt;Note that &lt;a href=&#34;https://favicon.io&#34;&gt;https://favicon.io&lt;/a&gt;  doesn&amp;rsquo;t create as wide a range of sizes as Icongen but &lt;em&gt;does&lt;/em&gt; let you quickly create favicons from text: if you want to create text favicons you can use this site to generate them, then use Icongen to create more sizes (if necessary) from your generated &lt;code&gt;.png&lt;/code&gt; file.&lt;/p&gt;
 &lt;p&gt;If you have special favicon requirements, you can create your own &lt;code&gt;layouts/partials/favicons.html&lt;/code&gt; with your links.&lt;/p&gt;
 &lt;h2 id=&#34;add-images&#34;&gt;Add images&lt;/h2&gt;
 &lt;h3 id=&#34;landing-pages&#34;&gt;Landing pages&lt;/h3&gt;
-&lt;p&gt;Docsy&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/#blockscover&#34;&gt;&lt;code&gt;blocks/cover&lt;/code&gt; shortcode&lt;/a&gt; make it easy to add large cover images to your landing pages. The shortcode looks for an image with the word &amp;ldquo;background&amp;rdquo; in the name inside the landing page&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;Page Bundle&lt;/a&gt; - so, for example, if you&amp;rsquo;ve copied the example site, the landing page image in &lt;code&gt;content/en/_index.html&lt;/code&gt; is &lt;code&gt;content/en/featured-background.jpg&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Docsy&amp;rsquo;s &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/#blockscover&#34;&gt;&lt;code&gt;blocks/cover&lt;/code&gt; shortcode&lt;/a&gt; make it easy to add large cover images to your landing pages. The shortcode looks for an image with the word &amp;ldquo;background&amp;rdquo; in the name inside the landing page&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;Page Bundle&lt;/a&gt; - so, for example, if you&amp;rsquo;ve copied the example site, the landing page image in &lt;code&gt;content/en/_index.html&lt;/code&gt; is &lt;code&gt;content/en/featured-background.jpg&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You specify the preferred display height of a cover block container (and hence its image) using the block&amp;rsquo;s &lt;code&gt;height&lt;/code&gt; parameter.  For a full viewport height, use &lt;code&gt;full&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;blocks&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;cover&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Welcome to the Docsy Example Project!&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;image_anchor&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;top&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;full&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;}}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;...
@@ -5905,7 +5905,7 @@ name&lt;/a&gt;.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;...
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{&lt;span style=&#34;color:#a40000&#34;&gt;&amp;lt;&lt;/span&gt; /blocks/cover &amp;gt;}}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;other-pages&#34;&gt;Other pages&lt;/h3&gt;
-&lt;p&gt;To add inline images to other pages, use the &lt;a href=&#34;http://localhost:1313/docs/adding-content/shortcodes/#imgproc&#34;&gt;&lt;code&gt;imgproc&lt;/code&gt; shortcode&lt;/a&gt;. Alternatively, if you prefer, just use regular Markdown or HTML images and add your image files to your project&amp;rsquo;s &lt;code&gt;static&lt;/code&gt; directory. You can find out more about using this directory in &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#adding-static-content&#34;&gt;Adding static content&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To add inline images to other pages, use the &lt;a href=&#34;http://localhost:4321/docs/adding-content/shortcodes/#imgproc&#34;&gt;&lt;code&gt;imgproc&lt;/code&gt; shortcode&lt;/a&gt;. Alternatively, if you prefer, just use regular Markdown or HTML images and add your image files to your project&amp;rsquo;s &lt;code&gt;static&lt;/code&gt; directory. You can find out more about using this directory in &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#adding-static-content&#34;&gt;Adding static content&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;images-used-on-this-site&#34;&gt;Images used on this site&lt;/h2&gt;
 &lt;p&gt;Images used as background images in this site are in the &lt;a href=&#34;https://commons.wikimedia.org/wiki/User:Bep/gallery#Wed_Aug_01_16:16:51_CEST_2018&#34;&gt;public domain&lt;/a&gt; and can be used freely. The porridge image in the example site is by &lt;a href=&#34;https://pixabay.com/users/iha31-560629/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=531209&#34;&gt;iha31&lt;/a&gt; from &lt;a href=&#34;https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=531209&#34;&gt;Pixabay&lt;/a&gt;.&lt;/p&gt;
 
@@ -5914,10 +5914,10 @@ name&lt;/a&gt;.&lt;/p&gt;
     
     <item>
       <title>Docs: Print Support</title>
-      <link>http://localhost:1313/docs/adding-content/print/</link>
+      <link>http://localhost:4321/docs/adding-content/print/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/print/</guid>
+      <guid>http://localhost:4321/docs/adding-content/print/</guid>
       <description>
         
         
@@ -6128,10 +6128,10 @@ name&lt;/a&gt;.&lt;/p&gt;
     
     <item>
       <title>Docs: Analytics, User Feedback, and SEO</title>
-      <link>http://localhost:1313/docs/adding-content/feedback/</link>
+      <link>http://localhost:4321/docs/adding-content/feedback/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/feedback/</guid>
+      <guid>http://localhost:4321/docs/adding-content/feedback/</guid>
       <description>
         
         
@@ -6249,15 +6249,15 @@ them, see the following &lt;a href=&#34;https://discourse.gohugo.io/t/what-does-
 &lt;p&gt;By default Docsy puts a &amp;ldquo;was this page helpful?&amp;rdquo; feedback widget at the bottom
 of every documentation page, as shown in Figure 1.&lt;/p&gt;
 &lt;figure&gt;
-  &lt;img src=&#34;http://localhost:1313/images/feedback.png&#34;
+  &lt;img src=&#34;http://localhost:4321/images/feedback.png&#34;
        alt=&#34;The user is presented with the text &#39;Was this page helpful?&#39; followed
             by &#39;Yes&#39; and &#39;No&#39; buttons.&#34;/&gt;
   &lt;figcaption&gt;Figure 1. The feedback widget, outlined in red&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;After clicking &lt;strong&gt;Yes&lt;/strong&gt; the user should see a response like Figure 2. You can
-&lt;a href=&#34;http://localhost:1313/docs/adding-content/feedback/#setup-1&#34;&gt;configure&lt;/a&gt; the response text in your project&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configuration-file&#34;&gt;configuration file&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://localhost:4321/docs/adding-content/feedback/#setup-1&#34;&gt;configure&lt;/a&gt; the response text in your project&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configuration-file&#34;&gt;configuration file&lt;/a&gt;.&lt;/p&gt;
 &lt;figure&gt;
-  &lt;img src=&#34;http://localhost:1313/images/yes.png&#34;
+  &lt;img src=&#34;http://localhost:4321/images/yes.png&#34;
        alt=&#34;After clicking &#39;Yes&#39; the widget responds with &#39;Glad to hear it!
             Please tell us how we can improve.&#39; and the second sentence is a link which,
             when clicked, opens GitHub and lets the user create an issue on the
@@ -6560,24 +6560,24 @@ using the &lt;code&gt;description&lt;/code&gt; meta tag to tell search engines w
 For each generated page, Docsy will set the content of the meta &lt;code&gt;description&lt;/code&gt; by
 using the first of the following that is defined:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The page &lt;code&gt;description&lt;/code&gt; &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#page-frontmatter&#34;&gt;frontmatter field&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The page &lt;code&gt;description&lt;/code&gt; &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#page-frontmatter&#34;&gt;frontmatter field&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;For non-index pages, the page &lt;a href=&#34;https://gohugo.io/content-management/summaries/&#34;&gt;summary&lt;/a&gt;, as computed by Hugo&lt;/li&gt;
 &lt;li&gt;The site description taken from the &lt;a href=&#34;https://gohugo.io/variables/site/#the-siteparams-variable&#34;&gt;site &lt;code&gt;params&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For the template code used to perform this computation, see
 &lt;a href=&#34;https://github.com/google/docsy/blob/main/layouts/partials/page-description.html&#34;&gt;layouts/partials/page-description.html&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Add more meta tags as needed to your project&amp;rsquo;s copy of the &lt;code&gt;head-end.html&lt;/code&gt;
-partial. For details, see &lt;a href=&#34;http://localhost:1313/docs/adding-content/lookandfeel/#customizing-templates&#34;&gt;Customizing templates&lt;/a&gt;.&lt;/p&gt;
+partial. For details, see &lt;a href=&#34;http://localhost:4321/docs/adding-content/lookandfeel/#customizing-templates&#34;&gt;Customizing templates&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: Hugo Content Tips</title>
-      <link>http://localhost:1313/docs/best-practices/site-guidance/</link>
+      <link>http://localhost:4321/docs/best-practices/site-guidance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/best-practices/site-guidance/</guid>
+      <guid>http://localhost:4321/docs/best-practices/site-guidance/</guid>
       <description>
         
         
@@ -6587,18 +6587,18 @@ potential gotchas for adding and editing content for your site. Feel free to add
 &lt;h2 id=&#34;linking&#34;&gt;Linking&lt;/h2&gt;
 &lt;p&gt;By default, regular relative URLs in links are left unchanged by Hugo (they&amp;rsquo;re still relative links in your site&amp;rsquo;s generated HTML), hence some hardcoded relative links like &lt;code&gt;[relative cross-link](../../peer-folder/sub-file.md)&lt;/code&gt; might behave unexpectedly compared to how they work on your local file system. You may find it helpful to use some of Hugo&amp;rsquo;s built-in &lt;a href=&#34;https://gohugo.io/content-management/cross-references/#use-ref-and-relref&#34;&gt;link shortcodes&lt;/a&gt; to avoid broken links in your generated site. For example a &lt;code&gt;{{&amp;lt; ref &amp;quot;filename.md&amp;quot; &amp;gt;}}&lt;/code&gt; link in Hugo will actually
 find and automatically link to your file named &lt;code&gt;filename.md&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Note, however, that &lt;code&gt;ref&lt;/code&gt; and &lt;code&gt;relref&lt;/code&gt; links don&amp;rsquo;t work with &lt;code&gt;_index&lt;/code&gt; or &lt;code&gt;index&lt;/code&gt; files (for example, this site&amp;rsquo;s &lt;a href=&#34;http://localhost:1313/docs/adding-content/&#34;&gt;content landing page&lt;/a&gt;): you&amp;rsquo;ll need to use regular Markdown links to section landing or other index pages. Specify these links relative to the site&amp;rsquo;s root URL, for example: &lt;code&gt;/docs/adding-content/&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#working-with-links&#34;&gt;Learn more about linking&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note, however, that &lt;code&gt;ref&lt;/code&gt; and &lt;code&gt;relref&lt;/code&gt; links don&amp;rsquo;t work with &lt;code&gt;_index&lt;/code&gt; or &lt;code&gt;index&lt;/code&gt; files (for example, this site&amp;rsquo;s &lt;a href=&#34;http://localhost:4321/docs/adding-content/&#34;&gt;content landing page&lt;/a&gt;): you&amp;rsquo;ll need to use regular Markdown links to section landing or other index pages. Specify these links relative to the site&amp;rsquo;s root URL, for example: &lt;code&gt;/docs/adding-content/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#working-with-links&#34;&gt;Learn more about linking&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: Organizing Your Content</title>
-      <link>http://localhost:1313/docs/best-practices/organizing-content/</link>
+      <link>http://localhost:4321/docs/best-practices/organizing-content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/best-practices/organizing-content/</guid>
+      <guid>http://localhost:4321/docs/best-practices/organizing-content/</guid>
       <description>
         
         
@@ -6625,11 +6625,11 @@ site or even just the docs section instead if you like this simpler structure be
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
 
-    If you want to copy this guide, be aware that its &lt;a href=&#34;https://github.com/google/docsy/tree/main/userguide&#34;&gt;source files&lt;/a&gt; are &lt;em&gt;inside&lt;/em&gt; the Docsy theme repo, and so it doesn&amp;rsquo;t have its own &lt;code&gt;themes/&lt;/code&gt; directory: instead, we run &lt;code&gt;hugo server --themesDir ../..&lt;/code&gt; to use Docsy from its parent directory. You may want to either copy the site and &lt;a href=&#34;http://localhost:1313/docs/get-started/other-options/#option-2-clone-the-docsy-theme&#34;&gt;add a &lt;code&gt;themes/&lt;/code&gt; directory with Docsy&lt;/a&gt;, or just copy the &lt;code&gt;docs/&lt;/code&gt; folder into your existing site&amp;rsquo;s content root.
+    If you want to copy this guide, be aware that its &lt;a href=&#34;https://github.com/google/docsy/tree/main/userguide&#34;&gt;source files&lt;/a&gt; are &lt;em&gt;inside&lt;/em&gt; the Docsy theme repo, and so it doesn&amp;rsquo;t have its own &lt;code&gt;themes/&lt;/code&gt; directory: instead, we run &lt;code&gt;hugo server --themesDir ../..&lt;/code&gt; to use Docsy from its parent directory. You may want to either copy the site and &lt;a href=&#34;http://localhost:4321/docs/get-started/other-options/#option-2-clone-the-docsy-theme&#34;&gt;add a &lt;code&gt;themes/&lt;/code&gt; directory with Docsy&lt;/a&gt;, or just copy the &lt;code&gt;docs/&lt;/code&gt; folder into your existing site&amp;rsquo;s content root.
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#organizing-your-documentation&#34;&gt;Learn more about how Hugo and Docsy use folders and other files to organize your site&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#organizing-your-documentation&#34;&gt;Learn more about how Hugo and Docsy use folders and other files to organize your site&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;why-this-structure&#34;&gt;Why this structure?&lt;/h2&gt;
 &lt;p&gt;We based the Example Site structure on our own experiences creating (and using) large documentation sets for
 different types of project and on user research carried out on some of our bigger sites. In user studies we saw that
@@ -6651,14 +6651,14 @@ documentation, particularly for Open Source projects.&lt;/p&gt;
     
     <item>
       <title>Docs: Repository Links and other page information</title>
-      <link>http://localhost:1313/docs/adding-content/repository-links/</link>
+      <link>http://localhost:4321/docs/adding-content/repository-links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/repository-links/</guid>
+      <guid>http://localhost:4321/docs/adding-content/repository-links/</guid>
       <description>
         
         
-        &lt;p&gt;The Docsy &lt;a href=&#34;http://localhost:1313/docs/adding-content/content/#adding-docs-and-blog-posts&#34;&gt;docs and blog layouts&lt;/a&gt; include links for readers to edit the page or create issues for your docs or project via your site&amp;rsquo;s source repository. The current generated links for each docs or blog page are:&lt;/p&gt;
+        &lt;p&gt;The Docsy &lt;a href=&#34;http://localhost:4321/docs/adding-content/content/#adding-docs-and-blog-posts&#34;&gt;docs and blog layouts&lt;/a&gt; include links for readers to edit the page or create issues for your docs or project via your site&amp;rsquo;s source repository. The current generated links for each docs or blog page are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;View page source&lt;/strong&gt;: Brings the user to the page source in your docs repo.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Edit this page&lt;/strong&gt;: Brings the user to an editable version of the page content in their fork (if available) of your docs repo. If the user doesn&amp;rsquo;t have a current fork of your docs repo, they are invited to create one before making their edit. The user can then create a pull request for your docs.&lt;/li&gt;
@@ -6667,7 +6667,7 @@ documentation, particularly for Open Source projects.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Create project issue&lt;/strong&gt; (optional): Brings the user to a new issue form in your project repo. This can be useful if you have separate project and docs repos and your users want to file issues against the project feature being discussed rather than your docs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This page shows you how to configure these links.&lt;/p&gt;
-&lt;p&gt;Currently, Docsy supports only GitHub repository links &amp;ldquo;out of the box&amp;rdquo;. Since GitLab can handle the same link scheme, it should work as well. If you are using another repository such as Bitbucket and would like generated repository links, feel free to &lt;a href=&#34;http://localhost:1313/docs/contribution-guidelines/&#34;&gt;add a feature request or update our theme&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Currently, Docsy supports only GitHub repository links &amp;ldquo;out of the box&amp;rdquo;. Since GitLab can handle the same link scheme, it should work as well. If you are using another repository such as Bitbucket and would like generated repository links, feel free to &lt;a href=&#34;http://localhost:4321/docs/contribution-guidelines/&#34;&gt;add a feature request or update our theme&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;link-configuration&#34;&gt;Link configuration&lt;/h2&gt;
 &lt;p&gt;There are four site variables you can configure in &lt;code&gt;hugo.toml&lt;/code&gt;/&lt;code&gt;hugo.yaml&lt;/code&gt;/&lt;code&gt;hugo.json&lt;/code&gt; to set up links, as well as one in your page metadata.&lt;/p&gt;
 &lt;h3 id=&#34;github_repo&#34;&gt;&lt;code&gt;github_repo&lt;/code&gt;&lt;/h3&gt;
@@ -7084,7 +7084,7 @@ then also set &lt;code&gt;github_project_repo&lt;/code&gt;, something like this:
 &lt;/div&gt;
 
 &lt;p&gt;The &lt;code&gt;path_base_for_github_subdir&lt;/code&gt; setting is a regular expression, so you can
-use it even if you have a site with &lt;a href=&#34;http://localhost:1313/docs/language/&#34;&gt;multiple languages&lt;/a&gt; for example:&lt;/p&gt;
+use it even if you have a site with &lt;a href=&#34;http://localhost:4321/docs/language/&#34;&gt;multiple languages&lt;/a&gt; for example:&lt;/p&gt;
 
 
 
@@ -7236,7 +7236,7 @@ index file is named &lt;code&gt;README.md&lt;/code&gt; in the originating repo:&
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Deprecation note&lt;/h4&gt;
 
-    This setting is deprecated. Use &lt;a href=&#34;http://localhost:1313/docs/adding-content/repository-links/#path_base_for_github_subdir-optional&#34;&gt;path_base_for_github_subdir&lt;/a&gt; instead.
+    This setting is deprecated. Use &lt;a href=&#34;http://localhost:4321/docs/adding-content/repository-links/#path_base_for_github_subdir-optional&#34;&gt;path_base_for_github_subdir&lt;/a&gt; instead.
 
 &lt;/div&gt;
 
@@ -7310,7 +7310,7 @@ or require a non-GitHub URL. Pages using this value have &lt;strong&gt;Edit this
 links only.&lt;/p&gt;
 &lt;h3 id=&#34;disabling-links&#34;&gt;Disabling links&lt;/h3&gt;
 &lt;p&gt;You can use CSS to selectively hide links. For example, add the following to
-your &lt;a href=&#34;http://localhost:1313/docs/adding-content/lookandfeel/#project-style-files&#34;&gt;projects&amp;rsquo;s &lt;code&gt;_styles_project.scss&lt;/code&gt;&lt;/a&gt; file to hide
+your &lt;a href=&#34;http://localhost:4321/docs/adding-content/lookandfeel/#project-style-files&#34;&gt;projects&amp;rsquo;s &lt;code&gt;_styles_project.scss&lt;/code&gt;&lt;/a&gt; file to hide
 &lt;strong&gt;Create child page&lt;/strong&gt; links from all pages (optionally with a &lt;code&gt;!important&lt;/code&gt;
 modifier &amp;ndash; not shown):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-scss&#34; data-lang=&#34;scss&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;.td-page-meta__child&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#c4a000&#34;&gt;display&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ce5c00&#34;&gt;none&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
@@ -7377,10 +7377,10 @@ modifier — not shown):&lt;/p&gt;
     
     <item>
       <title>Docs: Taxonomy Support</title>
-      <link>http://localhost:1313/docs/adding-content/taxonomy/</link>
+      <link>http://localhost:4321/docs/adding-content/taxonomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/taxonomy/</guid>
+      <guid>http://localhost:4321/docs/adding-content/taxonomy/</guid>
       <description>
         
         
@@ -7664,17 +7664,17 @@ modifier — not shown):&lt;/p&gt;
     
     <item>
       <title>Docs: Diagrams and Formulae</title>
-      <link>http://localhost:1313/docs/adding-content/diagrams-and-formulae/</link>
+      <link>http://localhost:4321/docs/adding-content/diagrams-and-formulae/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/adding-content/diagrams-and-formulae/</guid>
+      <guid>http://localhost:4321/docs/adding-content/diagrams-and-formulae/</guid>
       <description>
         
         
         &lt;p&gt;Docsy has built-in support for a number of diagram creation and typesetting tools you can use to add rich content to your site, including \(\KaTeX\), Mermaid, Diagrams.net, PlantUML, and MarkMap.&lt;/p&gt;
 &lt;h2 id=&#34;latex-support-with-katex&#34;&gt;\(\LaTeX\) support with \(\KaTeX\)&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.latex-project.org/&#34;&gt;\(\LaTeX\)&lt;/a&gt; is a high-quality typesetting system for the production of technical and scientific documentation. Due to its excellent math typesetting capabilities, \(\TeX\) became the de facto standard for the communication and publication of scientific documents, especially if these documents contain a lot of mathematical formulae. Designed and mostly written by Donald Knuth, the initial version was released in 1978. Dating back that far, \(\LaTeX\) has &lt;code&gt;pdf&lt;/code&gt; as its primary output target and is not particularly well suited for producing HTML output for the Web. Fortunately, with &lt;a href=&#34;https://katex.org/&#34;&gt;\(\KaTeX\)&lt;/a&gt; there exists a fast and easy-to-use JavaScript library for \(\TeX\) math rendering on the web, which was integrated into the Docsy theme.&lt;/p&gt;
-&lt;p&gt;With \(\KaTeX\) support &lt;a href=&#34;http://localhost:1313/docs/adding-content/diagrams-and-formulae/#activating-and-configuring-katex-support&#34;&gt;enabled&lt;/a&gt; in Docsy, you can include complex mathematical formulae into your web page, either inline or centred on its own line. Since \(\KaTeX\) relies on server side rendering, it produces the same output regardless of your browser or your environment. Formulae can be shown either inline or in display mode:&lt;/p&gt;
+&lt;p&gt;With \(\KaTeX\) support &lt;a href=&#34;http://localhost:4321/docs/adding-content/diagrams-and-formulae/#activating-and-configuring-katex-support&#34;&gt;enabled&lt;/a&gt; in Docsy, you can include complex mathematical formulae into your web page, either inline or centred on its own line. Since \(\KaTeX\) relies on server side rendering, it produces the same output regardless of your browser or your environment. Formulae can be shown either inline or in display mode:&lt;/p&gt;
 &lt;h3 id=&#34;inline-formulae&#34;&gt;Inline formulae&lt;/h3&gt;
 &lt;p&gt;The following code sample produces a text line with three inline formulae:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;When &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;\\&lt;/span&gt;(a &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;\ne&lt;/span&gt; 0&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;\\&lt;/span&gt;), there are two solutions to &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;\\&lt;/span&gt;(ax&lt;span style=&#34;color:#204a87&#34;&gt;^&lt;/span&gt;2 + bx + c= 0&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;\\&lt;/span&gt;) and they are &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;\\&lt;/span&gt;(x = &lt;span style=&#34;color:#204a87&#34;&gt;{&lt;/span&gt;-b &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;\pm&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;\sqrt&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;{&lt;/span&gt;b&lt;span style=&#34;color:#204a87&#34;&gt;^&lt;/span&gt;2-4ac&lt;span style=&#34;color:#204a87&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;\over&lt;/span&gt; 2a&lt;span style=&#34;color:#204a87&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;\\&lt;/span&gt;).
@@ -7988,7 +7988,7 @@ modifier — not shown):&lt;/p&gt;
 
 &lt;p&gt;For a complete list of options and their detailed description, have a look at the documentation of \({\KaTeX}&amp;rsquo;s\) &lt;a href=&#34;https://katex.org/docs/autorender.html#api&#34;&gt;Rendering API options&lt;/a&gt; and of \({\KaTeX}&amp;rsquo;s\) &lt;a href=&#34;https://katex.org/docs/options.html&#34;&gt;configuration options&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;display-of-chemical-equations-and-physical-units&#34;&gt;Display of Chemical Equations and Physical Units&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.ctan.org/pkg/mhchem&#34;&gt;mhchem&lt;/a&gt; is a \(\LaTeX\) package for typesetting chemical molecular formulae and equations. Fortunately, \(\KaTeX\) provides the &lt;code&gt;mhchem&lt;/code&gt; &lt;a href=&#34;https://github.com/KaTeX/KaTeX/tree/main/contrib/mhchem&#34;&gt;extension&lt;/a&gt; that makes the &lt;code&gt;mhchem&lt;/code&gt; package accessible when authoring content for the web. With &lt;code&gt;mhchem&lt;/code&gt; extension &lt;a href=&#34;http://localhost:1313/docs/adding-content/diagrams-and-formulae/#activating-rendering-support-for-chemical-formulae&#34;&gt;enabled&lt;/a&gt;, you can easily include chemical equations into your page. An equation can be shown either inline or can reside on its own line. The following code sample produces a text line including a chemical equation:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ctan.org/pkg/mhchem&#34;&gt;mhchem&lt;/a&gt; is a \(\LaTeX\) package for typesetting chemical molecular formulae and equations. Fortunately, \(\KaTeX\) provides the &lt;code&gt;mhchem&lt;/code&gt; &lt;a href=&#34;https://github.com/KaTeX/KaTeX/tree/main/contrib/mhchem&#34;&gt;extension&lt;/a&gt; that makes the &lt;code&gt;mhchem&lt;/code&gt; package accessible when authoring content for the web. With &lt;code&gt;mhchem&lt;/code&gt; extension &lt;a href=&#34;http://localhost:4321/docs/adding-content/diagrams-and-formulae/#activating-rendering-support-for-chemical-formulae&#34;&gt;enabled&lt;/a&gt;, you can easily include chemical equations into your page. An equation can be shown either inline or can reside on its own line. The following code sample produces a text line including a chemical equation:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mhchem&#34; data-lang=&#34;mhchem&#34;&gt;*Precipitation of barium sulfate:* \\(\ce{SO4^2- + Ba^2+ -&amp;gt; BaSO4 v}\\)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;Precipitation of barium sulfate:&lt;/em&gt; \(\ce{SO4^2- + Ba^2+ -&amp;gt; BaSO4 v}\)&lt;/p&gt;
 &lt;p&gt;More complex equations need to be displayed on their own line. Use a code block adorned with &lt;code&gt;chem&lt;/code&gt; in order to achieve this:&lt;/p&gt;
@@ -8643,7 +8643,7 @@ Foo -&amp;gt; Foo7: To queue
 &lt;p&gt;As the diagram data is transported via the browser, the diagrams.net server does not need to access the content on your Docsy server directly at all.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://localhost:1313/docs/adding-content/diagrams-and-formulae/docsy-diagrams.svg&#34;
+    &lt;img src=&#34;http://localhost:4321/docs/adding-content/diagrams-and-formulae/docsy-diagrams.svg&#34;
          alt=&#34;Mouse over the above image and click the Edit button!&#34;/&gt; &lt;figcaption&gt;
             &lt;p&gt;Mouse over the above image and click the &lt;code&gt;Edit&lt;/code&gt; button!&lt;/p&gt;
         &lt;/figcaption&gt;
@@ -8779,10 +8779,10 @@ Foo -&amp;gt; Foo7: To queue
     
     <item>
       <title>Docs: The Framingham Heart Study (FHS)</title>
-      <link>http://localhost:1313/docs/fhs-intro/</link>
+      <link>http://localhost:4321/docs/fhs-intro/</link>
       <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/fhs-intro/</guid>
+      <guid>http://localhost:4321/docs/fhs-intro/</guid>
       <description>
         
         
@@ -8792,7 +8792,7 @@ Foo -&amp;gt; Foo7: To queue
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;how-is-the-fhs-conducted&#34;&gt;How is the FHS conducted?&lt;/h2&gt;
 &lt;p&gt;When the FHS began in 1948, researchers recruited 5,209 men and women between the ages of 30 and 62 from the town of Framingham, Massachusetts. This was for the first round of extensive physical examinations and lifestyle interviews they would later analyze for common patterns related to cardiovascular disease development. Since then, the participants have continued to return to the study approximately every two to six years to give researchers a detailed medical history and to get physical exams and laboratory tests done. In 1971, the study enrolled a second generation—5,124 of the original participants&amp;rsquo; adult children and their spouses—to participate in similar examinations. In April 2002, the study entered a new phase: the enrollment of a third generation of participants, the grandchildren of the original cohort.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;FHS Study physicians&#34; src=&#34;http://localhost:1313/images/Framingham_Heart_Study_physicians_small.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;FHS Study physicians&#34; src=&#34;http://localhost:4321/images/Framingham_Heart_Study_physicians_small.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The study&amp;rsquo;s landmark findings have shaped public health policies and clinical guidelines worldwide. Through its rigorous data collection, including medical histories, physical examinations, and laboratory tests, the FHS has contributed significantly to our understanding of cardiovascular health and disease.&lt;/p&gt;
 &lt;p&gt;Continuously funded by the National Institutes of Health, the FHS remains an essential resource for researchers investigating various aspects of heart disease, stroke, and related conditions. Its longitudinal design allows researchers to track participants over many years, providing valuable data on the natural history of cardiovascular diseases and their risk factors.&lt;/p&gt;
 &lt;p&gt;Today, the FHS continues to evolve, incorporating cutting-edge technologies and methodologies to address emerging research questions. It remains a cornerstone of cardiovascular research, with its findings continuing to inform strategies for the prevention, diagnosis, and treatment of cardiovascular diseases globally.&lt;/p&gt;

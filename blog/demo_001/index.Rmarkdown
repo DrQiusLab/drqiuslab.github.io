@@ -1,7 +1,7 @@
 ---
 title: R plot 001
 author: Admin
-date: '2024-02-27'
+date: '2024-03-08'
 slug: demo_001
 categories: 
   - Blog
@@ -17,7 +17,8 @@ library(ggplot2)
 library(dplyr)
 ```
 
-# Loading data
+# Loading data (update for fix figure link)
+
 ```{r}
 head(mtcars)
 # summary(mtcars)

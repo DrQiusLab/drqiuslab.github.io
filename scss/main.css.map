@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/mnt/c/Users/qtao/BU/FHS/Book_down/UseR/fhsbap/mysite",
+	"sourceRoot": "C:/Users/qtao/BU/FHS/Book_down/UseR/fhsbap/mysite",
 	"sources": [
 		"themes/docsy/assets/scss/main.scss",
 		"themes/github.com/twbs/bootstrap/scss/_functions.scss",
