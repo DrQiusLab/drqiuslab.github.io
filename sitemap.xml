@@ -2,175 +2,163 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:4321/docs/get-started/docsy-as-module/installation-prerequisites/</loc>
+    <loc>https://drqiuslab.github.io/docs/get-started/docsy-as-module/installation-prerequisites/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/get-started/docsy-as-module/</loc>
+    <loc>https://drqiuslab.github.io/docs/get-started/docsy-as-module/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/content/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/content/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/updating/updating-hugo-module/</loc>
+    <loc>https://drqiuslab.github.io/docs/updating/updating-hugo-module/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/get-started/other-options/</loc>
+    <loc>https://drqiuslab.github.io/docs/get-started/other-options/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/get-started/docsy-as-module/example-site-as-template/</loc>
+    <loc>https://drqiuslab.github.io/docs/get-started/docsy-as-module/example-site-as-template/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/get-started/</loc>
+    <loc>https://drqiuslab.github.io/docs/get-started/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/lookandfeel/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/lookandfeel/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/updating/updating-submodules/</loc>
+    <loc>https://drqiuslab.github.io/docs/updating/updating-submodules/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/get-started/docsy-as-module/start-from-scratch/</loc>
+    <loc>https://drqiuslab.github.io/docs/get-started/docsy-as-module/start-from-scratch/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/get-started/quickstart-docker/</loc>
+    <loc>https://drqiuslab.github.io/docs/get-started/quickstart-docker/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/navigation/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/navigation/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/search/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/search/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/updating/convert-site-to-module/</loc>
+    <loc>https://drqiuslab.github.io/docs/updating/convert-site-to-module/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/get-started/basic-configuration/</loc>
+    <loc>https://drqiuslab.github.io/docs/get-started/basic-configuration/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/get-started/known_issues/</loc>
+    <loc>https://drqiuslab.github.io/docs/get-started/known_issues/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/versioning/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/versioning/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/shortcodes/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/shortcodes/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/iconsimages/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/iconsimages/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/language/</loc>
+    <loc>https://drqiuslab.github.io/docs/language/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/deployment/</loc>
+    <loc>https://drqiuslab.github.io/docs/deployment/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/print/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/print/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/feedback/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/feedback/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/examples/</loc>
+    <loc>https://drqiuslab.github.io/docs/examples/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/updating/</loc>
+    <loc>https://drqiuslab.github.io/docs/updating/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/best-practices/</loc>
+    <loc>https://drqiuslab.github.io/docs/best-practices/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/contribution-guidelines/</loc>
+    <loc>https://drqiuslab.github.io/docs/contribution-guidelines/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/best-practices/site-guidance/</loc>
+    <loc>https://drqiuslab.github.io/docs/best-practices/site-guidance/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/best-practices/organizing-content/</loc>
+    <loc>https://drqiuslab.github.io/docs/best-practices/organizing-content/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/repository-links/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/repository-links/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/taxonomy/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/taxonomy/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/adding-content/diagrams-and-formulae/</loc>
+    <loc>https://drqiuslab.github.io/docs/adding-content/diagrams-and-formulae/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/categories/blog/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/categories/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/plots/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/r/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/blog/demo_001/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/docs/fhs-intro/</loc>
+    <loc>https://drqiuslab.github.io/categories/blog/</loc>
     <lastmod>2024-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/tutorial/</loc>
+    <loc>https://drqiuslab.github.io/categories/</loc>
+    <lastmod>2024-02-26T20:54:49-05:00</lastmod>
+  </url><url>
+    <loc>https://drqiuslab.github.io/tags/</loc>
+    <lastmod>2024-02-26T20:54:49-05:00</lastmod>
+  </url><url>
+    <loc>https://drqiuslab.github.io/tags/tutorial/</loc>
     <lastmod>2024-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/blog/youtube-demo/</loc>
+    <loc>https://drqiuslab.github.io/blog/youtube-demo/</loc>
     <lastmod>2024-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/blog/2024/0.9.0/</loc>
+    <loc>https://drqiuslab.github.io/blog/2024/0.9.0/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/blog/2023/priorities-for-2024/</loc>
+    <loc>https://drqiuslab.github.io/blog/2023/priorities-for-2024/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/blog/2023/docsy-0.7/</loc>
+    <loc>https://drqiuslab.github.io/blog/2023/docsy-0.7/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/blog/2023/bootstrap-5-migration/</loc>
+    <loc>https://drqiuslab.github.io/blog/2023/bootstrap-5-migration/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/blog/2022/hello/</loc>
+    <loc>https://drqiuslab.github.io/blog/2022/hello/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/about/</loc>
+    <loc>https://drqiuslab.github.io/about/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/blog/</loc>
+    <loc>https://drqiuslab.github.io/blog/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/community/</loc>
+    <loc>https://drqiuslab.github.io/community/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/</loc>
+    <loc>https://drqiuslab.github.io/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/docs/</loc>
+    <loc>https://drqiuslab.github.io/docs/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/labelling/</loc>
+    <loc>https://drqiuslab.github.io/tags/labelling/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/search/</loc>
+    <loc>https://drqiuslab.github.io/search/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/structuring-content/</loc>
+    <loc>https://drqiuslab.github.io/tags/structuring-content/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/tagging/</loc>
+    <loc>https://drqiuslab.github.io/tags/tagging/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/categories/taxonomies/</loc>
+    <loc>https://drqiuslab.github.io/categories/taxonomies/</loc>
     <lastmod>2024-02-26T20:54:49-05:00</lastmod>
   </url>
 </urlset>

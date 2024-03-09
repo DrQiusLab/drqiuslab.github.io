@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="http://localhost:4321/docs/adding-content/">
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:4321/docs/adding-content/index.xml">
+<link rel="canonical" type="text/html" href="https://drqiuslab.github.io/docs/adding-content/">
+<link rel="alternate" type="application/rss&#43;xml" href="https://drqiuslab.github.io/docs/adding-content/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -26,7 +26,7 @@
 <meta property="og:description" content="How to add content to and customize your Docsy site.
 " />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4321/docs/adding-content/" /><meta property="og:site_name" content="FHS-BAP-Docs" />
+<meta property="og:url" content="https://drqiuslab.github.io/docs/adding-content/" /><meta property="og:site_name" content="FHS-BAP-Docs" />
 
 <meta itemprop="name" content="Content and Customization">
 <meta itemprop="description" content="How to add content to and customize your Docsy site.
@@ -37,12 +37,12 @@
 
 
 
-
-<link href="/scss/main.css" rel="stylesheet">
+<link rel="preload" href="/scss/main.min.f218e6ba263de6273c808e8b6407095cd4cc1127f939505c7906cc4ec2c5c37f.css" as="style">
+<link href="/scss/main.min.f218e6ba263de6273c808e8b6407095cd4cc1127f939505c7906cc4ec2c5c37f.css" rel="stylesheet" integrity="">
 
 <script
-  src="https://code.jquery.com/jquery-3.6.3.min.js"
-  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
   </head>
@@ -586,7 +586,7 @@ This is the multi-page printable view of this section.
     </div>
 </div>
 
-<p>The minimum frontmatter you need to provide is a title: everything else is up to you! However, if you leave out the page weight, your <a href="/docs/adding-content/navigation/">navigation</a> may get a little disorganized. You may also want to include <code>description</code> since Docsy uses that to generate the meta <code>description</code> tag used by search engines. See <a href="http://localhost:4321/docs/adding-content/feedback/#search-engine-optimization-meta-tags">Search Engine Optimization (SEO) meta tags</a> for details.</p>
+<p>The minimum frontmatter you need to provide is a title: everything else is up to you! However, if you leave out the page weight, your <a href="/docs/adding-content/navigation/">navigation</a> may get a little disorganized. You may also want to include <code>description</code> since Docsy uses that to generate the meta <code>description</code> tag used by search engines. See <a href="https://drqiuslab.github.io/docs/adding-content/feedback/#search-engine-optimization-meta-tags">Search Engine Optimization (SEO) meta tags</a> for details.</p>
 <h2 id="page-contents-and-markup">Page contents and markup</h2>
 <p>By default you create pages in a Docsy site as simple <a href="https://gohugo.io/content-management/formats/">Markdown or HTML files</a> with <a href="/docs/adding-content/content/#page-frontmatter">page frontmatter</a>, as described above.
 As of version 0.100, <a href="https://github.com/yuin/goldmark/">Goldmark</a> is the only Markdown parser supported by Hugo.</p>
@@ -2241,7 +2241,7 @@ version selector drop down to the top-level menu.</p>
 </div>
 
 <p>To hide a page or section from the left navigation menu, set <code>toc_hide: true</code> in the front matter.</p>
-<p>To hide a page from the section summary on a <a href="http://localhost:4321/docs/adding-content/content/#docs-section-landing-pages">docs section landing page</a>, set <code>hide_summary: true</code> in the front matter. If you want to hide a page from both the TOC menu and the section summary list, you need to set both <code>toc_hide</code> and <code>hide_summary</code> to <code>true</code> in the front matter.</p>
+<p>To hide a page from the section summary on a <a href="https://drqiuslab.github.io/docs/adding-content/content/#docs-section-landing-pages">docs section landing page</a>, set <code>hide_summary: true</code> in the front matter. If you want to hide a page from both the TOC menu and the section summary list, you need to set both <code>toc_hide</code> and <code>hide_summary</code> to <code>true</code> in the front matter.</p>
 
 
 
@@ -5501,14 +5501,14 @@ using the <code>description</code> meta tag to tell search engines what your pag
 For each generated page, Docsy will set the content of the meta <code>description</code> by
 using the first of the following that is defined:</p>
 <ul>
-<li>The page <code>description</code> <a href="http://localhost:4321/docs/adding-content/content/#page-frontmatter">frontmatter field</a></li>
+<li>The page <code>description</code> <a href="https://drqiuslab.github.io/docs/adding-content/content/#page-frontmatter">frontmatter field</a></li>
 <li>For non-index pages, the page <a href="https://gohugo.io/content-management/summaries/">summary</a>, as computed by Hugo</li>
 <li>The site description taken from the <a href="https://gohugo.io/variables/site/#the-siteparams-variable">site <code>params</code></a></li>
 </ul>
 <p>For the template code used to perform this computation, see
 <a href="https://github.com/google/docsy/blob/main/layouts/partials/page-description.html">layouts/partials/page-description.html</a>.</p>
 <p>Add more meta tags as needed to your project&rsquo;s copy of the <code>head-end.html</code>
-partial. For details, see <a href="http://localhost:4321/docs/adding-content/lookandfeel/#customizing-templates">Customizing templates</a>.</p>
+partial. For details, see <a href="https://drqiuslab.github.io/docs/adding-content/lookandfeel/#customizing-templates">Customizing templates</a>.</p>
 
 </div>
 
@@ -7735,8 +7735,8 @@ window.markmap = {
 </script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
 <script src='/js/deflate.js'></script>
-<script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src="/js/main.min.d3318b626beabca2e352debf2c1efd8347e282517eeb2b0e770128c3aec202ea.js" integrity="sha256-0zGLYmvqvKLjUt6/LB79g0figlF&#43;6ysOdwEow67CAuo=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.f724d3de49218995223b7316aa2e53e2b34bf42026bf399ebb21bb02212402d1.js" integrity="sha256-9yTT3kkhiZUiO3MWqi5T4rNL9CAmvzmeuyG7AiEkAtE=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
   </body>

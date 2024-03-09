@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FHS-BAP-Docs – Previews and Deployment</title>
-    <link>http://localhost:4321/docs/deployment/</link>
+    <link>https://drqiuslab.github.io/docs/deployment/</link>
     <description>Recent content in Previews and Deployment on FHS-BAP-Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:4321/docs/deployment/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://drqiuslab.github.io/docs/deployment/index.xml" rel="self" type="application/rss+xml" />
     
     
       
